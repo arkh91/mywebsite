@@ -1,0 +1,208 @@
+<!--======================================================================-->
+<!-- Hunter Ehrismann, Navodit Kaushal, Ali Khazaeli                      -->
+<!-- Purpose: Home Template                                               -->
+<!-- Date: 01 FEB 2020                                                    -->
+<!--======================================================================-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+			<meta charset="utf-8"/>
+			<title>Distracto</title>
+			<link href="/~csci311g/bootstrap.min.css" rel="stylesheet"/>
+			<link href="/~csci311g/site.css" rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<!-- HEADER START -->
+		<div class="header">
+			<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+				<div class="container">
+				  <a class="navbar-brand" href="/~csci311g">
+					<img src="/~csci311g/logo.png" alt="Distracto" width="155" height="40"/>
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item">
+						<a class="nav-link" href="/~csci311g">Home </a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="/~csci311g/Users">Users</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" href="/~csci311g/Games">Games <span class="sr-only">(current)</span></a>
+					  </li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item ">
+							<a class="nav-link" href="/~csci311g/Account/Login">Login / Register</a>
+					  </li>		        
+					</ul>
+				  </div>
+			  </div>
+			</nav>
+		</div>
+		<!-- HEADER END -->
+	    <div class="container-fluid">
+	    	<!--CONTENT STARTS HERE-->
+			<div class="container r2d2-padding-fix">
+				<h1>Games</h1>
+				
+				<h4>Your playing history</h5>
+				<h6>How distracted have you been?</h5>
+				<!-- https://getbootstrap.com/docs/4.4/components/pagination/ -->
+				<ul class="pagination justify-content-center">
+	   			<li class="page-item disabled"><a class="page-link" href="#"><<</a></li>
+	    			<li class="page-item active"><a class="page-link" href="/~csci311g/Games">1</a></li>
+	    			<li class="page-item"><a class="page-link" href="/~csci311g/Games/2">2</a></li>
+	    			<li class="page-item"><a class="page-link" href="/~csci311g/Games/3">3</a></li>
+	    			<li class="page-item"><a class="page-link" href="/~csci311g/Games/2">>></a></li>
+	  			</ul>
+
+				<table class="table">
+					<thead>
+						<tr class="r2d2-secondary-color">
+							<th scope="col">Type</th>
+							<th scope="col">Opponent</th>
+							<th scope="col">Status</th>
+						</tr>					
+					</thead>
+					<tbody>
+						<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strAstudent</td>
+				      	<td>Invited</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>sarahC</td>
+				      	<td>Ongoing</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Ongoing</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+						<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>pwalsh</td>
+				      	<td>Tie</td>
+				    	</tr>
+						<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>rvngofhc11</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+				   	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>pwalsh</td>
+				      	<td>Tie</td>
+				    	</tr>
+				    	<tr>
+				   	   <td>Tic Tac Toe</td>
+				      	<td>huntere</td>
+				      	<td>Win</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>fortnitegod02</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+						<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>pwalsh</td>
+				      	<td>Tie</td>
+				    	</tr>
+						<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>rvngofhc11</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+				    	<tr>
+				      	<td>Tic Tac Toe</td>
+				      	<td>strCstudent</td>
+				      	<td>Loss</td>
+				    	</tr>
+				  </tbody>
+				</table>
+				<ul class="pagination justify-content-center">
+	   			<li class="page-item disabled"><a class="page-link" href="#"><<</a></li>
+	    			<li class="page-item active"><a class="page-link" href="/~csci311g/Games">1</a></li>
+	    			<li class="page-item"><a class="page-link" href="/~csci311g/Games/2">2</a></li>
+	    			<li class="page-item"><a class="page-link" href="/~csci311g/Games/3">3</a></li>
+	    			<li class="page-item"><a class="page-link" href="/~csci311g/Games/2">>></a></li>
+	  			</ul>
+			</div>
+			<!--CONTENT ENDS HERE-->
+		</div>	
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<a href="">Our Team</a>
+						<a href="">About Us</a>
+						<a href="">Contact</a>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						Copyright Team R2D2. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</footer>	
+	</body>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- Stray script tag error is triggered by above in w3 validator. Do not know how to resolve. -->	
+	<script src="/~csci311g/bootstrap.min.js"></script>
+</html>

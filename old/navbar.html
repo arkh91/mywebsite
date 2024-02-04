@@ -1,0 +1,24 @@
+<div id="placeholder">
+  <a href="#" class="active" >Home</a>    
+  <div class="dropdown">
+    <button class="dropbtn">Linux 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="./pages/main.html">SSH Key</a>
+        <a href="./pages/newuser.html">New User</a>
+        <a href="./pages/NTFS_dislocker.html">NTFS dislocker</a>
+    </div>
+  </div>     
+     <a href="./pages/info.html">About</a>
+     <a href="./pages/contact.html">Contact</a>
+     <a href="./pages/courses">VIU</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    
+</div>
+
+<script>
+$(function(){
+  $("#placeholder").load("navbar.html");
+});
+</script>

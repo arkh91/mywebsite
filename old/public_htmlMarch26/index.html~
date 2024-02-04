@@ -1,0 +1,152 @@
+<!--======================================================================-->
+<!-- Hunter Ehrismann, Navodit Kaushal, Ali Khazaeli                      -->
+<!-- Purpose: Home Template                                               -->
+<!-- Date: 01 FEB 2020                                                    -->
+<!--======================================================================-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+			<meta charset="utf-8"/>
+			<title>Distracto</title>
+			<link href="/~csci311g/bootstrap.min.css" rel="stylesheet"/>
+			<link href="/~csci311g/site.css" rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<!-- HEADER START -->
+		<div class="header">
+			<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+				<div class="container">
+				  <a class="navbar-brand" href="/~csci311g">
+					<img src="/~csci311g/logo.png" alt="Distracto" width="155" height="40"/>
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item">
+						<a class="nav-link active" href="/~csci311g">Home <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="/~csci311g/Users">Users</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="/~csci311g/Games">Games</a>
+					  </li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item ">
+							<a class="nav-link" href="/~csci311g/Account/Login">Login / Register</a>
+					  </li>		        
+					</ul>
+				  </div>
+			  </div>
+			</nav>
+		</div>
+		<!-- HEADER END -->
+	    <div class="container-fluid">
+	    	<!--CONTENT STARTS HERE-->
+			<!--Image from: https://unsplash.com/photos/fzOITuS1DIQ Used with permission under the Unsplash License https://unsplash.com/license -->
+			<div class="cover-container">
+				<div class="cover-text">
+					<h1>Distracto</h1>
+					<hr>
+					<h3>Not just a gaming platform</h3>
+					<h5>It's a lifestyle</h5>
+					<br/>
+					<a href="/~csci311g/Account/Login" class="btn btn-outline-light">Transform your life</a>
+				</div>
+			</div>
+			<div class="veranda">
+				<div class="cover-row">
+					<div class="container">
+						<h1>Get Started</h1>
+						<div style="text-align:left;" class="row">
+							<div class="r2d2-tile col-12 col-md-5">
+								<div style="overflow:hidden">								
+									<img alt="hc11" src="/~csci311g/hc11navo.jpg"/>
+								</div>
+								<p>No friends? No worries. Play against our state of the art AI.</p>
+								<p><a class="btn btn-primary" href="">Play solo.</a></p>
+							</div>
+							<div class="r2d2-tile col-12 col-md-5 offset-md-2">
+								<div style="overflow:hidden">
+									<img alt="keyboard" src="/~csci311g/keyboardnavo.jpg"/>								
+								</div>							
+								<p>Since January 2020 over 3 people have chosen Distracto for their procrastination needs.</p>
+								<p><a class="btn btn-primary" href="" >Join them today!</a></p>				
+							</div>	
+						</div>					
+					</div>
+				</div>
+				<div class="cover-row">
+					<div class="container">
+						<h1>Our Team</h1>
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<!-- Credit to Navo -->
+								<img class="face" src="/~csci311g/profile.png" alt="Ali">
+								<h2>Ali Khazaeli</h2>
+								<h4>Database</h4>
+								<div class="left-align">
+									<p>Ali designed and implemented the database.</p>
+									<p>Stretch goal: TBD</p>
+								</div>
+							</div>
+							<div class="col-12 col-md-4">
+								<img class="face" src="/~csci311g/profile.png" alt="Hunter">
+								<h2>Hunter Ehrismann</h2>
+								<h4>Full Stack</h4>
+								<div class="left-align">
+									<p>Hunter primarily focused on the back end PHP.</p>
+									<p>Stretch goal: Laravel</p>
+								</div>
+							</div>
+							<div class="col-12 col-md-4">
+								<img class="face" src="/~csci311g/profile.png" alt="Navo">
+								<h2>Navodit Kaushal</h2>
+								<h4>Front End</h4>
+								<div class="left-align">
+									<p>Navo planned and designed the HTML and CSS for most of the website.</p>
+									<p>Stretch goal: Typescript</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cover-row">
+					<div class="container">
+						<h1>Our Vision</h1>
+						<div class="row">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in vehicula mi. Morbi rhoncus nec dui at feugiat. Sed feugiat dapibus ante id aliquam. Nulla vitae elit tellus. Nam vitae ultrices metus. Nulla eu urna vel ante ultricies sollicitudin. Integer nulla leo, interdum sed mi ut, aliquet iaculis sapien. Morbi laoreet metus in finibus consectetur. Duis cursus bibendum eleifend. Ut molestie ligula sed tempor consequat. </p>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!--CONTENT ENDS HERE-->
+		</div>	
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<a href="">Our Team</a>
+						<a href="">About Us</a>
+						<a href="">Contact</a>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						Copyright Team R2D2. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</footer>	
+	</body>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- Stray script tag error is triggered by above in w3 validator. Do not know how to resolve. -->	
+	<script src="/~csci311g/bootstrap.min.js"></script>
+</html>

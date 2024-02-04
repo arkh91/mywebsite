@@ -1,0 +1,229 @@
+body > .container {
+	padding-top: 60px;
+}
+
+footer {
+/*text-align:center;
+position:absolute;
+bottom:0;
+width:100%;*/
+text-align:center;
+/*height:60px;
+line-height:60px;*/
+background:#007bff !important;
+color:white;
+}
+
+footer a {
+color:rgba(255,255,255,.5);
+margin-right:15px;
+margin-left:15px;
+text-decoration:none !important;
+}
+
+footer .row {
+padding-top:15px;
+padding-bottom:15px;
+}
+
+footer a:hover {
+color:white;
+}
+
+.footer-img {
+width:155px;
+height:40px;
+}
+
+.header {
+position: fixed;
+left:0;
+top:0;
+right:0;
+z-index:1000;
+}
+
+.cover-container {
+width:100%;
+height:100vh;
+background:url(/~csci311g/chess.png) top center;
+background-size:cover;
+position:relative;
+}
+
+.cover-container:before {
+content: "";
+background: rgba(0, 0, 0, 0.6);
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+.cover-text {
+font-family:"Bookman Old Style";
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+text-align: center;
+color:white;
+}
+
+.cover-text hr{
+display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: 1px;
+width:375px;
+
+
+}
+
+hr {
+border-color:white !important;
+}
+
+.container-fluid {
+padding-left:0!important;
+padding-right:0!important;	
+}
+
+.cover-row {
+text-align:center;
+padding-top:15px;
+padding-bottom:15px;
+}
+
+.left-align {
+text-align:left;
+}
+
+.r2d2-padding-fix {
+padding-top:70px;
+}
+
+
+.face {
+width:50%;
+background:rgba(0,123,255,0.6);
+border-radius:200px;
+padding-top:7px;
+padding-bottom: 7px;
+margin-bottom:10px;
+}
+
+.profile {
+width:33%;
+}
+.cover-row h1 {
+text-transform: uppercase;
+}
+
+.cover-row:nth-child(even) {
+background:#f2f2f2;
+border-top: 1px solid #E0E0E0;
+border-bottom: 1px solid #E0E0E0;
+}
+
+.veranda {
+font-family: Verdana, Geneva, sans-serif;
+}
+
+.r2d2-tile {
+background:#F5F5F5;
+padding:17px;
+border: 1px solid #E0E0E0;
+margin-bottom:10px;
+}
+
+.r2d2-tile img {
+width:100%;
+filter: blur(1px);
+-webkit-filter: blur(1px);
+-moz-filter: blur(1px);
+}
+
+.r2d2-secondary-color {
+background:rgba(0,123,255,0.6);
+color:white;
+}
+
+.r2d2-board {
+border-color:black;
+height:150px;
+font-size:100px;
+line-height:150px;
+text-align:center;
+}
+
+.board-overlay {
+position:relative;
+}
+
+.board-overlay.inactive:before {
+content:"";
+position:absolute;
+top:0;
+left:0;
+z-index:1000;
+background-color:rgba(0,0,0,.1);
+height:100%;
+width:100%;
+}
+
+.r2d2-board.top-left {
+border-right:1px solid;
+border-bottom:1px solid;
+}
+.r2d2-board.top {
+border-bottom:1px solid;
+}
+.r2d2-board.top-right {
+border-left:1px solid;
+border-bottom:1px solid;
+}
+.r2d2-board.right {
+border-left:1px solid;
+}
+.r2d2-board.left {
+border-right:1px solid;
+}
+
+.r2d2-board.bottom-left {
+border-right:1px solid;
+border-top:1px solid;
+}
+.r2d2-board.bottom {
+border-top:1px solid;
+}
+.r2d2-board.bottom-right {
+border-left:1px solid;
+border-top:1px solid;
+}
+
+
+
+

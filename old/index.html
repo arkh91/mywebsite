@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+   <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./css/index-project.css">
+   <!-- <link rel="stylesheet" type="text/css" href="../css/.project-main.css"> -->
+
+
+<meta charset="utf-8" >
+
+</head>
+<body>
+<!--<header style="width: 80%;"> 
+
+<script type="text/javascript" src="./js/userip.js"></script>-->
+
+<div class="navbar" id="myTopnav">
+  <a href="#" class="active" >Home</a>    
+  <div class="dropdown">
+    <button class="dropbtn">Linux 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="./pages/main.html">SSH Key</a>
+        <a href="./pages/newuser.html">New User</a>
+        <a href="./pages/NTFS_dislocker.html">NTFS dislocker</a>
+    </div>
+  </div>     
+     <a href="./pages/info.html">About</a>
+     <a href="./pages/contact.html">Contact</a>
+     <a href="./pages/courses">VIU</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<!-- </header> -->
+    
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+<!--
+<script>
+function myFunction() {
+    alert("Please email at: \narkh91@gmail.com ");
+}
+</script>    
+-->
+<div class="first_left" >
+    <a href="./pages/main.html">
+    <img class="index_pic1" src="./img/ssh.png" alt="Shell Secure" title="Add a new user">
+    </a>
+    <h3>An SSH client is a software program which uses the secure shell protocol to connect to a remote computer.</h3>
+    
+    
+</div>
+<div class="first_left" >
+    <a href="./pages/newuser.html">
+    <img class="index_pic1" src="./img/user.png" alt="Shell Secure" title="Add a new user">
+    </a>
+    <h3>This page helps you to add a new user.</h3>
+    
+</div>
+<div class="first_left" >
+    <a href="./pages/contact.html">
+    <img class="index_pic1" src="./img/cont.jpg" alt="Shell Secure" title="Add a new user">
+    </a>
+    <h3>Contact us if you have any questions.</h3>
+    
+</div>
+        <div id="footer">
+				<p id="copyright">© 2019 Alireza Khazaeli <!-- &amp; Faye Ostergard --> </p>
+				<p id="validation"> Valid: <a class="blue" href="http://validator.w3.org/check?uri=referer">HTML 5</a> | <a class="blue" href="http://jigsaw.w3.org/css-validator/check/referer">CSS 3</a> </p>
+		</div> <!-- ends footer -->
+
+</body>
+</html>
