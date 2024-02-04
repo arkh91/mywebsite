@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A1</title>
+	<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<body>
+
+	<div id="Main">
+		<img src="viu.jpg" >
+		<div id="inside-div">
+			<p>VIU is a public university located on Canada magnificent west coast dedicated to student success and support. A centre of excellence for teaching, applied research and learning, VIU offers more than 120 undergraduate and graduate programs in popular areas of study. Among the list of universities in western Canada, VIU has produced quality graduates in demand by employers across the country and around the world.</p>
+			<div class="flashit"><a href="#">Apply Here</a></div>
+		</div>
+	</div>
+
+
+	<h1>CSS Animations</h1>
+	<p style="font-size: 24px;">CSS animations allows animation of most HTML elements without using JavaScript or Flash!</p>
+
+
+
+	<h2>There are three key advantages to CSS animations :</h2>
+
+	<li> They are easy to use for simple animations; you can create them without even having to know JavaScript.</li>
+	<li> The animations run well, even under moderate system load. Simple animations can often perform poorly in JavaScript. The rendering engine can use frame-skipping and other techniques to keep the performance as smooth as possible.</li>
+	<li> Letting the browser control the animation sequence lets the browser optimize performance and efficiency by, for example, reducing the update frequency of animations running in tabs that aren't currently visible.</li>
+
+	<h2>Resources</h2>
+	<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">Configuring the animation</a></p>
+	<p><a href="https://www.w3schools.com/css/css3_animations.asp">W3schools</a></p>
+
+    
+    <h2>Animation property</h2>
+    <div class="ani_prop_padding">
+    The sub-properties of the animation property are:<br><br>
+    <p>
+    <strong>animation-name</strong><br>
+    Specifies the name of the @keyframes at-rule describing the animation’s keyframes.<br>
+    <strong>animation-duration</strong><br>
+    Configures the length of time that an animation should take to complete one cycle.<br>
+    <strong>animation-timing-function</strong><br>
+    Configures the timing of the animation; that is, how the animation transitions through keyframes, by establishing acceleration curves.<br>
+    <strong>animation-delay</strong><br>
+    Configures the delay between the time the element is loaded and the beginning of the animation sequence.<br>
+    <strong>animation-iteration-count</strong><br>
+    Configures the number of times the animation should repeat; you can specify infinite to repeat the animation indefinitely.<br>
+    <strong>animation-direction</strong><br>
+    Configures whether or not the animation should alternate direction on each run through the sequence or reset to the start point and repeat itself.<br>
+    <strong>animation-fill-mode</strong><br>
+    Configures what values are applied by the animation before and after it is executing.<br>
+    <strong>animation-play-state</strong><br>
+    Lets you pause and resume the animation sequence.<br>
+        
+       
+    </p>
+    </div> 
+	<div id="EX"></div>
+	<pre style="margin-left: 20%;font-size: 20px;">
+
+		#EX {
+		  width: 100px;
+		  height: 100px;
+		  background-color: red;
+		  position: relative;
+		  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+		  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+		  animation-name: example;
+		  animation-duration: 4s;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes example {
+		  0%   {background-color:red; left:0px; top:0px;}
+		  25%  {background-color:yellow; left:200px; top:0px;}
+		  50%  {background-color:blue; left:200px; top:200px;}
+		  75%  {background-color:green; left:0px; top:200px;}
+		  100% {background-color:red; left:0px; top:0px;}
+		}
+
+		/* Standard syntax */
+		@keyframes example {
+		  0%   {background-color:red; left:0px; top:0px;}
+		  25%  {background-color:yellow; left:200px; top:0px;}
+		  50%  {background-color:blue; left:200px; top:200px;}
+		  75%  {background-color:green; left:0px; top:200px;}
+		  100% {background-color:red; left:0px; top:0px;}
+		}
+	</pre>
+
+</body>
+</html>
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <html lang="en" >
+<head>
+   <title>NTFS Dislocker</title>
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/Responsive.css">
+    <link rel="stylesheet" type="text/css" href="../css/NTFS_dislocker.css">
+<meta charset="utf-8" >
+
+</head>
+<body>
+	
+<div class="navbar" id="myTopnav">
+  <a href="../index.html">Home</a>    
+    <div class="dropdown">
+    <button class="dropbtn">Linux 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a  href="./main.html">SSH Key</a>
+        <a href="./newuser.html">New User</a>
+        <a class="active" href="./NTFS_dislocker.html">NTFS dislocker</a>
+    </div>
+  </div>     
+     <a href="./info.html">About</a>
+     <a href="./contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    
+</div> 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+<!-- https://www.isunshare.com/blog/decrypt-usb-encrypted-with-bitlocker-in-windows-and-linux/ -->
+<div class="content">
+ <h1>How to Decrypt/Open BitLocker Encrypted NTFS on Linux</h1>
+	<h3>Requirments:</h3>
+	<p>you need to have sudo access.</p>
+	<p>you need to have Bitlocker recovery code.</p>
+	 <!--
+            Step 1
+        -->
+	<h2>Step 1 — Installing Dislocker</h2>
+	<div id="options">1. Press <b>Ctrl+Alt+T</b> top open terminal</div>
+	<div id="options">2. Type <b>“sudo su”</b> and press Enter.</div>
+	<div id="options">3. Enter your login password for the current account.</div>
+	<div id="options">4. Execute the “sudo apt-get install dislocker” command.</div>
+	<!--
+            changed
+        
+	<h2>Step 2 — Set up a folder to mount the Bitlocker Drive</h2>
+	<p>To mount the BitLocker encrypted drive, we have to create a folder for it. You can run the command lines below and hit Enter at the end of each line.</p>
+	<pre>
+	<div id="folder">
+		<lu>
+			<li>sudo mkdir /media/bitlocker</li>
+			<li>sudo mkdir /media/mount</li>
+		</lu>
+	</div>
+	</pre>
+
+	<h2>Step 3 — View Mounted Drive</h2>
+	<p>Then we need to find out which is the target BitLocker USB drive. We can identify the BitLocker drive based on its size. Execute the command:</p>
+	<pre>
+	<div id="folder">
+		<lu>
+			<li>sudo fdisk -l</li>
+		</lu>
+	</div>
+	</pre>
+
+	<h2>Step 4 — Decrypt BitLocker with recovery key.</h2>
+	<p>Now, lets mount the BitLocker drive on Linux.</p>
+	<pre>
+	<div id="folder">
+		<lu>
+			<li>sudo mount -r -o loop /media/bitlocker/dislocker-file /media/mount</li>
+		</lu>
+	</div>
+	</pre>
+	<p>if you got the error "Intfs-3g-mount: mount failed: Permission denied", Run following Command</p>
+	<pre>
+	<div id="folder">
+		<lu>
+			<li>mount -o ro,loop /media/bitlocker/dislocker-file /media/mount</li>
+		</lu>
+	</div>
+	</pre>
+	<p>If it shows that you don’t have the permission to access, you can switch to root state.</p>
+	<pre>
+	<div id="folder">
+		<lu>
+			<li>sudo -i</li>
+			<li>cd /media/bitlocker</li>
+		</lu>
+	</div>
+	</pre>
+	<p>After that, you can open the BitLocker drive on Linux to transfer files between Windows and Linux.</p>
+-->
+	<!--
+            Step 2
+        -->
+	<h2>Step 2 — Set up a folder to mount the Bitlocker Drive</h2>
+	<p>To mount the BitLocker encrypted drive, we have to create a folder for it. You can run the command lines below and hit Enter at the end of each line.</p>
+	<pre>
+
+  sudo mkdir /media/bitlocker<br>
+  sudo mkdir /media/mount
+
+	</pre>
+	 <!--
+            Step 3
+        -->
+	<h2>Step 3 — View Mounted Drive</h2>
+	<p>Then we need to find out which is the target BitLocker USB drive. We can identify the BitLocker drive based on its size. Execute the command:</p>
+	<pre>
+  
+  sudo fdisk -l
+	</pre>
+
+	<!--
+            Step 4
+        -->
+	<h2>Step 4 — Decrypt BitLocker with recovery key.</h2>
+	<p>Now, lets mount the BitLocker drive on Linux.</p>
+	<pre>
+
+  sudo mount -r -o loop /media/bitlocker/dislocker-file /media/mount
+
+	</pre>
+	<p>if you got the error "Intfs-3g-mount: mount failed: Permission denied", Run following Command</p>
+	<pre>
+		
+  mount -o ro,loop /media/bitlocker/dislocker-file /media/mount
+	</pre>
+	
+	<p>If it shows that you don’t have the permission to access, you can switch to root state.</p>
+	<pre>
+		
+  sudo -i<br>
+  cd /media/bitlocker
+
+	</pre>
+	<p>After that, you can open the BitLocker drive on Linux to transfer files between Windows and Linux.</p>
+
+
+
+
+
+
+
+        <div id="footer">
+				<p id="copyright">© 2019 Alireza Khazaeli <!-- &amp; Faye Ostergard --> </p>
+				<p id="validation"> Valid: <a class="blue" href="http://validator.w3.org/check?uri=referer">HTML 5</a> | <a class="blue" href="http://jigsaw.w3.org/css-validator/check/referer">CSS 3</a> </p>
+		</div> <!-- ends footer -->
+</div> <!-- end content -->       
+</body>
+</html>

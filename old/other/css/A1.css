@@ -1,0 +1,87 @@
+:root {
+  --main-color: lightgreen;
+  --main-second-color: lightblue;
+
+  --tiny-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.8);
+  --animate-right: translateX(20px);
+}
+
+
+/*  ========================================== */
+/* variations */
+
+.btn.red {
+  --color: red
+}
+.btn.yellow {
+  --color: yellow
+}
+.btn.green {
+  --color: green
+}
+.btn.orange {
+  --color: orange
+}
+.btn.teal {
+  --color: teal
+}
+/*  ========================================== */
+
+.btn {
+  padding: 2rem 4rem;
+  border: 2px solid var(--color, black);
+  background: transparent;
+  font-size: 0.6em;
+  border-radius: 2px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: var(--color, black);
+  color: white;
+}
+
+/*  ========================================== */
+
+#div1 {
+  background-color: var(--main-color);
+  padding: 5px;
+}
+
+#div2 {
+  background-color: var(--main-second-color);
+  padding: 5px;
+}
+
+/*  ========================================== */
+
+li {
+  box-shadow: var(--tiny-shadow);
+}
+li:hover {
+  transform: var(--animate-right);
+}
+
+
+
+
+
+/*  ========================================== */
+
+
+body{
+	font-size: 1.5em;
+}
+ul {
+  padding: 20px;
+  list-style: none;
+  width: 300px;
+}
+li {
+  font: normal 18px sans-serif;
+  padding: 20px;
+  transition: 0.4s;
+  margin: 10px;
+  color: #444;
+  cursor: pointer;
+  background-color: yellow;
+}

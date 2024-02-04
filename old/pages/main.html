@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SSH KEY</title>
+        <meta name="description" content="An interactive getting started guide for ssh.">
+        <link rel="stylesheet" href="../css/index-project.css">
+        <link rel="stylesheet" href="../css/project-main.css">
+        
+    </head>
+    <body>
+
+<div class="navbar" id="myTopnav">
+  <a href="../index.html">Home</a>    
+    <div class="dropdown">
+    <button class="dropbtn">Linux 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a class="active" href="./main.html">SSH Key</a>
+        <a href="./newuser.html">New User</a>
+        <a href="./NTFS_dislocker.html">NTFS dislocker</a>
+    </div>
+  </div>     
+     <a href="./info.html">About</a>
+     <a href="./contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    
+</div> 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+<div class="content">
+        <br>
+        <h1>How to Set Up SFTP using SSH Keys on Linux</h1>
+        <h2>Introduction</h2>
+        
+        <p>
+            SSH, or secure shell, is an encrypted protocol used to administer and communicate with servers. When working with a Debian server, chances are you will spend most of your time in a terminal session connected to your server through SSH.</p>
+        
+        <p>
+            In this guide, we'll focus on setting up SSH keys for a vanilla Debian 9 installation. SSH keys provide an easy, secure way of logging into your server and are recommended for all users.
+        </p>
+        <h2>Requirment</h2>
+        <p>You need to have <b><i>sudo</i></b> access.</p>
+        <!--
+            Step 1
+        -->
+        <h3>Step 1 — Create the RSA Key Pair</h3>
+        <p>
+            The first step is to create a key pair on the client machine:
+        </p>
+        
+        <pre>
+    <samp class="yellow">$ ssh-keygen -t rsa</samp>
+        </pre>
+        
+        <p>
+        By default <code>ssh-keygen</code> will create a 2048-bit RSA key pair, which is secure enough for most use cases (you may optionally pass in the <code>-b 4096</code> flag to create a larger 4096-bit key).
+        </p>
+        
+        <p>After entering the command, you should see the following output:</p>
+        
+        <pre>
+    Output <br>
+    Generating public/private rsa key pair.<br>
+    Enter file in which to save the key (/<samp class="skyblue">your_home</samp>/.ssh/id_rsa):
+        </pre>
+        
+ 
+        <p>
+           Press enter to save the key pair into the .ssh/ subdirectory in your home directory, or specify an alternate path.
+            <br><br>
+            If you had previously generated an SSH key pair, you may see the following prompt:
+        </p>
+        
+        <pre>
+    Output <br>
+    /home/<samp class="skyblue">your_home</samp>/.ssh/id_rsa already exists. <br>
+    Overwrite (y/n)?   
+        </pre>
+        
+        
+        <p>
+        If you choose to overwrite the key on disk, you will not be able to authenticate using the previous key anymore. Be very careful when selecting yes, as this is a destructive process that cannot be reversed.
+<br><br>
+You should then see the following prompt:
+        </p>
+        
+        <pre>
+    Output<br>
+    Enter passphrase (empty for no passphrase):
+        </pre>
+        
+        <p>
+        It's up to you whether you want to use a passphrase. Entering a passphrase does have its benefits: the security of a key, no matter how encrypted, still depends on the fact that it is not visible to anyone else. Should a passphrase-protected private key fall into an unauthorized users possession, they will be unable to log in to its associated accounts until they figure out the passphrase, buying the hacked user some extra time. The only downside, of course, to having a passphrase, is then having to type it in each time you use the key pair.<br><br>
+         You should then see the following output:
+        </p>
+
+    <pre>
+    Your identification has been saved in /<samp class="skyblue">your_home</samp>/.ssh/id_rsa.<br>
+    Your public key has been saved in /<samp class="skyblue">your_home</samp>/.ssh/id_rsa.pub.<br>
+    The key fingerprint is:<br>
+    SHA256:qFN5n0JubGEx6tVSDfGGxa7N+AA5hZyZDaey8EWbTnk root@instance-1 <br>
+    The key's randomart image is: 
+    <samp class="line_space">
+    +---[RSA 2048]----+
+    |       .oB+o.    |
+    |       .**o*.    |
+    |    . . XoE.+    |
+    |     o X+* ..    |
+    |      B So.=     |
+    |     + B ++.o    |
+    |    o . * oo     |
+    |     . o .  .    |
+    |                 |
+    +----[SHA256]-----+
+    </samp>
+    </pre>
+        
+        <p>
+        You now have a public and private key that you can use to authenticate. The next step is to edit sshd_config so that you can use SSH-key-based authentication to log in.
+        </p>
+         <!--
+            Step 2
+        -->
+        <h3>Step 2 — Edit sshd_config</h3>
+        <pre>
+    sudo nano /etc/ssh/sshd_config<br>
+    PermitRootLogin prohibit-password to <samp class="yellow">PermitRootLogin yes</samp> <br>
+    PasswordAuthentication no to <samp class="yellow"> PasswordAuthentication yes</samp> 
+
+        </pre>
+         <!--
+            Step 3
+        -->
+        <h3>Step 3 — Restart ssh service</h3>        
+        
+        <pre>
+   <samp class="yellow"> sudo service ssh restart</samp>
+        </pre>
+        
+        <p>
+        Now you can use SFTP (Secure File Transfer Protocal) using any  cross-platform FTP application like <a class="blue" href="https://filezilla-project.org/download.php"> FileZilla</a> or <a class="blue" href="https://cyberduck.io/">Cyberduck</a>.
+        </p>
+        
+        <pre>
+    Host: <samp class="skyblue"> your_server_ip_address</samp> <br>
+    Username: <samp class="yellow"> root</samp> <br>
+    Password: <samp class="yellow"> your password</samp> <br>
+    Port: <samp class="skyblue"> 21 (or leave it blank)</samp>
+        </pre>
+        
+        <p>
+        You can ssh to the server via terminal using:
+        </p>
+        <pre>
+    ssh root@<samp class="skyblue">your_server_ip_address</samp>    
+        </pre>
+        
+        <p>
+        Learn about adding a <a class="blue" href="./newuser.html">new user</a>. 
+        </p>
+        
+    
+        <video controls>
+    <source src="../img/digi320-.mp4" type="video/mp4" >
+    <source src="../img/digi320.ogg" type="vide/ogg">
+        Your browser does not support video.
+            
+        </video>
+    
+        <div id="footer">
+				<p id="copyright">© 2019 Alireza Khazaeli <!-- &amp; Faye Ostergard --> </p>
+				<p id="validation"> Valid: <a class="blue" href="http://validator.w3.org/check?uri=referer">HTML 5</a> | <a class="blue" href="http://jigsaw.w3.org/css-validator/check/referer">CSS 3</a> </p>
+		</div> <!-- ends footer -->
+</div> <!-- end contetn -->        
+    </body>
+</html>

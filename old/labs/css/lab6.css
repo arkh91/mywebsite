@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Num1';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/INFROMAN.TTF');
+}
+
+@font-face {
+    font-family: 'Num2';
+    font-style: normal;
+    font-weight: 300;
+    
+    src: url('../fonts/ITCKRIST.TTF');
+    
+}
+
+
+#serif {
+    font-family: "Num1", serif;
+    float: left;
+    width: 40%;
+
+    margin-left: 5%;
+    font-size: 21px;
+}
+
+#sans {
+    font-family: "Num2", sans-serif;
+    width: 40%;
+
+    float: right;
+    margin-right: 5%;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#lab6wrap {
+    max-width: 100%;
+    
+}
+
+main{
+    line-height: 1.5;
+}
+
+#footer {
+    clear: both;
+	text-align: center;
+	font-size: 0.9em;
+	margin-top: 90%;
+	padding-top: 0.2em;
+	background: transparent url(Sunset.jpg) top repeat-x;
+    position:sticky;
+	}
+	
+#footer p {
+	margin: 0;
+	}
+
+/*
+The serifs are easily visible in Legacy® Serif, as compared with Legacy Sans, which is unadorned.
+
+Examples
+
+Serif:
+Latin fonts: Times New Roman, Bodoni, Garamond, Minion Web, ITC Stone Serif, MS Georgia, Bitstream Cyberbit
+Greek fonts: Bitstream Cyberbit
+Cyrillic fonts: Adobe Minion Cyrillic, Excelcior Cyrillic Upright, Monotype Albion 70, Bitstream Cyberbit, ER Bukinst
+Hebrew fonts: New Peninim, Raanana, Bitstream Cyberbit
+Japanese fonts: Ryumin Light-KL, Kyokasho ICA, Futo Min A101
+Arabic fonts: Bitstream Cyberbit
+Sans Serif
+Latin fonts: MS Trebuchet, ITC Avant Garde Gothic, MS Arial, MS Verdana, Univers, Futura, ITC Stone Sans, Gill Sans, Akzidenz Grotesk, Helvetica
+Greek fonts: Attika, Typiko New Era, MS Tahoma, Monotype Gill Sans 571, Helvetica Greek
+Cyrillic fonts: Helvetica Cyrillic, ER Univers, Lucida Sans Unicode, Bastion
+Hebrew fonts: Arial Hebrew, MS Tahoma
+Japanese fonts: Shin Go, Heisei Kaku Gothic W5
+Arabic fonts: MS Tahoma
+
+*/

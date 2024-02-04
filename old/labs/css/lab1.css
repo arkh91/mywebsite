@@ -1,0 +1,49 @@
+﻿/* Digi 320 - Lab1 */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}html{overflow-x:hidden}
+html,body{font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5
+}
+
+h1{font-size:36px}h2{font-size:30px}
+
+.w3-code{margin-top:16px!important;margin-bottom:16px!important}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+.w3-left{float:left!important}.w3-right{float:right!important}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+/* Colors */
+.w3-white{color:#000!important;background-color:#fff!important}
+/*OPPSETT AV TOP, TOPNAV, SIDENAV, MAIN, RIGHT OG FOOTER:*/
+h1,h2{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+#main {
+    padding:1%;
+    margin-left: -80%;
+    margin-right: -40%;
+}
+.w3-example{
+    background-color:#f1f1f1;
+    padding:0.01em 16px;
+    margin:20px 0;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
+}
+/* button color */
+.nextprev a.w3-right,.nextprev a.w3-left {background-color:gray;color:#ffffff;border-color:#4CAF50}
+
+/*"nullstilling" slutt*/
+
+.w3-code{
+    width:100%;
+    background-color:#fff;
+    padding:8px 12px;
+    border-left:4px solid black ;
+    word-wrap:break-word
+    font-family:Consolas,"courier new";
+    font-size:16px;
+    /*margin-left: 10%; */
+}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{
+    color:#000!important;
+    background-color:#f1f1f1!important;
+    padding-left: -10%;
+}

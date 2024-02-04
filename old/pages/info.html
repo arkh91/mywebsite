@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/info.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+  <script src='../scripts/api.js'></script>
+</head>
+<body>
+
+<script type='text/javascript'>
+
+function imageLoaded (id) {
+  const image = document.getElementById(id)
+  const into = image.getAttribute('data-into')
+  const removeBlur = image.getAttribute('data-remove-blur')
+  const quality = parseInt(image.getAttribute('data-quality'))
+  const receiver = document.getElementById(into)
+  const existingQuality = parseInt(receiver.getAttribute('data-quality'))
+
+  if (isNaN(existingQuality) || existingQuality < quality) {
+    receiver.style = 'background-image: url(' + image.src + ')'
+    receiver.setAttribute('data-quality', String(quality))
+
+    if (removeBlur) {
+      receiver.classList.toggle('blur')
+    }
+  }
+}
+
+function didChooseMessageMe() {
+  const details = document.getElementsByClassName('detail')[0]
+  const message = document.getElementsByClassName('send-message')[0]
+  details.style = 'display: none;'
+  message.style = 'display: normal;'
+}
+
+function didChooseCancelMessage() {
+  const details = document.getElementsByClassName('detail')[0]
+  const message = document.getElementsByClassName('send-message')[0]
+  details.style = 'display: normal;'
+  message.style = 'display: none;'
+}
+
+</script>
+
+<div>
+    
+  <div class="profile-page">
+    <div class="profile-page-background blur" id="profile-page-background"></div>
+    <img 
+      style="display: none;"
+      src="../img/info.jpg"
+      data-quality='0'
+      data-into='avatar'
+      id='avatar-img'
+      onload='imageLoaded("avatar-img")'
+    />
+    <img
+      style="display: none;"
+      src="../img/photo-1455218873509-8097305ee378.jpg"
+      data-quality='0'
+      data-into='profile-page-background'
+      id='background-thumb'
+      onload='imageLoaded("background-thumb")'
+    />
+    <img
+      style="display: none;"
+      src="../img/photo-1455218873509-8097305ee378.jpg"
+      data-quality='1'
+      data-into='profile-page-background'
+      data-remove-blur='true'
+      id='background-full'
+      onload='imageLoaded("background-full")'
+    />
+    <div class="card-container">
+      <div class="card">
+        <div>
+          <div class="avatar" style="background-image: url('/static/images/profile-avatar-default.png');">
+            <div id="avatar" ></div>
+          </div>
+          <h1>Alireza Khazaeli</h1>
+          <h2>4th Year Computing Science Candidate</h2>
+          <div class="hr">
+          </div>
+
+          <div class="send-message" style='display: none;'>
+            <form action="/message" method="post">
+              <input type='hidden' name='csrfmiddlewaretoken' value='HXDH5DfSMmiE8shEKAcNu5NnwhmyuEQ7BczHDiKKGincst6O38jzXBOqBaJtPXiD' />
+              <span style="display: none;"></span>
+              <div class="input-field  ">
+                <div class="input-wrapper">
+                  <input name="email" type="email" placeholder="Enter your email address" autocomplete="off" required>
+                </div>
+              </div>
+              <div class="input-field  textarea">
+                <div class="input-wrapper">
+                  <textarea rows="6" placeholder="Enter your message here, limited to 200 characters." name='message'></textarea>
+                </div>
+              </div>
+              <input type='hidden' value='2' name='user_id' />
+            <div>
+              <div class="g-recaptcha" data-sitekey="6LdxhDsUAAAAAPQJaGmWoPInIIft41-L2fc4W7Tc"></div>
+            </div>
+              <br>
+          <button class="btn">SEND</button>
+          <span class="cancel" onclick="didChooseCancelMessage()" >cancel</span>
+        </form>
+          </div>
+
+          <div class="detail">
+            <h3>ABOUT</h3>
+            <p>International Student from Iran. Programmer and PES player. Inhabiting Canada.</p>
+            <h3>CONNECT WITH ME</h3>
+            <div class="social-links">
+              <div>
+                
+                  <a href="https://instagram.com/arkh91" target="_blank" class="icon-btn">
+                    <span class="icon instagram"></span>
+                  </a>
+                
+                  <a href="https://www.linkedin.com/in/arkh91/" target="_blank" class="icon-btn">
+                    <span class="icon web"></span>
+                  </a>
+                
+                  <a href="http://alirezakhazaeli.com" target="_blank" class="icon-btn">
+                    <span class="icon medium"></span>
+                  </a>
+                
+              </div>
+            </div>
+            <!--<button class="btn" onclick="didChooseMessageMe()" >Message Gavin</button>-->
+              <p id="copyright"> © Copyright 2019 <!-- &amp; Faye Ostergard --> </p>
+            <!--<p id="validation"> Valid: <a class="blue" href="http://validator.w3.org/check?uri=referer">HTML 5</a> | <a class="blue" href="http://jigsaw.w3.org/css-validator/check/referer">CSS 3</a> </p> -->
+          </div>
+        </div>
+      </div>
+      <a href="http://splash.bio" class="icon logo ">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
