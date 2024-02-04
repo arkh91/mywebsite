@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fun with menus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+li {
+display: inline;
+padding: 20px;
+}
+
+#home {
+background: #ff0000;
+margin-bottom: 50px;
+margin-top: 100px;
+
+height: 400px;
+}
+
+#sec1 {
+background: red;
+color: white;
+height: 300px;
+
+}
+
+#sec2 {
+background: green;
+color: white;
+height: 500px;
+padding: 10px;
+}
+
+#sec2 h1 {
+margin-top: 50px;
+text-align: center;
+}
+
+
+#sec3 {
+background: blue;
+color: white;
+height: 400px;
+
+}
+
+#topMenu {
+position: sticky;
+top: 0;
+background: #c0c0c0;
+}
+
+</style>
+</head>
+<body>
+<ul id="topMenu">
+<li><a href=#topMenu>Home</a></li>
+<li><a href=#sec2>Section 2</a></li>
+<li><a href=#sec3>Section 3</a></li>
+</ul>
+
+<div id="home">
+<h1>A menu can jump to sections of your page</h1>
+<p>You can create menus that jump to elements with specific IDs</p>
+<p>This is the home div</p>
+</div>
+
+<div id="sec2">
+<h1>This is section 2</h1>
+</div>
+
+<div id="sec3">
+<h1>This is section 3</h1>
+</div>
+
+
+</body>
+</html>

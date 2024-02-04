@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Closure Example</h2>
+<p>Loop through ROY. G. BIV - the colors of the rainbow.</p>
+<button type="button" onclick="myFunction()">color</button>
+<h2 style="text-align:center" id="demo"></h2>
+</body>
+
+<script>
+var colors =      ["Red",    "Orange", "Yellow", "Green",  "Blue",   "Indigo", "Violet"];
+var colorValues = ["#FF0000","#FFAB00","#FFFF00","#00FF00","#FF0000","#4B0082","#7F00FF"];
+
+//This anonymous function is executed when the browser reaches the next line (after the comment.)
+//It defines the variable 'add' which holds a function
+
+//NOTE: this s not a <!--   --> style HTML comment because we're in a script
+
+var add = (function () {
+    var counter = -1;
+    return function () { //this is the inner anonymous function
+       counter++;
+       if(counter > 6) counter = 0;
+       return counter;
+    }                    //this is the end of the inner anonymous function
+} //end of outer anonymous function
+)(); //now we can call the inner anonymous function by calling add.
+
+function myFunction() {
+  var index = add(); //add one to the counter and return the value in variable 'index'
+  document.getElementById("demo").innerHTML="Counter is "+ index +". Color is "+colors[index];
+
+  var colorstyle = "color:"+colorValues[index]+";width:30%";
+  document.getElementById("demo").setAttribute("style",colorstyle);
+}
+</script>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html">
+<html>
+  <head>
+    <title>CSCI 360 Fall 2018</title>
+<style>
+h1 {text-align:center;}
+</style>
+  </head>
+  <body>
+	  <h1>  INTRODUCTION TO OPERATING SYSTEMS</h1>
+
+    <table border="2" cellpadding="4" cellspacing="0" width="100%">
+      <colgroup> <col width="84"> <col width="84"> <col width="84"> </colgroup>
+      <tbody>
+        <tr>
+          <td v="" valign="top" width="35%">
+		  <p align="center"> <font size="4"> Instructor</font> </p>
+		  Frank J. LoPinto, PhD<br>
+		  State University of New York (Physics)<br>
+                  <a href="http://pxit.tv/">Research
+			  Interests - Data Broadcasting</a>
+                  <br>
+          </td>
+          <td valign="top" width="33%">
+            <p align="center"><font size="4">Office Hours</font></p>
+	    <p E-mail: Frank.LoPinto@viu.ca</p>
+            <p >Tuesday 15:00 - 16:00 </p>
+          </td>
+
+          <td valign="top" width="33%">
+	     <p align="center"><font size="4">Schedule</font></p>
+             <p>Lectures: Tuesday & Thursday&nbsp;
+	     13:00 - 14:30<br>
+	        Labs: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday&nbsp;
+
+	              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		      12:00 - 13:00 and 16:00 - 17:00 
+	     </p>
+           
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+<h2>Lecture Topics</h2> 
+<ul>
+<li> Definition of Operating System</li>
+<li> Evolution, Types, and Architecture of Operating Systems</li>
+<li> Processes and Threads </li>
+<li> Process Scheduling </li>
+<li> Memory Management</li>
+<li> File Systems </li>
+<li> I/O Programming </li>
+<li> Multiple Processor Systems</li>
+</ul>
+
+<h2>Grading</h2>
+
+Final grades will be computed as follow:
+<ul>
+<li>Midterm Exam - 25%</li>
+<li>Lab Reports - 30%</li>
+<li>Final Exam - 45%</li>
+</ul>
+
+Letter grades will follow the 
+<a href=University_Wide_Grade_Scale.htm>University-Wide Grade Scale</a>
+
+<h2>Recommended Text</h2>
+Modern Operating Systems by Andrew S. Tannenbaum
+<h1>Lab Assignments</h1>
+Labs will be assigned on this web site and submitted using the GIT system developed for CSCI courses.  You will clone a repository and add the following to it:  
+<ul> 
+<li>A report in PDF format covering the goals of the assignment, what you did and what you learned</li>
+<li>Source code in C or C++</li>
+<li>A makefile with a target to build all executables</li>
+<li>A listing or description of output produced by your code</li>
+</ul>
+
+
+<p>GIT will not accept submissions after the due date.</p>
+<h1><font color="red" size="5">UPDATE TO SUBMISSION PROCEDURE</h1>
+We will use e-mailed tar files instead of git to submit lab reports. To create a tar file enter the following on
+the command line:<br><br>
+tar -cvf archiveName.tar file1 file2 ...
+<br><br>
+For example, if your student
+id is 1234567 and you want to submit lab2.c,lab2.pdf, and makefile you would enter<br><br>
+tar -cvf 1234567-lab2.tar lab2.c lab2.pdf makefile
+</font>
+        <h1> Study Aid </h1>
+        <p>The following gives pages in Modern Operating Systems by A. Tanenbaum corresponding to the lecture material</p>
+        <ul>
+        <li>History of Operating Systems: pages 7 - 18</li>
+        <li>Types of Operating System: pages 33 - 37</li>
+        <li>Operating System Structure: pages 62 - 72</li>
+        <li>System Calls: pages 49 - 52</li>
+        <li>Process Model: pages 83 - 95</li>
+        <li>Threads: pages 95 - 102</li>
+        <li>IPC - Race Conditions: pages 117 - 126</li>
+        <li>Consumer-Producer Problem: pages 126 - 132</li>
+        <li>Process Scheduling: pages 145 - 160, 162 - 163</li>
+        <li>Memory Management without Abstraction: pages 175 - 178</li>
+        <li>Memory Abstraction - Address Space - pages 179, 180</li>
+        <li>Swapping - pages 181-187</li>
+        <li>Paging - pages 188 - 196</li>
+        <li>Page Tables - pages 198 - 201
+        <li>Page Replacement Algorithms - pages 201 - 206</li>
+        <li>Paging Performance - pages 216 - 220</li>
+        <li>Segmentation - pages 243-245</li>
+        <li>File Systems</li>
+        <li>Introduction - pages 255-256</li>
+        <li>Linked List - page 277</li>
+        <li>File Allocation Table - pages 278, 320</li>
+        <li>Layout - page 273-274</li>
+        <li>Directories - pages 271,319, 323</li>
+        <li>Triple Indirect Block - page 322</li>
+        <li>Virtual File Systems - pages 289 - 291</li>
+        <li>Performance - page 294</li>
+        <li>Free Block Management - page 295</li>
+        <li>Disk Block Caching - page 308</li>
+        <li>Input/Output</li>
+        <li>Types of devices - page 329 - 332</li>
+        <li>Dual Bus - page 335</li>
+        <li>I/O Software - page 336 - 339</li>
+        <li>DMA Operations - page 336 - 339</li>
+        <li>Buffering - page 355 - 356</li>
+        </ul>
+
+        <h2>Lab 1 - Make a Shell with Fork and Exec (DUE Sept. 17)</h2>
+        Use man pages and online search to learn about the fork and exec commands.  Create a simple shell program that reads in a command from the keyboard, forks a new process,  and uses exec to run the command.</br>
+        The command can run a simple test programs like 'ls' or ones that you write (can be very simple.)
+        <br>
+        <br>
+        Your shell should be ready to execute other commands until you exit (can be CTL-C.  Since you are reading commands and doing fork and exec in a loop there is the possiblity of a fork bomb.  DO NOT DO THIS ON OTTER.  USE THE LAB MACHINES.
+        Note that 'exec' will replace the executable image.  IT SHOULD NOT RETURN to the calling program.  You must abort the program if exec returns.
+
+        <h2>Lab 2 - Experiment with Threads (DUE Sept. 24)</h2>
+        Use the example thread
+        <a href="./lab2">program</a> discussed in class to experiment with threads.  Get the program to compile and run with pthread_join commented out.  Run the program a few times and record your observations.  Next, uncomment the pthread_join statment and run the program many times.  Compare the results.  Summarize your observations and try to explain the differences.  Explain the code (use the man pages to explore the arguments used and their alternatives.) Include your makefile, code, and a report in PDF format.
+        <br>
+        <br>
+        <h2>Lab 3 - Interprocess Communications with Shared Memory. (DUE Oct.2)</h2>
+        Create two processes - one for a sender and one for a receiver.  Create a shared memory segment of 101 bytes.  Use the first byte as a flag for synchronization and the remaining 100 bytes to carry data from the sender to the receiver.
+        <br>
+        <br>
+        The sender should busy-wait on the flag.  When the flag is in the proper state, the sender writes text into the shared buffer.  The receiver should also busy-wait on the flag. When the flag is in its proper the receiver should print get the message from shared memory and print it.
+        <br>
+        <br>
+        Both the sender and receiver should run in a loop until terminated by the user.  You can refer to
+        <a href="./lab3/sender.c">this example sender</a> to see how ftok, shmget, and shmat system calls are done.  You should describe these calls in your PDF report and explain what permissions you used for shmget in the sender and the receiver.  Also you should explain what ipcs and ipcrm do.
+        <br>
+        <br>
+        <h2>Lab 4 - Strict Alternation without Blocking. (DUE Oct. 9)</h2>
+        Strict alternation within the operating system may be bad but strict alternation between application programs may be vital. Create two processes that log entries into a shared memory.  Use two semaphores to ensure the two processes make alternating entries.  There should never be two consecutive entries from the same process.  Think of the producer-consumer system with only one common buffer.
+        <br>
+        <br>
+        Be aware that there may be two different semaphore packages on your machine - the POSIX semaphores and the System V semaphores.  Don't mix them.  Here's an
+        <a href="aSender.c">example</a> using POSIX.  Run the example more than once and report your findings.
+        <br>
+        <br>
+        In addition, each log entry should contain a name for the logging process as well as the number of nanoseconds since it made it's last entry.  You can use zero for the first log entries.
+        <br>
+        <br>
+        <h2>Lab 5 - Producer-Consumer Problem with TCP/IP Message Passing. (Due Oct. 16)</h2>
+        Use TCP/IP networking for interprocess communication in the consumer-producer problem.  You can start from
+        <a href="./TCPIPlab/client.c">client.c</a>,
+        <a href="./TCPIPlab/server.c">server.c</a>, and
+        <a href="./TCPIPlab/makefile">makefile</a>.  Improved the code by adding comments, handling return codes for all function calls, and making other changes you want.  You should invent and implement a way to ensure that complete messages are received at both ends.  In other words, make sure there is no possibility of reading a partial message.  You should describe all functions used and the parameters used with them.</br></br>
+
+        <h2>Lab 6 - Creating a RAM Space based on a Block RAM. (Due Oct. 23) </h2>
+        A RAM is a list of byte-addressable locations that can be read and written in any order.  A "BlockRAM" is a block addressable menory.  The blocks have a fixed size and can be accessed (read or written) as a whole.
+        <br>
+        <br>
+        Use the code in the attached
+        <a href="newRamspace.tar">tar file</a> as a starting example.  You should create a RAM space of a fixed length. Than usa a random number generator to fill the space with integers.  Once the RAM is filled, sort it using bubble sort.  Then verify that the integers are properly sorted.
+        <br>
+        <br>
+        You must use only the methods provided by class RamSpace.  You must also fill in the methods for BlockRam but those methods are hidden from your main program.
+        <br>
+        <br>
+        <br>
+        <h2>Lab 7 - Simulation to Measure Page Fault Frequency (Due Nov. 20</h2>
+        This is a two week lab (worth twice the points) but due in three weeks because
+        of the reading week break.  The goal is to simulate the operation of a paging
+        system to study the frequency of page fault under different page replacement
+        algorithms.
+        <br>
+        <br>
+        You can use this
+        <a href="memoryReferenceSimulator.c">Memory Reference Simulator</a> to generate virtual addresses. The program is believed to be correct but there are no guarantees. If you find a bug, report it to me. You can modify the simulator to experiment with making the working set of pages larger and/or to change the sizes of the simulated code and memory segments.
+        <br>
+        <br>
+        The simulator calls mmu() which must convert virtual to physical addresses.  Your MMU function should maintain a page table.  And should record blocks that are referenced and whether the reference was for reading or writing.  Assume that there are 10 page frames of physical memory but program this as an adjustable parameter so you can experiment with different size physical memories.
+        <br>
+        <br>
+        Implement two page replacement algorithms - FIFO and Not Recently Used.  Complare the page fault frequency (PFF) for the two algorithms. Your report should document the simulator as well as you own code and report on how you measured PFF for the different algorithms and assumptions and what you can conclude from the exercise.
+        </br></br>
+        <h2> Lab 8 - Design a Simple Filesystem (Due December 7th)</h2>
+        This last lab is a report due the last day of classes.  You should design a file system.  Describe your system with source code snippets showing what data structures you need.  Describe procedures that access your data structures.  You don't have to create working software but you should describe your ideas in enough detail so that a competent programmer could implement your design.  You should design a file system layout and show how mount() uses it to prepare the file system for use.
+
+        You should describe the following functions: mount(), unmount(), create(), delete(), open(), and close().  Please note: you get an automatic zero if you describe the Linux functions using the man pages.  I want you to describe your file system including capacaties (i.e., now many files, how big, file name rules. directory structure, etc.)
+        <br>
+        <br>
+        <!--
+        <li>Paging Performance - pages 216 - 220</li>
+        <li>Segmentation - pages 243-245</li>
+        <li>File Systems<br>
+        <ul>
+        <li>Introduction - pages 255-256</li>
+        <li>Linked List - page 277</li>
+        <li>File Allocation Table - pages 278, 320</li>
+        <li>Layout - page 273-274</li>
+        <li>Directories - pages 271,319, 323</li>
+        <li>Triple Indirect Block - page 322</li>
+        <li>Virtual File Systems - pages 289 - 291</li>
+        <li>Performance - page 294</li>
+        <li>Free Block Management - page 295</li>
+        <li>Disk Block Caching - page 308</li>
+        </ul>
+        <li>Input/Output</li>
+        <ul>
+        <li>Types of devices - page 329 - 332</li>
+        <li>Dual Bus - page 335</li>
+        <li>I/O Software - page 336 - 339</li>
+        <li>DMA Operations - page 336 - 339</li>
+        <li>Buffering - page 355 - 356</li>
+        </ul>
+        <!--
+        <li>Multiple Processor Systems</li>
+        <ul>
+        <li>Introduction - pages 523 - 525</li>
+        <li>CORBA - page 597</li>
+        <li>Uniform Memory Access (UMA) - pages 526 - 531</li>
+        <li>NUMA - page 532 (diagram only)</li>
+        <li>OS Types - pages 534 - 538</li>
+        </ul>
+        </ul>
+        <li>Locality of Reference - pages 209 - 211</li>
+        <li>Paging Design Issues - pages 215 - 220</li>
+        <li>Page Fault Handling - pages 228 - 229</li>
+        <li>File Systems - Intro, Naming, File Structure - pages 255 - 260</li>
+        <li>File Operations - pages 264 - 265</li>
+        <li>Directories - pages 268 - 272</li>
+        <li>File System Implementation - pages 273 - 280</li>
+        <li>Implementing Directories - pages 280 - 282</li>
+        <li>Shared Files - pages 283 - 285</li>
+        <li>Journaling File Systems  - pages 287 - 288</li>
+        <li>Virtual File Systems - pages 288 - 291</li>
+        <li>File System Performance - pages 302 - 311</li>
+        <li>UNIX i-nodes - pages 321 - 323</li>
+        <li>I/O Devices - pages 329 - 331</li>
+        <li>Device Controllers - pages 331 - 332</li>
+        <li>Port Space and Memory-Mapped I/O - pages 332 - 336</li>
+        <li>Direct Memory Access (DMA) - pages 336 - 339</li>
+        <li>Programmed, Interrupt Driven and DMA I/0 - pages 344 - 348</li>
+        <li>Device Drivers - pages 349 - 353</li>
+        <li>Disk Hardware - pages 360 - 363</li>
+        <li>Disk Arm Scheduling - pages 379 - 382</li>
+        </ul>
+        <h1>Grading</h1>
+
+        <p>Final exam (45%), MidTerm (25%), Labs (30%)<br><br>
+        Some labs will be worth more than others:
+        <ul>
+        <li>Lab 1 - 10 points</li>
+        <li>Lab 2 - 10 points</li>
+        <li>Lab 3 - not graded separately</li>
+        <li>Lab 4 - 20 points</li>
+        <li>Lab 5 - 10 points</li>
+        <li>Lab 6 - 10 points</li>
+        <li>Lab 7 - 10 points</li>
+        <li>Labs 8 & 9 - 30 points graded together</li>
+        </ul>
+        -->
+</body>
+</html>

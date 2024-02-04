@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+background:#c5F38d;
+
+}
+h1{
+font-size:100px;
+text-align:center;
+
+}
+
+#h1{
+font-size:100px;
+text-align:center;
+color:red;
+
+animation-name:headline;
+animation-duration:5s;
+
+}
+
+p {
+font-size:40px;
+align:center;
+margin: 20px;
+color:red;
+}
+
+
+img {
+float:left;
+margin-left:50px;
+width:400px;
+height:600px;
+position:fixed;
+opacity:0.9;
+
+animation-name:alien-image;
+animation-duration:5s;
+}
+
+@keyframes alien-image {
+  0%   {opacity: 0;}
+  25%  {opacity: .25;}
+  50%  {opacity: .5;}
+  100% {opacity: .9;}
+}
+
+@keyframes headline {
+  0%   {color:#000000;}
+  25%  {color:#800000;}
+  50%  {color:#a00000;}
+  100% {color:#ff0000;}
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+<p>
+<img src="alien.png">
+
+<h1>ALIENS LAND IN NEW YORK!!!</h1>
+
+<h1 id="h1">SECRET MEETING AT THE U.N.!!!!!</h1>
+</p>
+
+</body>
+</html>

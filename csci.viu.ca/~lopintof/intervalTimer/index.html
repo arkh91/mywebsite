@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+
+<script>
+setInterval(myTimer, 1000);
+var count=0;
+function myTimer() {
+  count++;
+  var d = new Date();
+  document.getElementById("demo").innerHTML = "Count = "+count+"<br>" +"\n Time is "+d.toLocaleTimeString();
+}
+
+
+</script>
+
+</body>
+</html>

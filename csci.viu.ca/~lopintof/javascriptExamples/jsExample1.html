@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#myDiv {
+background-color:red;
+width:400px;
+height:400px;
+position:absolute;
+left:400px;
+top:80px;
+}
+
+body {
+background-color:grey;
+text-align:center;
+}
+</style>
+
+<body>
+
+<h1>Fun with Clicking on Divs</h1>
+
+<div onclick="myFunction()" id="myDiv" style="background-Color:red"></div>
+
+<script>
+function myFunction() {
+
+
+  var position;
+  var x = event.currentTarget.style.backgroundColor;
+
+
+   if(x == "red") {
+      x = "white";
+      position = 600;
+      event.currentTarget.style.left = position + "px";
+      
+   } else if (x == "white") {
+      x = "blue";
+      position = 800;
+      event.currentTarget.style.left = position + "px";
+
+   } else if(x=="blue") {
+      x = "red"; 
+      position = 400;  
+      event.currentTarget.style.left = position + "px";
+
+   }
+   
+   event.currentTarget.style.backgroundColor = x;
+
+}
+</script>
+
+
+</body>
