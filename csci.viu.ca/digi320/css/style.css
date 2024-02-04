@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* big picture layout 
+
+* {
+	margin: 0;
+	padding: 0;
+	}
+*/
+body {
+	font-family: Muli, sans-serif;
+	max-width: 80%;
+	margin-left: 10%;
+
+	}
+	
+#header {
+    margin-top: 1%;
+    padding-top: 3%;
+}
+/* navigation */
+
+#nav {
+    margin-left: 20%;
+    max-width: 100%;
+	font-size: 0.9em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    position: fixed;
+    border-style:hidden;
+/*    padding-right: 11.5%;
+    width: 52%;
+
+    background-color: lightgray; */
+	}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  border: 1px solid #bfbfbf;
+  margin-left: 6.5%;
+}
+
+#nav li {
+	list-style-type: none;
+	padding: 0.1em 0.2em;
+	}
+	
+#nav a {
+	text-decoration: none;
+	
+	padding: 0.2em 0.5em;
+
+	display: block;
+	}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* headings */
+
+h1 {
+	font-size: 1.1em;
+	font-weight: normal;
+	font-variant: small-caps;
+	color: #666;
+	text-align: center;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	}
+	
+hr {
+	display: none;
+	}
+	
+h2 {
+	text-align: center;
+	font-size: 1.8em;
+	font-variant: small-caps;
+	margin-bottom: 1em;
+	}
+	
+/* content styles */
+
+p {
+	margin-top: 1em;
+    border: 1px;
+    /*border-style: solid;
+    border-color:red; */
+	}
+	
+pre {
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px dotted #00F;
+	background-color: #EEE;
+	}
+	
+code {
+	font-size: 1.2em;
+	color: red;
+	}
+	
+#content ul, #content ol {
+	margin: 0 3em;
+	}
+
+#content ul {
+	list-style-type: circle;
+	}
+	
+#content ol > li {
+	margin-bottom: 0.5em;
+	}
+
+/*li {
+    float: right;
+}
+
+li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #008cba;
+  color: white;
+}*/
+.active {
+  background-color: #008cba;
+  color: blue;
+    border: none;
+
+  padding: 5px 16px;
+  background-color: #f1f1f1;
+  cursor:grabbing;
+
+}
+
+/* footer */
+
+#footer {
+	text-align: center;
+	font-size: 0.9em;
+	margin-top: 10em;
+	padding-top: 0.2em;
+	background: transparent url(Sunset.jpg) top repeat-x;
+	}
+	
+#footer p {
+	margin: 0;
+	}

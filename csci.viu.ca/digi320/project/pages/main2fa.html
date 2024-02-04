@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--<html lang="en-ca"> -->
+<html  lang="fa">    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SSH KEY</title>
+        <meta name="description" content="An interactive getting started guide for ssh.">
+        <link rel="stylesheet" href="../css/index-project.css">
+        <link rel="stylesheet" href="../css/project-main.css">
+        
+    </head>
+  <style>
+    .copy{
+      background-color: yellow;
+    }
+    p,h1,h2,h3 {
+        text-align: right;
+    }
+    pre,samp {
+        text-align: left;
+    }
+  </style>
+    <body>
+<header style="width: 100%;">       
+<div class="navbar">
+  <a href="./index-project.html">Home</a>
+  <a class="active" href="./main.html">SSH Key</a>
+  <a href="./contact.html">Contact</a>
+  <a href="./newuser.html">New User</a>
+
+</div>
+</header> 
+
+<div class="content">
+        <br>
+        <h1>چطور پروتوکال اس اس اچ نصب کنیم؟</h1> <!--<h1>How to Set Up SFTP using SSH Keys on Linux</h1> -->
+        
+        <h2>مقدمه</h2><!--<h2>Introduction</h2>-->
+        <p><div class ="copy" dir="rtl">
+        پوسته امن، یک پروتکل رمزگذاری شده است که برای مدیریت و ارتباط با سرورها مورد استفاده قرار می گیرد.
+هنگام کار با سرور دبیان شانس شما بیشتر وقت خود را در یک جلسه ترمینال متصل به سرور خود از طریق پوسته امن صرف خواهد کرد.
+            <!--SSH, or secure shell, is an encrypted protocol used to administer and communicate with servers.
+            When working with a Debian server,
+            chances are you will spend most of your time in a terminal session connected to your server through SSH.-->
+        </div ></p> 
+        <p><div class ="copy" dir="rtl">
+        در این راهنما، ما بر روی تنظیم کلید های SSH برای نصب وانیلی Debian 9 تمرکز می کنیم. کلیدهای SSH یک راه آسان و ایمن برای ورود به سرور شما هستند و برای همه کاربران توصیه می شود.
+        <!--
+            In this guide, we'll focus on setting up SSH keys for a vanilla Debian 9 installation.
+            SSH keys provide an easy, secure way of logging into your server and are recommended for all users.-->
+        </div>
+        </p>
+        
+        <div dir="rtl">
+        <h2>پیش نیاز</h2>
+        <!--<p>You need to have <b><i>sudo</i></b> access.</p>-->
+        <p>شما باید به <b><i>sudo</i></b> دسترسی داشته باشید.</p>
+        </div>
+        <!--
+            Step 1
+        -->
+        <div dir="rtl">
+        <h3>مرحله اول — ساخت کلید RSA</h3><!--<h3>Step 1 — Create the RSA Key Pair</h3>-->
+        <p>
+            در مرحله اول باید در ماشین مشتری کلید را بسازید.
+            <!--The first step is to create a key pair on the client machine:-->
+        </p>
+        </div>
+        
+        <pre>
+    <samp class="yellow">$ ssh-keygen -t rsa</samp>
+        </pre>
+      
+        <div class ="copy" dir="rtl"><p>
+        <!--
+        By default <code>ssh-keygen</code> will create a 2048-bit RSA key pair, which is secure enough for most use cases (you may optionally pass in the <code>-b 4096</code> flag to create a larger 4096-bit key). -->
+        به طور پیش فرض ssh-keygen یک جفت کلید RSA 2048 بیتی ایجاد می کند که برای اکثر موارد استفاده به اندازه کافی امن است (شما ممکن است به صورت اختیاری در پرچم-b 4096 برای ایجاد یک کلید بزرگتر 4096 بیتی منتقل کنید).
+        </p>
+        </div>
+        <div dir="rtl"><p>
+        <!--<p>After entering the command, you should see the following output:</p>-->
+        <p>پس از ورود به فرمان، باید خروجی زیر را ببینید:</p>
+        </div>
+        <pre>
+    Output <br>
+    Generating public/private rsa key pair.<br>
+    Enter file in which to save the key (/<samp class="skyblue">your_home</samp>/.ssh/id_rsa):
+        </pre>
+        
+ 
+        <div dir="rtl"><p>
+           <!--Press enter to save the key pair into the .ssh/ subdirectory in your home directory, or specify an alternate path.
+            <br><br>
+            If you had previously generated an SSH key pair, you may see the following prompt:-->
+           
+           برای ذخیره جفت کلیدی در پوشه .ssh / subdirectory در دایرکتوری خانگی خود وارد کنید، یا مسیر دیگری را مشخص کنید.
+           <br><br>
+           اگر قبلا یک جفت کلید SSH ایجاد کرده اید، ممکن است خروجی زیر را مشاهده کنید:
+        </p></div>
+        
+        <pre>
+    Output <br>
+    /home/<samp class="skyblue">your_home</samp>/.ssh/id_rsa already exists. <br>
+    Overwrite (y/n)?   
+        </pre>
+        
+        
+        <p><div class ="copy" dir="rtl">
+<!--        If you choose to overwrite the key on disk, you will not be able to authenticate using the previous key anymore.
+        Be very careful when selecting yes, as this is a destructive process that cannot be reversed.-->
+        اگر انتخاب می کنید کلید را روی دیسک بازنویسی کنید، دیگر نمی توانید با استفاده از کلید قبلی تایید هویت کنید. هنگام انتخاب بله بسیار مراقب باشید، زیرا این یک فرآیند مخرب است که قابل برگشت نیست.
+</div><br>
+      <div dir="rtl"><p>
+<!--You should then see the following prompt:-->
+ممکن است خروجی زیر را مشاهده کنید:
+        </p>
+        </div>
+        
+        <pre>
+    Output<br>
+    Enter passphrase (empty for no passphrase):
+        </pre>
+        
+        <div dir="rtl"><p>
+        <!--It's up to you whether you want to use a passphrase. Entering a passphrase does have its benefits: the security of a key, no matter how encrypted, still depends on the fact that it is not visible to anyone else. Should a passphrase-protected private key fall into an unauthorized users possession, they will be unable to log in to its associated accounts until they figure out the passphrase, buying the hacked user some extra time. The only downside, of course, to having a passphrase, is then having to type it in each time you use the key pair.-->
+        شما می توانید از عبارت عبور استفاده کنید. ورود به یک عبارت عبور مزایای خود را دارد: امنیت کلید، بدون توجه به اینکه چگونه رمزگذاری شده، هنوز هم بستگی به این واقعیت دارد که آن را برای هیچکس قابل مشاهده نیست. باید یک کلید خصوصی حفاظت شده با رمز عبور به اختیارات کاربران غیر مجاز وارد شود تا بتوانند از عبارت عبور استفاده کنند و برخی از زمان اضافی را به کاربر هک تبدیل کنند. البته، تنها داشتن یک عبارت عبور، باید آن را در هر بار که از جفت کلید استفاده می کنید تایپ کنید.<br><br>
+        <!-- You should then see the following output:-->
+        ممکن است خروجی زیر را مشاهده کنید:
+        </p></div>
+
+    <pre>
+    Your identification has been saved in /<samp class="skyblue">your_home</samp>/.ssh/id_rsa.<br>
+    Your public key has been saved in /<samp class="skyblue">your_home</samp>/.ssh/id_rsa.pub.<br>
+    The key fingerprint is:<br>
+    SHA256:qFN5n0JubGEx6tVSDfGGxa7N+AA5hZyZDaey8EWbTnk root@instance-1 <br>
+    The key's randomart image is: 
+    <samp class="line_space">
+    +---[RSA 2048]----+
+    |       .oB+o.    |
+    |       .**o*.    |
+    |    . . XoE.+    |
+    |     o X+* ..    |
+    |      B So.=     |
+    |     + B ++.o    |
+    |    o . * oo     |
+    |     . o .  .    |
+    |                 |
+    +----[SHA256]-----+
+    </samp>
+    </pre>
+        <!--
+        <p>
+        You now have a public and private key that you can use to authenticate. The next step is to edit sshd_config so that you can use SSH-key-based authentication to log in.
+        </p>
+        -->
+         <!--
+            Step 2
+        -->
+        <div dir="rtl">
+        <!--<h3>Step 2 — Edit sshd_config</h3>-->
+        <h3>مرحله دوم — ویرایش فایل sshd_config</h3>
+        </div>
+        
+        <pre>
+    sudo nano /etc/ssh/sshd_config<br>
+    PermitRootLogin prohibit-password to <samp class="yellow">PermitRootLogin yes</samp> <br>
+    PasswordAuthentication no to <samp class="yellow"> PasswordAuthentication yes</samp> 
+
+        </pre>
+         <!--
+            Step 3
+        -->
+      
+        <div dir="rtl">
+        <!-- <h3>Step 3 — Restart ssh service</h3>  -->
+        <h3>مرحله سوم — ری استارت ssh </h3>
+        </div>
+        
+        <pre>
+   <samp class="yellow"> sudo service ssh restart</samp>
+        </pre>
+        
+        <div dir="rtl"><p>
+       <!-- Now you can use SFTP (Secure File Transfer Protocol) using any  cross-platform FTP application like <a class="blue" href="https://filezilla-project.org/download.php"> FileZilla</a> or <a class="blue" href="https://cyberduck.io/">Cyberduck</a>.-->
+        حالا شما میتوانید با هر نرم افزار پروتوکل انتقال فایل نظیر <a class="blue" href="https://filezilla-project.org/download.php"> FileZilla</a> و <a class="blue" href="https://cyberduck.io/">Cyberduck</a> فایل ها را انتقال دهید.
+        </p></div>
+        
+        <pre>
+    Host: <samp class="skyblue"> your_server_ip_address</samp> <br>
+    Username: <samp class="yellow"> root</samp> <br>
+    Password: <samp class="yellow"> your password</samp> <br>
+    Port: <samp class="skyblue"> 21 (or leave it blank)</samp>
+        </pre>
+        
+        <div dir="rtl"><p>
+        <!--You can ssh to the server via terminal using:-->
+        شما می توانید با استفاده از ترمینال ssh به سرور متصل شوید:
+        </p></div>
+        <pre>
+    ssh root@<samp class="skyblue">your_server_ip_address</samp>    
+        </pre>
+        
+        <div dir="rtl"><p>
+        <!--Learn about adding a <a class="blue" href="./newuser.html">new user</a>. -->
+        یاد بگیرید که چطور <a class="blue" href="./newuser.html">کاربر جدید</a> بسازید. 
+        </p></div>
+        
+    
+        <video controls>
+    <source src="../img/digi320-.mp4" type="video/mp4" >
+    <source src="../img/digi320.ogg" type="vide/ogg">
+        Your browser does not support video.
+            
+        </video>
+    
+        <div id="footer">
+				<div id="copyright">© 2019 Alireza Khazaeli <!-- &amp; Faye Ostergard --> </div> <br>
+				<div id="validation"> Valid: <a class="blue" href="http://validator.w3.org/check?uri=referer">HTML 5</a> | <a class="blue" href="http://jigsaw.w3.org/css-validator/check/referer">CSS 3</a> </div>
+		</div> <!-- ends footer -->
+</div> <!-- end contetn -->        
+    </body>
+</html>

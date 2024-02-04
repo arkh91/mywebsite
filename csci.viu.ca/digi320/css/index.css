@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
+  /*-webkit-font-smoothing: antialiased;*/
+}
+
+
+.wrapper {
+    
+    position:static;
+
+}
+#nav {
+    margin-top: 1em;
+}
+.dev_page_image {
+    padding-top: 5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.context {
+    padding-left: 28%;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #142612;
+}
+.all_labs {
+    text-align: left;
+    padding-left: 9%;
+}
+code {
+  background: #feeae4;
+  color: #c40909;
+  padding: 3px 5px;
+  border-radius: 0;
+}

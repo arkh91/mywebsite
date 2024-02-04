@@ -1,0 +1,76 @@
+@charset "UTF-8"
+
+/* top-level components */
+.page {
+	margin: 36px auto;
+	width: 90%;
+}
+
+.blog {
+	margin: 0 auto 53px;  
+    width: 93.75%;  /* 900px / 960px */
+}
+
+.blog .main {
+	float: left;
+	width: 62.8888889%;  /* 566px / 900px */
+}
+
+.blog .other {
+	float: right;
+	width: 36.7777778%;  /* 331px / 900px */
+}
+
+/* margins & padding */
+.lede {
+	font: 20px;
+	padding: 0.8em 5.33333333%;  /* 48px / 900px */
+}
+
+.other .section {
+	margin: 0 auto;
+	width: 69.7885196%;  /* 231px / 331px */
+}
+
+.blog .article {
+	font-size: 14px;	/* 14px / 16px */
+	padding: 40px 8.48056537%;
+}
+
+.date {
+	float: left;
+	font-size: 12px; /* 12px / 14px */
+	margin: -2.25em 0 0 81px;
+    margin-left: -17.2340425531%;
+    width: 14.68085106%;  /* 69px / 470px */
+}
+
+/* Chapter 3 — Flexible Images */
+.blog .figure {
+	float: right;
+	margin-bottom: 0.5em;
+	margin-left: 12px;
+	overflow: hidden;
+	width: 231px;
+}
+
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+	width: 100%;
+    
+}
+
+.blog {
+    background: #F8F5F2 url("../../img/noise.gif"); /* trust me, keep this line */
+	background: #F8F5F2; /* Add the code from the book on this line */
+    background: #F8F5F2 url("blog-bg.png") repeat-y  »63.1111111111111% 0;  /* 568px / 900px */
+}
+
+.figure {  float: right;  
+    margin-bottom: 0.5em;  
+    margin-left: 2.55319149%;  /* 12px / 470px */  
+    width: 49.14893617%;  /* 231px / 470px */
+}
