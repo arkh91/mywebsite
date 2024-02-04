@@ -1,0 +1,71 @@
+
+<html>
+<head><title>CSCI 330 Fall 2008: Labs</title></head>
+<body>
+<center><h4>CSCI 330 Fall 2008: Trees in Scheme, continued</h4>
+<br> Nov 7, 2008
+<br>  </center>
+<br> 
+
+<b>
+This lab builds on Lab 6.
+</b>
+
+Dave Wessels' <a href="http://csciun1.mala.bc.ca:8080/~wesselsd/csci330/labs/2007/scheme.html">Scheme Scheme page</a> 
+Dave's <a href="http://csciun1.mala.bc.ca:8080/~wesselsd/csci330/scheme.html">Quick Reference</a>.
+<p><p>
+The following <a href = "lab6.scm">file</a> was provided for lab6.  You were to cut and paste it into a file, or copy it from 
+<br>
+csciun1.mala.bc.ca:8080/~gpruesse/public_html/teaching/330/labs/scheme/lab6/lab6.scm.
+<ol>
+<li>
+Add to your file of 
+tree functions the function build-tree, which takes a list and builds a tree of 
+the elements of the list.  The tree should be in Binary Search Tree order -- keys
+less than the root are in the left subtree, and keys greater than the root are
+in the right subtree.  
+<p>
+You may want to write, as a helper function, a function that inserts a new key into
+a given tree.  If you have <b>insert</b> and <b>fold</b>, how can you write build-tree?  
+Fold is given as
+<pre>
+; fold operator f over l, where f has identity id
+(define fold (lambda (f l id)
+  (if (null? l) id
+      (f (car l) (fold f (cdr l) id)))))
+</pre>
+Fold takes a function f, a list, and the identity value for the function -- for example, 
+the identity value of + is 0 (because `+0' is the identity function) and the 
+identity value of * is 1 (because `*1' is the identity function) -- and returns
+the result of applying f iteratively to the list of elements.  For example, 
+(fold + `(5 2 1) 0) is (+ 5 (+ 2 (+ 1 0))). 
+
+</li>
+<p><p>
+<li>
+Add to your file of tree functions the function inorder, which takes a tree and
+makes a list of the data in the tree in inorder traversal order. (This may be
+similar to your traverse function.)
+</li>
+</l>
+
+For example, if you were to call
+<tt>
+(inorder (build-tree `(3 9 77 2 19 1 6)))
+</tt>
+mzscheme would respond with 
+<tt>
+(1 2 3 6 9 19 77)
+</tt>
+
+
+<p>
+<p>
+
+
+
+
+</body>
+</html>
+
+

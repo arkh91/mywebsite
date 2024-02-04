@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Foundations of Computing Science</title>
+</head>
+
+<center>
+<h2>Computing Science 320 2019</h2>
+<h3>Assignment 1 </h3>
+</center>
+<h4> Due: 2:30 Wed Jan 23 2019</h4>
+<hr>
+<b>Objective</b><br>
+<blockquote>
+To demonstrate understanding of Regular Languages (FAs and REs).
+</blockquote>
+<hr>
+<p>
+<b>Task</b><br>
+<blockquote>
+<ol>
+<li>
+<ol type=a>
+<li>
+(10 marks)
+
+Design a DFA that recognizes the language
+<br>
+L = { <it>w &isin; {a,b}<sup>*</sup></it>:  |<it>w</it>| &ge; 2 and the 2-letter prefix of <it>w<it> is the reverse of the 2-letter suffix of <it>w</it> }. 
+<br>
+ For full marks, it must have as few states as possible and be correct.   How many states does it have?
+</li>
+<li>
+(2 marks)
+Suppose you were asked to give a DFA for the language 
+<br>
+L &cap; {<it>w</it>: |<it>w</it>| is even}
+<br>
+What is the minimum number of states in such a  DFA?  Explain your answer.  (An explanation
+will give the meaning of each state.)
+</li>
+<li>
+(1 marks)
+Give a RE for the language L of part 1(b).
+
+</li>
+</ol>
+<li>
+(10 marks)  <b>Use the construction</b> given in class to devise a NFA that accepts the language 
+<b>(ab<sup>*</sup> + ac)<sup>*</sup></b>.  
+Then give a smaller NFA that accepts the same language.
+
+</li>
+<li>
+(10 marks)
+<b>Use the construction</b> given in class to devise the DFA for the NFA with the following
+transition function.  Give the DFA as a diagram.  The alphabet is {a,b,c}, and the set of states is {1,2,3}.
+&delta; = {(1,a,{1}), (1,&epsilon;,{2}),(1,b,{2}),(2,a,{2,3}),(2,c,{3}),(3,&epsilon;,{1}),
+(3,b,{1}),(3,c,{3})}. State 1 is the start state and is the only accept state.
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <ellipse stroke="black" stroke-width="1" fill="none" cx="121.5" cy="155.5" rx="30" ry="30"/>
+      <text x="116.5" y="161.5" font-family="Times New Roman" font-size="20">1</text>
+         <ellipse stroke="black" stroke-width="1" fill="none" cx="121.5" cy="155.5" rx="24" ry="24"/>
+            <ellipse stroke="black" stroke-width="1" fill="none" cx="402.5" cy="154.5" rx="30" ry="30"/>
+               <text x="397.5" y="160.5" font-family="Times New Roman" font-size="20">2</text>
+                  <ellipse stroke="black" stroke-width="1" fill="none" cx="281.5" cy="270.5" rx="30" ry="30"/>
+                     <text x="276.5" y="276.5" font-family="Times New Roman" font-size="20">3</text>
+                        <polygon stroke="black" stroke-width="1" points="76.5,155.5 91.5,155.5"/>
+                           <polygon fill="black" stroke-width="1" points="91.5,155.5 83.5,150.5 83.5,160.5"/>
+                              <path stroke="black" stroke-width="1" fill="none" d="M 103.77,131.445 A 22.5,22.5 0 1 1 129.809,126.795"/>
+                                 <text x="100.5" y="79.5" font-family="Times New Roman" font-size="20">a</text>
+                                    <polygon fill="black" stroke-width="1" points="129.809,126.795 137.799,121.779 128.801,117.415"/>
+                                       <path stroke="black" stroke-width="1" fill="none" d="M 421.616,131.531 A 22.5,22.5 0 1 1 432.359,155.702"/>
+                                          <text x="471.5" y="123.5" font-family="Times New Roman" font-size="20">a</text>
+                                             <polygon fill="black" stroke-width="1" points="432.359,155.702 439.14,162.26 441.226,152.48"/>
+                                                <polygon stroke="black" stroke-width="1" points="380.844,175.261 303.156,249.739"/>
+                                                   <polygon fill="black" stroke-width="1" points="303.156,249.739 312.391,247.812 305.471,240.593"/>
+                                                      <text x="313.5" y="203.5" font-family="Times New Roman" font-size="20">a,c</text>
+                                                         <polygon stroke="black" stroke-width="1" points="257.14,252.991 145.86,173.009"/>
+                                                            <polygon fill="black" stroke-width="1" points="145.86,173.009 149.438,181.738 155.275,173.618"/>
+                                                               <text x="206.5" y="204.5" font-family="Times New Roman" font-size="20">&#949;, b</text>
+                                                                  <polygon stroke="black" stroke-width="1" points="151.5,155.393 372.5,154.607"/>
+                                                                     <polygon fill="black" stroke-width="1" points="372.5,154.607 364.482,149.635 364.518,159.635"/>
+                                                                        <text x="248.5" y="176.5" font-family="Times New Roman" font-size="20">&#949;, b</text>
+                                                                           <path stroke="black" stroke-width="1" fill="none" d="M 302.52,291.74 A 22.5,22.5 0 1 1 277.427,300.104"/>
+                                                                              <text x="306.5" y="355.5" font-family="Times New Roman" font-size="20">c</text>
+                                                                                 <polygon fill="black" stroke-width="1" points="277.427,300.104 270.246,306.222 279.78,309.24"/>
+                                                                                 </svg>
+
+
+</li>
+<li>
+(10 marks)
+<b>Use the construction</b> given in class to devise the RE for the language of the 
+FA with the following transition function. 
+&delta; = { (1,a,1), (1,b,2), (2,a,2), (2,b,1)}. 
+<br>
+State 1 is the start state and is the only accept state.
+
+</ol>
+<hr>
+<a href="a2.html">Next Assignment</a>
+</body>
+</html>
+

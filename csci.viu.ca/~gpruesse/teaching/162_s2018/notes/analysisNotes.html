@@ -1,0 +1,43 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; OSF1 V5.1 alpha) [Netscape]">
+   <title>Topics in Computing Science 162</title>
+</head>
+<body>
+
+<center>
+<h2>
+Computing Science 162: Notes on Big-Oh</h2></center>
+
+<center>
+<h3>
+An example proof that one function is in the big-Oh of another:</h3></center>
+
+<br><br>
+Claim:
+16 n<sup>2</sup> + 5n &isin; O(n<sup>2</sup>-1)
+<br><br>
+Proof:
+<br>
+16 n<sup>2</sup> + 5n &le; 
+16 n<sup>2</sup> + 5n<sup>2</sup>, &forall; n &ge; 1 <br>
+&rArr;16 n<sup>2</sup> + 5n &le;
+31n<sup>2</sup>, &forall; n &ge; 1 <br>
+&rArr;16 n<sup>2</sup> + 5n &le;
+62(n<sup>2</sup>/2), &forall; n &ge; 1 <br>
+&rArr;16 n<sup>2</sup> + 5n &le;
+62(n<sup>2</sup>/2 - 1 ) + 62, &forall; n &ge; 1 <br>
+&rArr;16 n<sup>2</sup> + 5n &le;
+62(n<sup>2</sup>/2 - 1 ) + (n<sup>2</sup>/2 - 1), &forall; n &ge; 16, since 
+62 &le; 127 &le; (n<sup>2</sup>/2 -1) when n &ge; 16<br>
+&rArr;16 n<sup>2</sup> + 5n &le;
+63(n<sup>2</sup>/2 - 1 )  &forall; n &ge; 16<br>
+&rArr; 
+16 n<sup>2</sup> + 5n &isin; O(n<sup>2</sup>-1)
+as witnessed by c=63 and n<sub>0</sub>=16.
+
+
+</body>
+</html>

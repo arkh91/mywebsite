@@ -1,0 +1,185 @@
+<DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.76 [en] (X11; U; OSF1 V5.1 alpha) [Netscape]">
+</head>
+<body>
+<center>
+<b><font size="+2">CSCI 422: Advanced Algorithms and Data Structures<br> Fall 2019  </font></b></h6>
+<br>
+<b><font face="Arial,Helvetica"><font size="+1">
+<br>
+<br>
+</font></font></b>
+</span></font></p>
+<style>
+table, th, td {
+   border: 1px solid lightgreen;
+}
+</style>
+</head>
+<p> <p> 
+<p><font face="verdana" color="LightSeaGreen">
+<center>
+<h3>Course Announcements
+</h3>
+
+<p>
+Anything new and of sufficient consequence (such as cancellations, updates to assignments, etc.)  
+will be emailed to the class.
+Such emails will arrive at the email address that is indicated at your Student Record.  
+Announcements with lasting significance will also be posted here.
+</center>
+<br><br>
+<table>
+   <tr>
+      <th>Date</th>
+      <th>Announcement</th>
+   </tr>
+   <tr>
+      <td>
+      Week of Dec 3: </td>
+      <td>
+      <b>Office hour</b>: I have a meeting at 10, so my office hour will 
+      be 9:30-10 and 11:30-12. 
+      <br>
+      </td>
+   </tr>
+   <tr>
+      <td>
+      Week of Nov 5: </td>
+      <td>
+      <b>Tutorial</b>: This week there will be a Lab, we'll continue work on Lab 6.
+      <br>
+      <b>Office hour on Wed</b>: will start at 10, not 9:30 <br>
+      <br>
+      <b>Nov 19:</b>  Class will be either foreshortened or cancelled, and a reading (from CLRS)
+      will be assigned.  I will post here which it is to be, once I have figured out travel to Vancouver 
+      for the VEF: The Entanglement of AI, ML, and Quantum Computing<br>
+      <br>
+      <b>Results for Lab6</b>: A few things of note from students who have completed the lab.
+      <br>1. If you run <tt>bump</tt> on otter you will get about 3 x the running time as on 
+      the cubs.  Don't know why. (Thanks, Cole.)
+      <br>2. If you use deques (double-ended queues -- also defined in STL) instead of vectors for the 
+      list of upper-cover lex numbers, you will cut your running time in about half.  (Thanks, Cole.)
+      <br>3. If you sort the elements in the deque of upper-cover-lex numbers before 
+      you compare, your running time on pos.25000.treduc will be 30 x higher.  But if you do
+      your pushes to the correct end of the deque in the right order, the values will be sorted so 
+      you don't have to. 
+      (Thanks, Tony.)
+      </td>
+   </tr>
+   <tr>
+      <td>
+      Week of September 3: </td>
+      <td>
+      <b>Tutorial</b>: This week there will be <b>No</b> mandatory tutorial.
+      However, there will be a group office hour in the tutorial room.  
+      Do the handout self-quiz, and if you have forgotten (or never learned)
+      some of the material on it, come to the office hour/tutorial and we'll
+      go over subjects you missed or have forgotten.
+      </td>
+   </tr>
+   
+
+   <tr>
+      <th>Date</th>
+      <th>Announcement</th>
+   </tr>
+   <tr>
+      <td>
+      Week of September 13: </td>
+      <td>
+      <b>Lab 1:</b>Due Sept 21 11:59 pm. 
+      <br>
+      <br>
+      Here are some sample inputs and outputs:
+
+      <br>
+      <br>
+      <tt>
+      $ ./mmopt 8 10 11 12 3 2 9 8 7
+      <br>
+      ((x(x(xx)))((xx)x)) 952
+       
+      <br>
+      <br>
+       $ ./mmopt 7 7 4 2 9 3 3 8
+      <br>
+       ((xx)(((xx)x)x)) 288
+      <br>
+      <br>
+       $ ./mmopt 8 7 4 11 2 9 3 3 8
+      <br>
+        ((x(xx))(((xx)x)x)) 376
+      <br>
+      <br>
+         $ ./mmopt 8 7 6 2 3 4 5 3 7
+      <br>
+         
+         ((xx)(((xx)x)x)x)) 318
+          
+      <br>
+      <br>
+          $ ./mmopt 10 10 11 12 5 3 16 17 19 4 8
+      <br>
+          ((x(x(xx)))((((xx)x)x)x)) 3255
+      <br>
+      <br>
+      </tt>
+      <br>
+Note that, by changing "&lt;" to "&gt;", we can find the optimally <it>bad</it> rather than good way of parsing the matrix chain. For example, the same matrix chain below 
+can take either 608 scalar multiplications, or 45,680 scalar multiplications, depending
+on how you parse the matrix chain!
+<br><br>
+<tt>
+$ ./mmopt 15 2 20 2 20 2 20 2 20 2 2 20 2 20 2 20 
+<br>
+(((xx)((xx)((xx)((xx)(x((xx)(xx)))))))x) 608
+<br>
+<br>
+$ ./mmbad 15 2 20 2 20 2 20 2 20 2 2 20 2 20 2 20 
+<br>
+(x((xx)((xx)((xx)((x(xx))((xx)(xx))))))) 45680
+<br>
+</tt>
+   <tr>
+      <td>
+      Week of October 14: </td>
+      <td>
+      <b>Tutorial</b>: This week there will be a tutorial, review for test.
+      <br>
+      <b>Project Options</b>: <br>Suffix trees 
+      <br>graph colouring or list colouring;
+      <br>
+      "The Transitive Reduction of a Directed Graph" by Aho, Garey, and 
+      Ullman (1972 SIAM J Computing).  In this paper, they prove that 
+      if there is a O(n<sup>&alpha;</sup> algorithm to find the transitive 
+         closure of a graph, then there is a O(n<sup>&alpha;</sup> algorithm
+         to find the transitive reduction of the graph. (Also vice versa?)
+      </td>
+   </tr>
+
+
+</table>
+
+<p><p>
+</p><p><a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/422/outline.html"> Course Outline </a>
+<!---
+</p><p><a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/422/homework.html"> Homework</a> and <a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/422/assign.html"> Assignments </a>
+</p><p><a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/422/samplefinal.pdf"> Sample Final</a>
+--->
+
+</p></center>
+<p>
+Useful Links:
+
+<hr>
+<a href="http://csciun1.mala.bc.ca:8080/~gpruesse/">Gara Pruesse's Homepage</a>
+<br><a href="http://csciun1.mala.bc.ca:8080/">Computer Science Homepage </a>
+<br><a href="http://www.viu.ca/">Vancouver Island University Homepage</a>
+</body></html>
+

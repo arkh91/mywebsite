@@ -1,0 +1,277 @@
+<CTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSCI 162 Topic: Operating Systems</title>
+</head>
+<center>
+<H1>Operating Systems</H1>
+Notes for CSCI 162
+<br>
+by Gara Pruesse
+<br>
+April 2017
+</center>
+<br><br>
+<body>
+An Operating System (OS) is the software that sits between your applications software and your hardware.
+<br><br>
+
+For the programmer, the OS provides useful 
+abstraction of the underlying hardware facilites, and manages how 
+these facilities are shared.
+<br><br>
+
+The OS provides abstractions of 
+<ul>
+<li>processors
+<li>RAM (Random Access Memory, i.e., primary memory)
+<li>disks, cloud access, etc. (other secondary storage)
+<li>network interface
+<li>display devices (monitor)
+<li>input devices (keyboard, mouse, etc.)
+</ul>
+
+<br><br>
+For example the OS manages the access to the processors: each program can proceed as if it is continuously having exclusive use of the processor but in fact, the OS is sharing processor time with other 
+programs at the same time.  The processor gives "time slices" to each 
+process, in such quick succession that each process has 
+the illusion of continuous, dedicated access to the processor.
+
+<br><br>
+Another example of the OS operations is the memory management it performs. 
+In your C++ program, you do not have to specify how or where to find memory
+for your variables or files, 
+nor do you have to give absolute addresses for any external files.  
+You can open a file in your program without worrying about what the 
+memory location you will be writing to and what vital data you might be 
+overwriting.  File Systems are an OS job.
+<br><br>
+<br><br>
+<br><br>
+
+<h2>History</h2>
+Early computers had no OS.  A  human being loaded up the computer with the software 
+and data and set it going. 
+<br><br>
+
+Input/Output (I/O) was the first task to become more automated, 
+in the 1950s.
+<br><br>
+
+Batch systems were introduced.  Operators would run 
+multiple jobs sequentially. 
+Once a job was started, it had sole control and access
+to the computer resources (processors, memory), unless 
+and until an operator halted execution or the 
+process completed.
+
+<br><br>
+In 1954, the <em>interrupt</em> was introduced: it is an OS signal 
+that was invented in order to handle I/O.  
+<br>
+Since waiting for the human operator
+to enter data or select a choice of action takes 
+an enormous amount of time, by processor standards -- 
+time that could be spent getting work done on some other process --
+the interrupt was introduced to allow the processor to 
+go off and make progress on other tasks while it
+waited for the slow human to type in the option, or
+for the data to be transferred into memory.  
+   <br><br>
+<div style="border:1px solid #000;">
+<h4>More on interrupts: </h4>
+   The system was designed so that, when 
+   a program has to pause to wait for input, it was removed 
+   from the scheduler (i.e., it was blocked), and
+   the context for its computation -- the 
+   data in the registers, the program counter, the
+   values of variables -- are all stored.  
+   Once the external event was accomplished, an "interrupt" 
+   was launched, and detected in the fetch-decode-execute 
+   cycle.  The interrupt had priority of execution, so
+   whatever the processor was doing was temporarily
+   put aside -- the contents of the registers was 
+   stored -- and the interrupt handled.  
+   If a process had been "blocked" because it
+   was waiting for the input, then the interrupt-handler
+   would unblock the process and put it back in the 
+   scheduler, to be serviced by time-slices now that 
+   the input it waited for had arrived.  (Of course, 
+   we are skipping ahead here to multiprocessing 
+   environments, when interrupts really proved their usefulness.)
+   The interrupt is the signal to the OS that
+   something has happened that needs handling.  In the case of 
+   input from the user being recieved, the handler restores
+   the context, so that the register values return, the 
+   program gets loaded again and the program can 
+   execute as if it were never interrupted.
+
+</div>
+
+   <br><br>
+In 1959, John McCarthy at MIT proposed "time sharing", which lead to the 
+next important innovation in OS: Multiprogramming, the ability to concurrently run several programs.  It was incorporated into Operating Systms  around 1960.
+
+<br><br>
+In the 1960's, memory consisted of:
+<ul>
+<li>
+primary memory: core memory, where a core was a unit of 
+memory consisting of a magnetic torus where the 
+direction of the magnetic charge indicated the 
+value of the bit (0 or 1) that was stored.
+<li>
+secondary memory: magnetic disks and drums -- cheaper, and slower to 
+access than core memory
+<li>
+archival memory: even slower, even cheaper than secondary 
+memory, it consisted of cards and magnetic tapes.
+</ul>
+In 1962, at the University of Manchester, computer 
+scientists designed memory management so that programmers 
+programmed as if they had a lot of core memory, but behind the scenes, 
+the OS was
+swapping data in and out between the small core and large secondary 
+storage.  This was the first use of "virtual memory".
+
+<br><br>
+Meanwhile, MIT and GE and Bell Labs were developing time sharing.
+The MULTICS (Multiplexed Infomration and Computing Service)
+operating system 
+introduced remote terminals to access a 
+process that was under continuous operation.
+The set of peripheral devices was easily expandible or
+contractible. 
+Furthermore, the system utilized a hierarchical file stores and system administration system
+that provided controlled access to 
+allow selective sharing of data and programs.
+The system supported different programming environments  a
+and human interfaces. MULTICS was flexible, allowing it 
+to evolve over time.  It employed a "one-level store"in which file and virtual 
+memory were unified: files were objects.  It pioneered computer 
+security by incorporating 
+data security into its access design.  It was also the first 
+OS known to be written in a high-level language (PL1); previous OSs were
+written in assembler.
+
+MULTICS was very advanced for its time and was used until 2000.
+It was not a commercial success, perhaps in part because its implementation 
+was dependent on particular hardware -- in other 
+words, it did not port easily to other platforms.
+
+<br><br>
+The IBM OS/360 introduced the idea of running the same OS on a family of
+different kinds of computers (IBM-360).  While this idea was 
+implemented in this OS with only partial success, the idea was 
+attractive and the OS was a commercial success.
+
+<br><br>
+So far, all the OS development was in the context of large computers,
+meant to serve an entire organization -- the mainframe.
+
+<br><br>
+In the mid 1960s, the minicomputer was introduced.  It was still large
+by modern standards.  The DEC PDP-8 was of a size and price that an 
+academic computer science department could maybe afford to purchase and 
+house.
+<br><br>
+In 1969, Ken Thompson designed and implemented a simple OS on a spare PDP-7.  Dennis Ritchie joined him onthe project; they called it UNIX.  Bell 
+Labs researchers joined in developing it.
+
+<h3>Unix</h3>
+The first implementations of UNIX were written in B, a C precurser; subseqent versions were written in C.  The OS was trademarked as UNIX, all in capitals,
+but the family of operating systems is more commonly referred to as Unix 
+today, and is preferred by its originators. 
+<br><br>
+Unix evolved at Bell Labs.  In its 6th edition,
+Bell let academic departments buy the complete source
+if they promised to treat it like a trade secret and not 
+   use the OS for administration.  The price was
+   reasonable, at under $1000.
+
+The Berkeley University computing community worked on producing a 
+new version that employed virtual memory. 
+DARPA (Defence Advanced Research Projects Agency, in the US)
+funded this group to make improvement that were desired so that Unix would 
+support research on the 
+ARPAnet (precursor to the Internet).  The
+OS systems that evolved were called the
+Berkeley Software Distributions (BSD).
+
+
+<br><br>
+The Unix philosophy (from Wikipedia):
+<div style="border:1px solid #000;">
+The UNIX philosophy is documented by 
+Doug McIlroy in the The Bell System Technical Journal from 1978:
+<br><br>
+<ul>
+<li>
+Make each program do one thing well. 
+To do a new job, build afresh rather than complicate old programs by adding new "features".
+<li>
+Expect the output of every program to become the input to another, as yet unknown, program. Don't clutter output with extraneous information. Avoid stringently columnar or binary input formats. Don't insist on interactive input.
+<li>
+Design and build software, even operating systems, to be tried early, ideally within weeks. Don't hesitate to throw away the clumsy parts and rebuild them.
+<li>
+Use tools in preference to unskilled help to lighten a programming task, even if you have to detour to build the tools and expect to throw some of them out after you've finished using them.
+</ul>
+Later summarized by Peter H. Salus in A Quarter-Century of Unix (1994): This is the Unix philosophy:
+
+<ul>
+<li>
+Write programs that do one thing and do it well.
+<li>
+Write programs to work together.
+<li>
+Write programs to handle text streams, because that is a universal interface.
+</ul>
+In the book The Pragmatic Programmer: From Journeyman to Master the authors mention the philosophy of combining "small, sharp tools" and the use of "common underlying format—the line-oriented, plain text file" to accomplish larger tasks.
+<br><br>
+The whole philosophy of UNIX seems to be to stay out of assembler.
+
+— Joseph Henry Condon
+</div>
+
+
+<br><br>
+The GNU project (GNU = "GNU's Not UNIX") developed in 
+parallel: it consisted of an expansion set of utilities, built 
+to reside atop the UNIX kernel -- actually, atop any UNIX-like
+kernel. 
+
+<br>
+"A Unix kernel — the core or key components of the operating system — consists of many kernel subsystems like process management, scheduling, file management, device management and network management, memory management, dealing with interrupts from hardware devices." -Wikipedia.
+<br><br>
+The GNU package was "free", in the sense of "liberated" code, 
+the source code of which is available for people to read, and for 
+programmers to adapt and potentially redistribute 
+(not necessarily without payment).  
+The kernel it built upon, however, was the UNIX kernel, which was not free 
+in this sense -- it was owned by Bell Labs, then Santa Cruz Operations (1995); then the UNIX trademark became part of the Open Group.  
+<br><br>
+In 1991 a free, Unix-style kernel called Linux was published 
+by Linus Torvalds.  The
+GNU/Linux OS has been ported to more platforms than any other OS.
+It is now an evolving, community-developed operating system that 
+exemplifies the open source software tradition.
+"Open Source" is an alternative term to "free" in the software sense, 
+though Richard Stallman (initiator of the GNU project) 
+prefers the latter term. He argues the two terms are distinct in 
+that software can be technically "open source" but yet 
+deny users freedom through the use of Digital Rights Management.
+
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+Text is available under the Creative Commons Attribution-ShareAlike License. 
+</body>
+</html>
+

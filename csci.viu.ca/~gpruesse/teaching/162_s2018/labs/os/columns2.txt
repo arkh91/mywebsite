@@ -1,0 +1,208 @@
+42012017689 2017-689 01/07/17 03:11 PM Mischief-Under-$5000 2170-04  Mischief 2  Property Crime 1  XX NEWCASTLE AVE  32500 Newcastle/brechin 16 49.172473   -123.942008
+420120174   2017-4   01/01/17 12:30 AM Mischief Under-$5000 2170-04  Mischief 2  Property Crime 1  7XX  ST ANDREWS ST   32501 Townsite 17 49.180278   -123.957834
+4201201642453  2016-42453  12/27/16 08:05 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  JINGLE POT RD / EAST WELLINGTON RD  32504 Westwood 18 49.172401   -124.021767
+42012017519 2017-519 01/05/17 11:47 PM Mischief Under-$5000 2170-04  Mischief 2  Property Crime 1  3XX HOWARD AVE 32508 University District  19 49.162241   -123.955241
+42012017130 2017-130 01/02/17 02:00 AM Mischief Under-$5000 2170-04  Mischief 2  Property Crime 1  XX FOURTH ST   32510 University District  19 49.158926   -123.946197
+42012017351 2017-351 01/04/17 11:48 AM Mischief Under-$5000 2170-04  Mischief 2  Property Crime 1  XX GARNER CRES 32511 University District  19 49.172141   -123.961369
+420120171259   2017-1259   01/13/17 03:26 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  6XX FITZWILLIAM ST   32518 Downtown 2  49.164575   -123.94522
+420120171343   2017-1343   01/14/17 09:36 AM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  XX  PRIDEAUX ST   32520 Downtown 2  49.169241   -123.945269
+42012017901 2017-901 01/10/17 12:47 AM Mischief Under-$5000 2170-04  Mischief 2  Property Crime 1  DUKE POINT HWY / DUKE POINT HWY OFRP   32526 Chase River 8  49.112394   -123.895229
+420120171401   2017-1401   01/14/17 09:53 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  DOVER RD / DICKINSON RD 32530 Dover 11 49.241709   -124.051109
+420120171483   2017-1483   01/15/17 09:20 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  NANAIMO PKWY / MOSTAR RD   32541 Pleasant Valley   20 49.206041   -124.03505
+420120172265   2017-2265   01/23/17 05:02 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  3XX CAMPBELL ST   32542 Downtown 2  49.168452   -123.942301
+420120172221   2017-2221   01/23/17 09:24 AM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  26XX DEPARTURE BAY RD   32546 Departure Bay  3  49.201194   -123.971436
+420120172158   2017-2158   01/22/17 01:16 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  58XX  HAMMOND BAY RD 32550 North Slope 7  49.234133   -124.018112
+420120171705   2017-1705   01/18/17 01:14 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  HAMMOND BAY RD / PARKWAY DR   32551 North Slope 7  49.234109   -124.016956
+420120172374   2017-2374   01/24/17 04:53 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  61XX NITINAT WAY  32558 Dover 11 49.238312   -124.03054
+420120172253   2017-2253   01/23/17 02:41 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  DEPARTURE BAY RD / ROCK CITY RD  32567 Linley Valley  14 49.209971   -123.994189
+420120172399   2017-2399   01/24/17 07:41 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  6XX  ROSEHILL ST  32571 Townsite 17 49.176196   -123.956731
+420120172359   2017-2359   01/24/17 01:12 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  BOUNDARY AVE / DUFFERIN CRES  32572 Townsite 17 49.183162   -123.972412
+420120171837   2017-1837   01/19/17 12:15 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  18XX VALLEY OAK DR   32576 University District  19 49.167235   -123.973572
+420120171655   2017-1655   01/17/17 06:04 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  1XX FOURTH ST  32577 University District  19 49.158935   -123.948841
+420120172195   2017-2195   01/22/17 10:29 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  BOWEN RD / BUTTERTUBS DR   32578 University District  19 49.176891   -123.967422
+420120173042   2017-3042   01/30/17 08:38 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  6XX SHORELINE DR  32580 Unknown  0  49.152498   -123.928454
+420120172780   2017-2780   01/28/17 10:40 AM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  KENNEDY ST / HECATE ST  32583 Downtown 2  49.158212   -123.938863
+420120172733   2017-2733   01/27/17 09:21 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  28XX FAIRBANKS ST 32586 Departure Bay  3  49.205216   -123.97481
+420120172684   2017-2684   01/27/17 01:49 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  18XX NORTHFIELD RD   32587 Northfield  5  49.191967   -123.980552
+420120172950   2017-2950   01/30/17 12:09 AM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  BOUNDARY AVE / STRATHMORE ST  32588 Northfield  5  49.188184   -123.972261
+420120172578   2017-2578   01/26/17 03:09 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  7XX RAILWAY AVE   32594 Harewood 10 49.148192   -123.93932
+420120172738   2017-2738   01/27/17 10:51 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  8XX BROOKFIELD DR 32595 Harewood 10 49.144575   -123.962804
+420120172551   2017-2551   01/26/17 11:00 AM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  FIFTH ST / PARK AVE  32596 Harewood 10 49.155118   -123.943768
+420120172575   2017-2575   01/26/17 02:35 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  43XX STONEWOOD PL 32599 Rutherford  12 49.216965   -124.018292
+420120172790   2017-2790   01/28/17 03:00 AM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  24XX CRYSTAL BROOK WAY  32604 Diver Lake  13 49.202694   -124.027896
+420120173710   2017-3710   02/07/17 10:50 AM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  4XX FITZWILLIAM ST   32610 Downtown 2  49.165258   -123.942483
+420120173260   2017-3260   02/01/17 07:50 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  ROBSON ST / FRANKLYN ST 32613 Downtown 2  49.164189   -123.939215
+420120173643   2017-3643   01/31/17 01:32 PM Mischief-Under $5000 2170-04  Mischief 2  Property Crime 1  60XX HAMMOND BAY RD  32620 Dover 11 49.234209   -124.028332
+420120173344   2017-3344   02/02/17 07:12 PM Mischief Under $5000 2170-04  Mischief 2  Property Crime 1  5XX  ARMISHAW RD  32631 University District  19 49.163829   -123.956726
+4201201636857  2016-36857  11/05/16 07:17 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  11XX TERMINAL AVE N  20344 Newcastle/brechin 16 49.183075   -123.954583
+420120172199   2017-2199   01/22/17 11:52 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  15XX BOUNDARY CRES   20493 Townsite 17 49.182224   -123.971911
+420120171746   2017-1746   01/18/17 08:47 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  15XX BOUNDARY CRES   20493 Townsite 17 49.182224   -123.971911
+42012017165 2017-165 01/02/17 04:14 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  15XX BOUNDARY CRES   20493 Townsite 17 49.182224   -123.971911
+4201201626440  2016-26440  08/10/16 02:14 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  15XX BOUNDARY CRES   20493 Townsite 17 49.182224   -123.971911
+4201201633266  2016-33266  10/05/16 02:43 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  15XX ESTEVAN RD   20506 Newcastle/brechin 16 49.185796   -123.956212
+420120172563   2017-2563   01/26/17 11:54 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  16XX BOWEN RD  20553 Northfield  5  49.180095   -123.97712
+420120171024   2017-1024   01/11/17 08:21 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  16XX BOWEN RD  20553 Northfield  5  49.180095   -123.97712
+4201201642232  2016-42232  12/24/16 09:54 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  16XX BOWEN RD  20553 Northfield  5  49.180095   -123.97712
+4201201626599  2016-26599  08/11/16 08:17 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  16XX BOWEN RD  20553 Northfield  5  49.180095   -123.97712
+420120172811   2017-2811   01/28/17 03:04 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  16XX DUFFERIN CRES   20570 Northfield  5  49.183351   -123.974424
+420120172481   2017-2481   01/25/17 03:16 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  19XX BOWEN RD  20725 Northfield  5  49.185887   -123.984181
+4201201642874  2016-42874  12/31/16 05:11 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  1XX NICOL ST   20971 South End   6  49.158916   -123.934058
+4201201641346  2016-41346  12/16/16 09:07 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  1XX NICOL ST   20971 South End   6  49.158916   -123.934058
+4201201642620  2016-42620  12/29/16 02:00 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  1XX PROMENADE DR  20998 Downtown 2  49.166611   -123.93292
+4201201635512  2016-35512  10/25/16 03:27 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  1XX WAKESIAH AVE  21052 University District  19 49.169595   -123.962126
+420120173590   2017-3590   02/05/17 09:49 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX HOLLY AVE  22327 Townsite 17 49.174968   -123.949396
+420120172769   2017-2769   01/27/17 11:30 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX MT BENSON ST  22349 Newcastle/brechin 16 49.175055   -123.9464
+42012017201 2017-201 01/03/17 03:10 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX NICOL ST   22353 South End   6  49.155602   -123.934003
+4201201641242  2016-41242  12/16/16 12:21 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX NICOL ST   22353 South End   6  49.155602   -123.934003
+420120171190   2017-1190   01/12/17 08:04 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX SELBY ST   22823 Downtown 2  49.162419   -123.940162
+4201201629555  2016-29555  09/04/16 10:24 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX 5TH ST  23281 Harewood 10 49.155141   -123.951757
+420120171476   2017-1476   01/15/17 08:04 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX PRIDEAUX ST   23397 Downtown 2  49.160385   -123.938905
+4201201640465  2016-40465  12/08/16 12:22 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  69XX ISLAND HWY N 23800 Dover 11 49.239695   -124.052457
+420120172540   2017-2540   01/26/17 08:02 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX TERMINAL AVE  23977 Downtown 2  49.163786   -123.934558
+4201201761  2017-61  01/01/17 10:24 AM Mischief - Los- of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  9XX HECATE ST  24282 Downtown 2  49.15678 -123.939805
+4201201638806  2016-38806  11/23/16 12:18 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  9XX HECATE ST  24282 Downtown 2  49.15678 -123.939805
+4201201631367  2016-31367  09/19/16 02:35 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  9XX HECATE ST  24282 Downtown 2  49.15678 -123.939805
+420120172028   2017-2028   01/21/17 03:43 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  X CHAPEL ST 25418 Downtown 2  49.169628   -123.938236
+4201201641529  2016-41529  12/18/16 10:58 PM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  X TERMINAL AVE N  25448 Downtown 2  49.170357   -123.940992
+4201201641373  2016-41373  12/17/16 02:50 AM Mischief-- Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  X TERMINAL AVE N  25448 Downtown 2  49.170357   -123.940992
+4201201635482  2016-35482  10/24/16 05:32 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX FRONT ST 25559 Downtown 2  49.169009   -123.937177
+420120172870   2017-2870   01/29/17 12:33 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX PRIDEAUX ST 25618 Downtown 2  49.171425   -123.945796
+420120172965   2017-2965   01/30/17 08:43 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX VICTORIA CRES  25661 Downtown 2  49.163415   -123.935463
+420120171719   2017-1719   01/18/17 02:33 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX VICTORIA CRES  25661 Downtown 2  49.163415   -123.935463
+42012017661 2017-661 01/07/17 10:12 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX VICTORIA CRES  25661 Downtown 2  49.163415   -123.935463
+4201201634065  2016-34065  10/12/16 05:40 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX VICTORIA CRES  25661 Downtown 2  49.163415   -123.935463
+4201201638758  2016-38758  11/23/16 01:06 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  9XX BOWEN RD   26601 University District  19 49.174441   -123.962795
+4201201642739  2016-42739  12/30/16 02:09 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  25XX BOWEN RD  26631 Diver Lake  13 49.200821   -123.999982
+4201201634346  2016-34346  10/15/16 01:37 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX SABISTON ST   26701 South End   6  49.155275   -123.931856
+4201201774  2017-74  01/01/17 02:40 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX HALIBURTON ST 26715 South End   6  49.152029   -123.932375
+4201201639591  2016-39591  11/30/16 08:42 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX HALIBURTON ST 26715 South End   6  49.152029   -123.932375
+4201201632649  2016-32649  09/30/16 05:13 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX HALIBURTON ST 26715 South End   6  49.152029   -123.932375
+4201201638714  2016-38714  11/22/16 02:55 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX BRUCE AVE  26792 University District  19 49.158219   -123.949524
+4201201641655  2016-41655  12/20/16 08:04 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  11XX SEAFIELD CRES   26849 Townsite 17 49.183271   -123.967803
+420120172628   2017-2628   01/27/17 12:31 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  10XX BOWEN RD  27127 University District  19 49.176268   -123.966031
+4201201641345  2016-41345  12/16/16 09:05 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  10XX BOWEN RD  27127 University District  19 49.176268   -123.966031
+4201201627660  2016-27660  08/20/16 02:05 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX SELBY ST   27192 Downtown 2  49.160514   -123.935812
+4201201638546  2016-38546  11/21/16 04:01 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX WALLACE ST  27229 Downtown 2  49.169327   -123.942024
+4201201632735  2016-32735  09/30/16 06:54 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX WALLACE ST  27229 Downtown 2  49.169327   -123.942024
+4201201637298  2016-37298  11/09/16 10:01 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX COMMERCIAL ST 27359 Downtown 2  49.166692   -123.937104
+4201201638659  2016-38659  11/22/16 02:17 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  1XX VICTORIA RD   27617 South End   6  49.159097   -123.935232
+4201201626475  2016-26475  08/10/16 07:10 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  20XX LAKESIDE DR  27691 Chase River 8  49.102069   -123.929944
+4201201638616  2016-38616  11/21/16 05:20 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  60XX UPLANDS DR   27970 Dover 11 49.23451 -124.03706
+4201201636198  2016-36198  10/31/16 12:15 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  60XX UPLANDS DR   27970 Dover 11 49.23451 -124.03706
+4201201636869  2016-36869  11/05/16 11:34 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX TRANS-CANADA HWY 28040 Newcastle/brechin 16 49.189334   -123.951762
+4201201626233  2016-26233  08/08/16 10:25 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX TRANS-CANADA HWY 28040 Newcastle/brechin 16 49.189334   -123.951762
+420120173491   2017-3491   02/04/17 03:36 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX WESLEY ST  28417 Downtown 2  49.16462 -123.940931
+420120171506   2017-1506   01/16/17 07:02 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX WESLEY ST  28417 Downtown 2  49.16462 -123.940931
+420120172288   2017-2288   01/23/17 08:05 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX MILFORD CRES  28418 Downtown 2  49.161472   -123.937296
+4201201637838  2016-37838  11/14/16 12:22 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX MILFORD CRES  28418 Downtown 2  49.161472   -123.937296
+4201201629791  2016-29791  09/06/16 06:29 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  7XX ALBERT ST  28549 Downtown 2  49.159528   -123.941655
+4201201631780  2016-31780  09/22/16 10:19 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX STEWART AVE   28746 Newcastle/brechin 16 49.178915   -123.945089
+4201201636021  2016-36021  10/29/16 10:11 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  25XX ROSSTOWN RD  28808 Diver Lake  13 49.195596   -124.01024
+420120172297   2017-2297   01/23/17 09:43 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  30XX BARONS RD 29113 Rutherford  12 49.208798   -124.003034
+42012017781 2017-781 01/08/17 03:39 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX VICTORIA RD   29154 South End   6  49.156414   -123.935724
+42012017535 2017-535 01/06/17 08:40 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX VICTORIA RD   29154 South End   6  49.156414   -123.935724
+4201201632781  2016-32781  10/01/16 04:55 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX ARMISHAW RD   29220 University District  19 49.163829   -123.956726
+4201201640828  2016-40828  12/11/16 06:57 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX NICOL ST   29443 South End   6  49.157023   -123.933962
+420120173415   2017-3415   02/03/17 05:25 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  10XX MOYSE CRES   29510 Townsite 17 49.185437   -123.964006
+420120171415   2017-1415   01/14/17 11:12 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  12XX LAWLOR RD 29621 Harewood 10 49.132   -123.923909
+4201201641259  2016-41259  12/16/16 08:04 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX CAMPBELL ST   29660 Downtown 2  49.168361   -123.943207
+4201201630216  2016-30216  09/10/16 02:24 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  1XX ADAMS AVE  29668 Northfield  5  49.175924   -123.970106
+420120172492   2017-2492   01/25/17 05:03 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  8XX DOUGLAS AVE   29682 Harewood 10 49.145676   -123.938187
+4201201633451  2016-33451  10/07/16 01:39 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  10XX ST GEORGE CRES  29699 Townsite 17 49.181776   -123.964421
+4201201639949  2016-39949  12/03/16 08:51 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX HOWARD AVE 29704 University District  19 49.15947 -123.955303
+4201201629802  2016-29802  09/06/16 08:29 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX KENNEDY ST 29716 Downtown 2  49.158674   -123.940507
+4201201642153  2016-42153  12/24/16 07:20 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  61XX MCGIRR RD 29737 Dover 11 49.236134   -124.031856
+4201201639156  2016-39156  11/26/16 07:28 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX NICOL ST 29800 Downtown 2  49.163118   -123.933953
+4201201631318  2016-31318  09/19/16 06:03 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  1XX YOUNG RD   29829 Harewood 10 49.128659   -123.925724
+4201201630102  2016-30102  09/09/16 10:45 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  19XX VALLEY OAK DR   29952 University District  19 49.168362   -123.975849
+4201201638972  2016-38972  11/24/16 06:30 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX TOWNSITE RD   30008 Newcastle/brechin 16 49.177215   -123.947359
+4201201631514  2016-31514  09/20/16 07:36 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX VICTORIA RD   30041 South End   6  49.156708   -123.93567
+420120172520   2017-2520   01/26/17 12:13 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX SARUM RISE WAY   30098 University District  19 49.169143   -123.965196
+42012017907 2017-907 01/10/17 06:26 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX NICOL ST   30124 South End   6  49.15703 -123.93407
+420120173427   2017-3427   02/03/17 06:55 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX IRWIN ST   30395 South End   6  49.156914   -123.931259
+4201201639616  2016-39616  11/30/16 12:54 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  2XX IRWIN ST   30395 South End   6  49.156914   -123.931259
+420120173587   2017-3587   02/05/17 08:29 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX MILTON ST  30432 Downtown 2  49.161126   -123.94234
+420120173584   2017-3584   02/05/17 07:48 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  33XX ROCK CITY RD 30509 Linley Valley  14 49.214219   -123.993895
+4201201629801  2016-29801  09/06/16 08:26 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  27XX GLEN EAGLE CRES 30560 Departure Bay  3  49.20432 -123.996162
+420120171995   2017-1995   01/20/17 08:30 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  7XX VICTORIA RD   30573 South End   6  49.150329   -123.936824
+4201201631377  2016-31377  09/19/16 03:50 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  34XX MEADOW LANE RD  30590 Hammond Bay 15 49.217916   -123.951155
+4201201633194  2016-33194  10/05/16 08:34 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX BRUCE AVE  30603 University District  19 49.160258   -123.949515
+4201201627187  2016-27187  08/16/16 10:44 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  12XX WADDINGTON RD   30659 Townsite 17 49.183186   -123.962673
+4201201640103  2016-40103  12/04/16 06:00 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  VICTORIA RD / FARQUHAR ST  30697 South End   6  49.156243   -123.935758
+420120171675   2017-1675   01/18/17 07:36 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  12XX PRINCESS ROYAL AVE 30723 Newcastle/brechin 16 49.18274 -123.952847
+4201201640542  2016-40542  12/09/16 06:47 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  18XX  BOWEN RD 30808 Northfield  5  49.183067   -123.981529
+4201201626878  2016-26878  08/13/16 10:46 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX  NICOL ST  30812 South End   6  49.154243   -123.933935
+4201201626594  2016-26594  08/11/16 06:48 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  65XX DOVER RD  30828 Dover 11 49.241591   -124.046845
+4201201627903  2016-27903  08/22/16 05:01 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  19XX HEALY RD  30879 Chase River 8  49.110534   -123.920324
+4201201628449  2016-28449  08/26/16 03:05 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  67XX ELLEN PL  30890 Dover 11 49.246061   -124.055166
+4201201630270  2016-30270  09/10/16 02:25 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  17XX RAJEENA WAY  30913 Chase River 8  49.114024   -123.923994
+42012017633 2017-633 01/07/17 01:12 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX MILTON ST  30945 Downtown 2  49.163387   -123.944613
+4201201632118  2016-32118  09/25/16 09:30 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  RICHARDS ST / WENTWORTH ST 30961 Downtown 2  49.166956   -123.942428
+420120171332   2017-1332   01/14/17 07:09 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  X NICOL ST  30964 Downtown 2  49.163118   -123.933953
+4201201632308  2016-32308  09/27/16 06:34 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX VICTORIA CRES  30988 South End   6  49.162706   -123.93463
+4201201640255  2016-40255  12/06/16 09:09 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX SEVENTH ST 31004 Harewood 10 49.147555   -123.951061
+4201201631343  2016-31343  09/19/16 11:23 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  7XX PARK AVE   31008 Harewood 10 49.150417   -123.943839
+4201201631752  2016-31752  09/22/16 05:06 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  59XX CODY PL   31012 Dover 11 49.236461   -124.024243
+4201201632099  2016-32099  09/25/16 09:02 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  11XX TERMINAL AVE N  31034 Newcastle/brechin 16 49.182981   -123.954651
+4201201629831  2016-29831  09/07/16 02:57 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  14XX ESTEVAN RD   31035 Newcastle/brechin 16 49.184529   -123.953857
+4201201629792  2016-29792  09/06/16 06:37 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX GEORGIA AVE   31051 University District  19 49.161251   -123.952366
+4201201632018  2016-32018  09/24/16 06:48 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  9XX BOWEN RD   31055 University District  19 49.176268   -123.966031
+4201201632549  2016-32549  09/29/16 07:40 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  22XX  HIGHLAND BLVD  31074 Departure Bay  3  49.192201   -123.97144
+4201201632397  2016-32397  09/27/16 09:38 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  17XX NORTHFIELD RD   31077 Northfield  5  49.191954   -123.978193
+4201201634031  2016-34031  10/12/16 02:04 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  8XX GEORGIA AVE   31100 Harewood 10 49.14611 -123.952522
+4201201633269  2016-33269  10/05/16 03:31 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  XX FIFTH ST 31105 Harewood 10 49.155097   -123.940186
+4201201632427  2016-32427  09/28/16 08:28 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  BULLRUSH PL / BROUGHTON PL 31113 Rutherford  12 49.22182 -124.02033
+4201201638634  2016-38634  11/21/16 08:18 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  8XX BRECHIN RD 31201 Newcastle/brechin 16 49.190209   -123.959142
+4201201641092  2016-41092  12/14/16 02:40 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX EIGHTH ST  31243 Harewood 10 49.143765   -123.954023
+4201201639898  2016-39898  12/02/16 07:02 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX SIXTH ST   31245 Harewood 10 49.151338   -123.951042
+4201201635377  2016-35377  10/24/16 12:50 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  57XX LINLEY VALLEY DR   31264 Linley Valley  14 49.226329   -124.013171
+420120173511   2017-3511   02/04/17 10:28 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  9XX FIFTH ST   31273 Westwood 18 49.154348   -123.971329
+4201201636989  2016-36989  11/06/16 10:54 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  MADSEN RD / BOWEN RD 31932 Northfield  5  49.181999   -123.980495
+420120171695   2017-1695   01/18/17 11:29 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  NANAIMO PKWY / NORTHFIELD RD  31957 Diver Lake  13 49.188335   -124.002526
+4201201638152  2016-38152  11/17/16 12:45 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX MILFORD CRES  32282 Downtown 2  49.161184   -123.936295
+4201201639586  2016-39586  11/30/16 07:40 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  FITZWILLIAM ST / PRIDEAUX ST  32285 Downtown 2  49.164816   -123.94423
+4201201638292  2016-38292  11/18/16 05:41 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  SINGLETON RD / DEPARTURE BAY RD  32329 Linley Valley  14 49.210083   -123.988629
+4201201638618  2016-38618  11/21/16 05:27 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  7XX DUFFERIN ST   32336 Townsite 17 49.184354   -123.95786
+42012017868 2017-868 01/09/17 03:18 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX TOWNSITE RD   32382 Townsite 17 49.177008   -123.954217
+4201201641542  2016-41542  12/19/16 03:05 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX TOWNSITE RD   32382 Townsite 17 49.177008   -123.954217
+4201201639845  2016-39845  12/02/16 09:49 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  19XX EAST WELLINGTON RD 32386 Westwood 18 49.179754   -123.98677
+4201201639777  2016-39777  12/01/16 03:47 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX  WHEATLEY PL  32387 University District  19 49.159334   -123.956038
+4201201639632  2016-39632  11/30/16 03:31 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  5XX FOURTH ST  32389 University District  19 49.158974   -123.95746
+4201201639686  2016-39686  12/01/16 12:41 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX FOSTER ST  32390 University District  19 49.160842   -123.960324
+4201201640884  2016-40884  12/12/16 12:16 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  19XX ZORKIN RD 32422 Newcastle/brechin 16 49.19036 -123.950858
+4201201641665  2016-41665  12/20/16 09:37 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  29XX ISLAND HWY N 32431 Departure Bay  3  49.203321   -123.996793
+4201201642560  2016-42560  12/28/16 10:30 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  55XX LOST LAKE RD 32467 North Slope 7  49.229988   -124.007267
+4201201642458  2016-42458  12/27/16 09:02 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX DIAMOND BLVD  32485 Rutherford  12 49.211538   -124.000301
+4201201775  2017-75  01/01/17 02:50 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  WESTERN ACRES RD / HAREWOOD MINES RD   32505 Westwood 18 49.136412   -123.96641
+4201201788  2017-88  01/01/17 05:20 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX HILLCREST AVE 32507 University District  19 49.15991 -123.959599
+4201201739  2017-39  01/01/17 04:05 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  32XX WILLOWMERE CRES 32512 Pleasant Valley   20 49.201295   -124.030609
+420120171500   2017-1500   01/16/17 01:07 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX WESLEY ST  32517 Downtown 2  49.163254   -123.93944
+42012017999 2017-999 01/10/17 10:20 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  28XX NEYLAND RD   32522 Departure Bay  3  49.206137   -123.988772
+42012017843 2017-843 01/09/17 08:00 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  56XX ARNHEM TERR  32539 Pleasant Valley   20 49.221361   -124.036741
+420120171998   2017-1998   01/20/17 09:05 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX TENTH ST   32555 Harewood 10 49.136119   -123.946934
+420120172476   2017-2476   01/25/17 03:00 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  4XX  CAMPBELL ST  32582 Downtown 2  49.168361   -123.943207
+420120172878   2017-2878   01/29/17 02:43 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX PETROGLYPH CRES  32589 South End   6  49.142355   -123.929233
+420120172488   2017-2488   01/25/17 11:00 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  68XX ISLAND HWY N 32597 Dover 11 49.239148   -124.050679
+420120172477   2017-2477   01/25/17 03:06 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  6XX BRECHIN RD 32607 Newcastle/brechin 16 49.190049   -123.956141
+420120172588   2017-2588   01/26/17 04:52 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  ST GEORGE ST / TERMINAL AVE N 32608 Newcastle/brechin 16 49.181999   -123.953258
+420120173203   2017-3203   02/01/17 10:39 AM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  30XX MCCAULEY DR  32615 Departure Bay  3  49.20674 -123.998696
+420120173264   2017-3264   02/01/17 08:31 PM Mischief - Loss of Enjoyment of Property  2170-05  Mischief 2  Property Crime 1  3XX THIRD ST   32630 University District  19 49.16251 -123.952426
+4201201635237  2016-35237  10/22/16 10:49 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  1XX NICOL ST   20971 South End   6  49.158916   -123.934058
+4201201641503  2016-41503  12/18/16 03:17 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  32XX ISLAND HWY N 21914 Rutherford  12 49.205092   -124.007251
+4201201631755  2016-31755  09/22/16 05:58 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  3XX HOLLY AVE  22327 Townsite 17 49.174968   -123.949396
+4201201627285  2016-27285  08/17/16 08:47 AM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  3XX WESLEY ST  28417 Downtown 2  49.16462 -123.940931
+4201201626485  2016-26485  08/10/16 10:48 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  HALIBURTON ST / FARQUHAR ST   30753 South End   6  49.156111   -123.932586
+420120173758   2017-3758   02/07/17 05:27 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  2XX BASTION ST 30866 Downtown 2  49.166143   -123.938176
+4201201641618  2016-41618  12/19/16 05:20 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  ALBERT ST / MILTON ST   30867 Downtown 2  49.159931   -123.941157
+4201201633941  2016-33941  10/11/16 05:10 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  PROMENADE DR / FRONT ST 31069 Downtown 2  49.165886   -123.932729
+4201201641629  2016-41629  12/19/16 07:54 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  4XX  DUKE POINT HWY  31173 Duke Pt  9  49.134176   -123.870244
+4201201634806  2016-34806  10/19/16 01:10 AM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  4XX  DUKE POINT HWY  31173 Duke Pt  9  49.134176   -123.870244
+4201201635823  2016-35823  10/27/16 07:46 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  10XX  ISLAND HWY S   31236 Chase River 8  49.138946   -123.925735
+4201201635992  2016-35992  10/29/16 01:13 AM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  FIRST ST / WAKESIAH AVE 31277 University District  19 49.170376   -123.960992
+4201201639909  2016-39909  12/02/16 09:41 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  5XX TOWNSITE RD   32382 Townsite 17 49.177008   -123.954217
+4201201640215  2016-40215  12/05/16 07:32 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  WAKESIAH AVE / BOWEN RD 32393 University District  19 49.173361   -123.960751
+4201201640890  2016-40890  12/12/16 01:23 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  ISLAND HWY N / MARY ELLEN DR  32415 Dover 11 49.240108   -124.05421
+4201201641319  2016-41319  12/16/16 05:13 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  1XX EAGLE CRES 32435 Northfield  5  49.185253   -123.97847
+4201201642789  2016-42789  12/30/16 08:36 PM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  5XX  DUKE POINT HWY  32472 Duke Pt  9  49.134176   -123.870244
+420120173713   2017-3713   02/07/17 11:23 AM Mischief Caused by Act/Ommission 2170-10  Mischief 2  Property Crime 1  NANAIMO PKWY / AULDS RD 32633 Pleasant Valley   20 49.234371   -124.052597
+

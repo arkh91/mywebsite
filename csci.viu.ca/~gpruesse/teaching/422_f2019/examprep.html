@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+<title>Advanced Algorithms</title>
+.column {
+   float: left;
+   width: 50%;
+   padding: 10px;
+}
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+</style>
+</head>
+<center>
+<h2>Computing Science 422</h2>
+<h3>Exam Preparation </h3>
+</center>
+<hr>
+<ol>
+<li>
+Construct the relevant table for finding the optimal 
+order to perform matrix multiplication of four matrices, 
+of dimensions 3 x 11, 11 x 14, 14 x 2, 2 x 6.
+What is the worst case number of scalar multiplications required?
+<li>
+Give a Dynamic Programming algorithm that finds the largest Independent Set
+in a rooted tree.
+<li>
+Given an n x n boolean array Less[n][n], where Less[i][j] means 
+element i &lt; element j, 
+but Less is not guaranteed to be transitively closed or transitively 
+reduced, show how to find either the transitive reduction or the
+transitive closure of Less.
+
+<li>
+Suppose you have a topological sort input that consists of 
+four independent chains, two of length two and two of length one. 
+What is the Information Theoretic Lower Bound on the number of 
+comparisions needed by a comparison-based sort to sort the data
+into a linear ordering?
+
+<li>
+Binomial Heap practice:
+Construct two binomial heaps on 10 and 11 keys, respectively. Show the
+merge of the two.  Now do a DeleteMin.
+
+<li>
+Fibonacci Heap practice:
+Given the following keys to insert in the following order into an 
+initially empty Fibonacci Heap:
+<br>
+1 9 4 8 3 2 6 7 12 13 10 5 11 15 14
+<br>
+What does the FibHeap look like after the inserts?  Suppose you now execute
+FindMin -- what does it look like?
+Suppose you now execute a DeleteMin -- what does it look like?
+Now delete as many items as you can without provoking a Consolidate. 
+What does the FibHeap look like?
+Now make one more Delete in the largest tree in the heap.  What does the 
+result look like?
+<br>
+<li>
+Consider our Assignment 2 data structure, consisting of 
+an array A of sorted lists, where each list A[i] is either empty or 
+is contains 2^i elements. Let's call them FullLists. 
+Consider if we maintained a collection of FullLists.  
+What would the merge operation on two FullLists consist in -- 
+i.e., write the pseudocode.  What is the actual running time? 
+What is the amortized running time of 
+Mergeable FullLists, including just the operations Insert and Merge? 
+Assume that you start with empty FullLists.
+What is the amortized running time of FullList operations, if 
+the operations are Insert, Merge, and Find?
+</ol>
+</body>
+</html>

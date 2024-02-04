@@ -1,0 +1,112 @@
+
+<html>
+<head><title>CSCI 162 Spring 2018: Labs</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: Computer Architecture Lab -  A Simple MARIE program</h4>
+<br> 
+</center>
+
+
+For this lab, you will write a MARIE assembler language program in a new directory.  
+
+<ol>
+<li>
+Log in to your computer, and go into your directory for CSCI 162 files.  If you 
+don't have one yet, create it in the relevant directory 
+(e.g., your home directory) by entering the command
+"mkdir csci162".
+<br><br>
+"ls csci162" to see what's in that directory.
+<br><br>
+"cd csci162" to enter the directory.  
+<br><br>
+Make a subdirectory lab4 using "mkdir lab4"
+
+
+<br><br>
+Now open 
+the MARIE simulator through the drop-down menu <b>Applications -> Other -> MARIE Simulator</b>.  If you are working on your laptop, you 
+can download the MARIE simulator at:
+<a href="http://computerscience.jbpub.com/ecoa/23/student_resources.cfm">
+Student Resources</a> for Computer Architecture (Null and Lobur).  If you 
+don't have time to download it now, use the <a href=
+"https://csci.viu.ca/marie">web version (hosted at VIU-CSCI)</a>
+or the <a href=
+"https://marie-js.github.io/MARIE.js/">web version</a> from github.
+<br>
+<br>
+Take the short tour. 
+</li>
+<li>
+Enter the following program (which is in the MARIE Assembler Language) 
+into the space for a program.
+<tt>
+<br>
+<br>
+load x
+<br>
+add y
+<br>
+store z
+<br>
+halt
+<br>
+x, hex a 
+<br>
+y, hex b 
+<br>
+z, hex 2 
+<br>
+
+</tt>
+<li>
+Save the file using the File drop down menu; write it to a file named lab1.mas in your csci162/lab2/
+<li>
+What is in the memory locations 4, 5 and 6? 
+Step through the execution of the code using the "Step" button.  Watch the
+AC register -- what happens when "load x" is executed?  Note what happens
+when "Store z" is exectud in the memory location 6.
+<p><p>
+Change it so that it outputs the answer in decimal -- get z into the 
+AC register and execute and "output" instruction.  
+<p><p>
+What do you think will happen if you have no HALT instruction at the end of the program?
+Somebody in the lab should try it and report what happens. 
+<p><p>
+<li>
+Change the program so that it takes takes as input two integers in decimal form 
+and outputs each integer in turn (use decimal output) and then outputs their sum.
+<li>
+Use the program to determine what the numbers 7F and AA are in decimal,
+and what is their sum, in both decimal and hex.
+<li>
+Write a MARIE assembler program that does the following:
+<ul>
+<li>
+gets an input integer
+<li>
+subtracts x from it, where x is 6
+<li>
+outputs the result, and stores it in y
+<li>
+gets another input integer
+<li>
+adds y to it
+<li>
+outputs the result, and stores it in z
+<li>
+halts
+<li>
+What happens if you start with a value like 5, which results in a 
+negative integer when 6 is subtracted from it?
+<li>
+What if you forget to put "halt" in the program?
+</ol>
+
+
+
+
+</body>
+</html>
+
+

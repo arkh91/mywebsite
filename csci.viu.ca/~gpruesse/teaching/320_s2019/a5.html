@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Foundations of Computing Science</title>
+</head>
+
+<center>
+<h2>Computing Science 320</h2>
+<h3>Assignment 5 </h3>
+</center>
+<hr>
+<b>Objective</b><br>
+<blockquote>
+To gain an understanding of decidability and of P, NP and NP-c.
+</blockquote>
+<hr>
+<p>
+
+<br><br>
+<h3>Questions 1,2,3 Due March 29 2:30</h3>
+<ol>
+<li>
+(10 marks)
+Prove that 
+L<sub>1</sub> is undecidable, where
+L<sub>1</sub> = {&lt;
+M<sub>1</sub>,M<sub>2</sub>&gt; | 
+&exist; string w such that M<sub>1</sub> and M<sub>2</sub>  
+accept w }.  Assume that 
+M<sub>1</sub> and M<sub>2</sub> both use the same input alphabet &Sigma;.
+
+<li>
+(10 marks)
+Prove that L<sub>1</sub> from Question 1 is recognizable.  
+<li>
+(10 marks)
+Prove that 
+L<sub>2</sub> is undecidable, where
+L<sub>2</sub> = {&lt;
+M&gt; | 
+M accepts no string that ends in 0}.
+<br>
+
+<li>
+(10 marks) Due Friday April 5. 
+The proof that SAT reduces in polynomial time to 3SAT 
+involves a method to write any CNF clause as a logically equivalent 
+3SAT boolean formula.  Use the method to construct a 3SAT equivalent 
+to <b><br>
+(
+x<sub>1</sub> &or; 
+x<sub>2</sub> &or; 
+x<sub>3</sub> &or; 
+x<sub>4</sub> &or; 
+x<sub>5</sub> &or; 
+x<sub>6</sub> &or; 
+x<sub>7</sub> &or; 
+x<sub>8</sub> 
+)</b>
+
+</li>
+
+<li>
+(10 marks)
+Due Friday April 5. 
+Consider the problem WEIGHTY_CYCLE(&lt;G,w,K&gt;| G=(V,E) is a graph, 
+w: E&rarr; Z<sup>+</sup> &cup; {0} is a weight function on edges, and 
+there exists a cycle of weight K or greater in G }.
+<br>
+The weight of a cycle is the sum of the weight of the edges in the cycle.
+<br>
+Prove that WEIGHTY_CYCLE is NP-complete.  
+Remember to first prove it is in NP.
+<br>
+<br>
+Notes about this question:
+<br><br>
+      Questions 4 and 5 of A5 are due on Friday.  
+      <br>
+      For the WEIGHTY_CYCLE question, you can assume that the 
+      following problem is NP-complete:
+      <br>
+      <br>
+      HAMCYCLE = {&lt;G&gt; | G is a graph, and there is
+      a cycle that visits each vertex of G exactly once}.
+      <br>
+      <br>
+      Note that the graph in HAMCYCLE is undirected and no weights are assumed on the edges.
+      <br>
+      <br>
+      For the WEIGHTY_CYCLE language, the cycle in question must be 
+      simple (visits no vertex or edge more than once); note that WEIGHTY_CYCLE does not require that EVERY vertex be visited.  The weight function
+      w which is part of the input is simply saying each edge, say (u,v), 
+      has a weight on it, denoted w(u,v).  
+      An example of a weighted graph is below.  If that graph's encoding
+      is &lt;G_example1&gt;, then the string &lt;G_example1, 18&gt; is 
+      in the language WEIGHTY_CYCLE, because there is a simple cycle in the 
+      graph where summing the weights on the edges yeilds 18 or greater --
+      specifically, a,b,c,e,a is such a cycle.
+      <img src="WeightedGraph.png" alt="Weighted Graph">
+
+<!--
+Sipser Problem 7.11
+<li>
+(8 marks)
+Sipser Problem 7.17
+<li>
+(4 marks)
+Sipser Problem 7.20
+<li>
+{(8 marks)
+Sipser Problem 7.22  AND
+(8 marks) Sipser Problem 7.29} 
+OR (16 marks)
+Sipser 7.32
+-->
+</ol>
+<hr>
+<a href="a4.html">Previous Assignment</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </body>
+
+</html>

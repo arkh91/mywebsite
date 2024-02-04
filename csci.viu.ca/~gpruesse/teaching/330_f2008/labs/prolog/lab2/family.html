@@ -1,0 +1,97 @@
+
+<html>
+<head><title>CSCI 330 Fall 2008: Labs</title></head>
+<body>
+<center><h4>CSCI 330 Fall 2008: Prolog Whale Geneology Lab</h4>
+<br> 
+<br></center>
+<br> 
+
+For this lab, you will use the data in
+<a href="family">family</a> 
+to test your prolog programs.  
+You can get it using the following command:
+<pre>
+cp ~gpruesse/public_html/teaching/330/labs/prolog/lab2/family
+</pre>
+
+
+You are to write the following:
+<p><p>
+1. sibling(X,Y)
+<p><p>
+2. brother(B,X)
+<p><p>
+3. sister(B,X)
+<p><p>
+4. grandparent(G,X).
+<p><p>
+5. cousin(C,X).  Neither self nor sibling is a cousin.
+You can use the operator `not(P)', which will be satisified
+only if P is not -- e.g., 
+<pre>
+male(X):- not female(X).
+or
+male(X):- not(female(X)).
+<p><p>
+6. ancestor(X,Y).  I am my own ancestor, and every ancestor of my parent is also my ancestor; nobody else is my ancestor.
+<p><p>
+<b>Lists in Prolog</b>
+<p><p>
+8. Write a Prolog program that finds the maximum in a list. 
+It should be called by the following query:
+<p>
+max([3, 19, 2, ... 70], X).
+<p>
+
+
+
+
+
+<p><p><p>
+<p><p><p>
+<p><p><p>
+About Prolog lists:
+You can refer to the head and tail (the head is an element, the tail is a list which is the remainder of the list when the head
+is removed) by formatting it in your structure.  For example, 
+
+<p><p>
+<pre>
+sum([], 0). 
+sum([H], H).
+sum([H|T],X) :- sum(T,Tailsum), X is H+Tailsum.
+</pre>
+<p><p>
+
+The symbol '|' in the square brackets breaks the list up into
+the head (an element) and the tail (a list).  If the list is empty,
+when this is done, you'll get `No' -- i.e, it cannot be satisfied.
+.  However, notice that 
+there is a sum clause, above, that deals with the empty 
+list; Prolog will check the clauses in order, so it
+will check the first clause first, and will only
+try the others if so far it is unsatisfied. 
+
+<p><p>
+Now you can refer to H and T in your 
+structure.  H and T are just variables.  We could have used 
+X and Y. 
+<p><p>
+Note: no typechecking is done in the above.  It is a good idea to
+do typechecking using number(X). For example, sum could be:
+<p><p>
+<pre>
+sum([], 0). 
+sum([H], H):- number(H).
+sum([H|T],X) :- number(H), sum(T,Tailsum), X is H+Tailsum.
+</pre>
+<p><p>
+
+
+
+
+
+</body>
+</html>
+
+

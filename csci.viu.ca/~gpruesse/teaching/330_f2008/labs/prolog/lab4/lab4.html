@@ -1,0 +1,72 @@
+
+<html>
+<head><title>CSCI 330 Fall 2008: Labs</title></head>
+<body>
+<center><h4>CSCI 330 Fall 2008: Prolog use of fail and cut</h4>
+<br> Oct 2.  <b>DUE on TUES OCT 7 IN CLASS</b>
+</center>
+<br> 
+<b>Part I. Combinations</b>
+<p>
+Write a prolog program that generates all combinations of a given size from
+a list.  For example, 
+
+<pre>
+| ?- combi(3,[a,b,c,d,e],L).
+
+L = [a,b,c] ? ;
+
+L = [a,b,d] ? ;
+
+L = [a,b,e] ? ;
+
+L = [a,c,d] ? ;
+
+L = [a,c,e] ? ;
+
+L = [a,d,e] ? ;
+
+L = [b,c,d] ? ;
+
+L = [b,c,e] ? ;
+
+L = [b,d,e] ? ;
+
+L = [c,d,e] ? ;
+
+(10 ms) no
+
+</pre>
+
+<p><p>
+<b>Part II.  Use Write and fail</b>
+<p><p>
+Use the built-in predicates write and fail to generate the entire list 
+from one call, without the use of ';'.
+<pre>
+| ?- all_combi(3,[a,b,c,d,e]).
+[a,b,c]
+[a,b,d]
+[a,b,e]
+[a,c,d]
+[a,c,e]
+[a,d,e]
+[b,c,d]
+[b,c,e]
+[b,d,e]
+[c,d,e]
+
+(1 ms) no
+
+</pre>
+
+<p><p>
+
+
+
+
+
+</body>
+</html>
+
+

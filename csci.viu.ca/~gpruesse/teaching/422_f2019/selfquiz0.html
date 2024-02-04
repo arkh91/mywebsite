@@ -1,0 +1,167 @@
+<html>
+<head>
+<style>
+<title>Advanced Algorithms</title>
+.column {
+   float: left;
+   width: 50%;
+   padding: 10px;
+}
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+</style>
+</head>
+<center>
+<h2>Computing Science 422</h2>
+<h3>Self Quiz 0 </h3>
+</center>
+<h4> Due: <b>Sept 5 or 6 tutorial </b> </h4>
+<hr>
+<b>Objective</b><br>
+<blockquote>
+To understand how much you remember of the material relating to algorithms: 
+algorithmic paradigms, algorithm correctness (how to prove), and running time analysis.
+</blockquote>
+<hr>
+<ol>
+<li>
+(10 marks)
+Order the following running times in order of asymptotically fastest first.  If two or more of the 
+functions are equivalent, asymptotically, then put parens around the group that are all
+asymptotically the same, as an entry in the list. 
+
+<br>
+<div class="row">
+   <div class="column">
+<p>
+5n + log n
+<br>
+log <sup>2</sup>n
+<br>
+2<sup>n</sup>
+<br>
+n<sup>2</sup>
+<br>
+5n - log n + 3 log log n
+<br>
+5n + log n - 3 log log n
+</p>
+</div>
+<div class="column">
+<p>
+2<sup>2n</sup>
+<br>
+1.6<sup>n</sup>
+<br>
+2<sup>n+2</sup>
+<br>
+n!
+<br>
+ln n
+</p>
+</div>
+</div>
+</li>
+<li>
+(6 marks)
+If you have to visit every vertex in a graph, two algorithms to accomplish this are called:
+<br><br>
+They run in time: 
+
+<br><br>
+The one that uses a stack is:
+<br><br>
+The other one uses a (name the data structure):
+<br><br>
+<li>(4 marks)
+A graph can be represented in a number of ways; the two most imporant data structures for 
+representing a graph are:
+<br><br>
+A sparse graph is: 
+<br><br>
+It is natural to use the following data structure for sparse graphs:
+<br><br>
+If n is the number of vertices in a graph, the number of edges in an undirected graph is &le;
+<br>
+The number of edges in a directed graph is &le;
+</li>
+<li>
+(5 marks) 
+Besides the Abstract Data Types (ATDs) discussed in 422 already, I am familiar with the following ADT(s):
+<br><br>
+<br><br>
+And one of them that has multiple useful implementations with different running time behaviour is the following:
+<br><br>
+<br><br>
+</li>
+<li>(5 marks)
+I can code up a mergeSort with one hand tied behind my back.  Supposing a Merge subprogram is
+already supplied, the pseudocode for my MergeSort would look like this:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+MergeSort uses a programming paradigm called:
+<br><br>
+
+</li>
+<li>
+(4 marks)
+The Stack ADT has the following interface (including descriptions of behaviour).
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</li>
+<li>
+(8 marks)
+An algorithm to determine the depth of a rooted binary tree is the the following:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</li>
+<li>
+The running time of the above algorithm is:
+<br>
+<br>
+Proof:
+<br>
+<br>
+<br>
+<br>
+<br>
+</ol>
+The Array ADT:
+<br>
+<br>
+Operations:
+<br>
+<b>init(n)</b>: initializes a new Array, of size n, where n is a non-negative integer.
+<br>
+<br>
+item 
+<b>get(i)</b> : returns item at position i, if 1 &le; i &le; n and if there has been a "set(i,*)" 
+operation since the last "init" operation.  Otherwise, returns the sentinal item NO_ITEM.
+<br>
+<br>
+<b>set(i, k)</b>: sets item at position i to be item k.  Overwrites whatever was in position i.
+<br>
+<p>
+<p>
+
+<a href="selfquiz0.html">Previous Assignment</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="selfquiz1.html">Next Self Quiz</a>
+</body>
+</html>

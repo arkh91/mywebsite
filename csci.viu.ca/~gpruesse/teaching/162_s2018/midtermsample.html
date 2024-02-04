@@ -1,0 +1,229 @@
+<html>
+<head><title>CSCI 162 Spring 2017: Midterm Examination</title></head>
+<body>
+<center><h4>CSCI Spring 2017: Midterm Examination</h4></center> 
+<br><br>
+<h2>NAME:_______________________________________________________________</h2>
+
+
+
+<ol>
+<li>
+For the Digital Display Unit (the Seven-Segment Display) 
+we are interested, in this question, in the 
+boolean function for the <b>top left vertical</b> segment.  Note the following: 
+<ul>
+<li>
+the inputs are w,x,y,z, where w represents the most significant bit and z the least 
+significant bit
+<li>
+valid inputs are four-bit sequences that are binary representations of integers between
+0 and 9. For example, since 1001 is the representation for 9, when the application
+requires that '9' is to be displayed,
+w=1, x=0, y=0, and z=1 are sent as inputs to the circuit.
+<li>
+invalid inputs are not assumed to be ever be sent to the circuit, and we don't care 
+whether the circuit turns the segment on or off for invalid inputs
+<li>
+the circuit should be '1' or ON when the input is the binary representation of a number which, 
+when written to a seven-segment display, needs the top left vertical segment to be lit up.
+<li>
+a '1' written to the display should correspond to lighting up the two vertical bars on the RIGHT.
+</ul>
+
+<ol>
+<li>
+(4 marks) Give the Truth Table for the top left vertical segment.
+<li>
+(6 marks) Draw the Karnaugh Map for the top left vertical segment, and give the
+resulting minimum sized boolean function for this segment.
+<li>
+(3 marks) Draw a circuit for the top left vertical segment that is two layers: some AND gates, all
+of which feed into an OR gate.  The gates can have more than two inputs.  The literals are 
+all available in negated and unnegated form -- i.e., there is an input w and an input w'
+and similarly for all the other variables.  Your circuit should minimize the number of "gate inputs".
+</ol>
+
+</li>
+
+<br<br>
+<li>
+(2 marks) Give the decimal representations of the numbers whose binary representations are
+1110101 and 1001001.
+<br><br>
+<li>
+(1 marks) Give the binary representations, and the three-digit hexidecimal representations, 
+of the numbers whose decimal representations are
+987 and 460.  
+<br><br>
+<li>
+(2 marks) Give the binary representation of the number whose decimal representation is 45.32.
+Suppose we have 11 binary digits of accuracy, and you can simply place the radix dot (".")
+in the binary string.  Use no leading 0's, but use trailing 0's if necessary. For example, 
+decimal 1.5 would be 1.1000000000)
+<br><br>
+<li>
+(4 marks)
+Suppose we have six binary digits for our two's complement representations.  Express the c
+following as an addition of two's complement numbers, and tell whether overflow has occurred: 
+<pre>
+     -12
+   +  -7
+   = -19
+</pre>
+<br><br>
+<li>
+Code Table
+<table>
+
+<tr><td>
+Type</td><td>  Instruction</td><td> Opcode</td><td>  Summary
+</tr><tr><td>
+Arithmetic</td><td>  Add X</td><td> Adds value in AC at address X into AC, AC &rarr; AC + X
+</tr><tr>
+</td><td><td>Subt X  </td><td>  Subtracts value in AC at address X into AC, AC &rarr; AC - X
+</tr><tr><td><td>
+AddI X    <td>Add Indirect: Use the value at X as the actual address of the
+data operand to add to AC
+</tr><tr><td><td>
+Clear  <td> AC &rarr; 0
+</tr><tr><td>
+Data Transfer</td><td>  Load X </td><td>  Loads Contents of Address X into AC
+</tr><tr><td><td>
+Store X </td><td> Stores Contents of AC into Address X
+</tr><tr><td>
+I/O </td><td>  Input </td><td>  Request user to input a value
+</tr><tr><td><td>
+Output </td><td>   Prints value from AC
+</tr><tr><td>
+Branch </td><td>  Jump X</td><td>     Jumps to Address X
+</tr><tr><td><td>
+Skipcond (C)   </td><td>  Skips the next instruction based on C: if (C) = 
+
+000: Skips if AC < 0;
+if C = 400: Skips if AC = 0;
+if C = 800: Skips if AC > 0;
+</tr><tr><td>
+Subroutine </td><td> JnS X </td><td>  Jumps and Store: Stores value of PC at address X then increments PC to X+1
+</tr><tr><td><td>
+JumpI X   </td><td> Uses the value at X as the address to jump to
+</tr><tr><td>
+Indirect Addressing</td><td>  StoreI </td><td>     Stores value in AC at the indirect address.
+e.g. StoreI addresspointer
+Gets value from addresspointer, stores the AC value into the address
+</tr><tr><td><td>
+LoadI  </td><td>  Loads value from indirect address into AC
+e.g. LoadI addresspointer
+Gets address value from addresspointer, loads value at the address into AC
+</tr><tr><td>
+Halt</td><td><td>  End the program
+</tr>
+</table>
+(10 marks)  Write a MARIE assembler code program that does the following:
+<ul>
+<li>
+prompts the user for 
+decimal integers X, Y, and Z, and 
+<li>
+invokes a subroutine (i.e., function) AplusBminusC with X, Y and Z provided as its parameter values; 
+the subroutine places 
+the "returned value" into a variable called ReturnedValue.  Retain the input values (i.e,
+keep X, Y, and Z unchanged.  
+<li>
+outputs the Returned Value.
+<li>
+Invoke the subroutine AplusBminusC with the parameter values X+Y, Z, Y.
+
+</ul>
+You will also write the subroutine (i.e., a function) AplusBminusC that takes as its 
+parameters Param1, Param2, Param3 and computes Param1 + Param2 - Param3, and 
+places the result in ReturnedValue.
+</li>
+
+<br><br>
+<li>
+(2 marks) Describe multiprocessing.
+
+<br><br>
+<li>
+(4 marks)
+There are computers everywhere, including simple devices that do not have multiprocessing but
+may nevertheless require a simple operating system.
+Would virtual memory have any usefulness if the system is a device with no multiprocessing?
+Discuss.
+
+<br><br>
+<li>
+(1 mark)
+Give a linux line command that will compute the differences between the files program1.cpp and 
+program2.cpp and store those differences in a file called programdiff.  Use the diff command.
+
+<br><br>
+<li>
+(1 mark)
+Give a linux line command that will cat two files f1 and f2 into third file f3.  
+
+<br><br>
+<li>
+(12 marks)
+Suppose you have the following prolog fact file that describes the links among nodes 
+in a computer network.  
+If otter has a link to capitan then otter can send data to capitan. 
+We use link(otter, capitan) to say there is a link from otter to capitan.
+<pre>
+link(otter,capitan).
+link(capitan, discovery).
+link(discovery, ubc).
+link(ubc, otter).
+link(discovery, uvic).
+link(uvic, otter).
+link(uvic, olds).
+link(olds, uvic).
+link(otter, toronto).
+</pre>
+Some nodes in the network are municipalities; some are universities.
+<pre>
+municipal(toronto).
+municipal(victoria).
+
+university(otter).
+university(capitan).
+university(discovery).
+university(olds).
+university(uvic).
+university(ubc).
+</pre>
+
+<ol>
+<li>
+(2 marks) 
+Suppose the above facts have been loaded into the Prolog interpreter.
+Write the query you would make (i.e., what would you type into 
+the Prolog interpreter) to find out what the links are that go out from 
+otter?  How would you find all of them?
+<li>
+(2 marks)
+Write a predicate "bilink(X,Y)" that is true if there is a X-Y link and 
+a Y-X link.
+<li>
+(5 marks)
+Every node
+can send data to itself; to send data to other nodes there must be 
+a succession of links that lead to the destination.
+For example, in the above facts, there is a otter-capitan link,
+and a capitan-discovery link, so "connected(otter,discovery)" would
+return "true", because otter-capitan-discovery is a path of links.
+Define the predicate "connected" that takes as parameters two nodes, and 
+is satisfied (true) if the is a path of links from the first node  
+to the second node -- you could send data from the first node to the second
+node (perhaps visiting intermediate nodes on the way).  
+<li>
+(2 marks)
+Write the predicate "munconnected(X,Y)" that is true if X and Y are connected using only municipal links -- i.e., the intermediate nodes must be 
+municipal, not university, nodes.  The endpoints need not be 
+municipal, but the intermediate nodes must be.
+</ol>
+</body>
+</html>
+
+

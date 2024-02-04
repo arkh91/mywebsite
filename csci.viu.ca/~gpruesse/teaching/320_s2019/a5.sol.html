@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Foundations of Computing Science</title>
+</head>
+
+<center>
+<h2>Computing Science 320</h2>
+<h3>Assignment 5 Partial Solutions</h3>
+</center>
+<hr>
+<b>Objective</b><br>
+<blockquote>
+To gain an understanding of decidability and of P, NP and NP-c.
+</blockquote>
+<hr>
+<p>
+
+<br><br>
+<h3>Questions 1,2,3 Due March 29 2:30</h3>
+<ol>
+<li>
+(10 marks)
+Prove that 
+L<sub>1</sub> is undecidable, where
+L<sub>1</sub> = {&lt;
+M<sub>1</sub>,M<sub>2</sub>&gt; | 
+&exist; string w such that M<sub>1</sub> and M<sub>2</sub>  
+accept w }.  Assume that 
+M<sub>1</sub> and M<sub>2</sub> both use the same input alphabet &Sigma;.
+
+<br>
+<br>
+
+Solution:
+<br>
+BWOC. Suppose L1 is decided by some TM, call it X1.  Then we 
+can construct a decider TM for XE for Etm as follows:
+<br>
+XE = "On input (M), 
+<br>
+1. Run X1 on input (M,M). If accept, REJECT; if reject, ACCEPT."
+<br>
+<br>
+This works because if M's language is empty, there will be no string 
+accepted by both M and M, so X1 will reject (M,M), 
+and XE will accept M.  If M's language is non-empty, M and M will 
+both accept some string, and X1 will accept (M,M), and XE will reject M.
+<br>
+<br>
+<li>
+(10 marks)
+Prove that L<sub>1</sub> from Question 1 is recognizable.  
+<br>
+<br>
+Solution:
+<br>
+Construct a recognizer TM R for L1 as follows:
+<br>
+<br>
+R="on input (M1, M2, w), 
+<br>
+1. set i=1.
+<br>
+2. enumerate all strings w over the alphabet for M1 and M2, in shortlex order. For each string w of length &le; i, do:
+<br>
+2.1 run M1 on w for i steps; if does not accept within i steps, get next
+string and go to 2.1
+<br>
+2.2 run M2 on the string for i steps; if does not accept within i steps, get next string and go to 2.1. Otherwise (both have accepted), ACCEPT."
+
+<br>
+<br>
+R is a recognizer -- if there is a string both accept, and 
+n = max(string length, steps for M1 to accept, steps for M2 to accept),
+then R will accept when i=n.
+Note that at each value of i, the amount of computation undertaken is finite.
+<br>
+<br>
+<li>
+(10 marks)
+Prove that 
+L<sub>2</sub> is undecidable, where
+L<sub>2</sub> = {&lt;
+M&gt; | 
+M accepts no string that ends in 0}.
+<br>
+Solution:
+<br>
+There is a shorter proof, but I would remind students of this method,
+which has great applicability.  It is similar to how REgularTM
+was proved undecidable. 
+
+<br>
+Suppose L2 is decided by some TM X2. Then we can construct 
+a decider XA for Atm as follows:
+<br>
+<br>
+XA = "on input (M),
+<br>
+1. construct a TM W that works as follows:
+<br>
+<br>
+W="on input (s)
+<br>
+1. if s does not end in 0, REJECT.
+<br>
+2. if s does end in 0, return M(w)."
+<br>
+<br>
+2. 
+Run X2 on W.  If X2 accepts, REJECT.  If X2 rejects, ACCEPT."
+<br>
+<br>
+Note that W either accepts no strings, if M does not accept w,
+or accepts exactly the strings that end in 0, if M accepts w.
+Thus XA decides Atm, an undecidable language.
+
+<li>
+(10 marks) Due Friday April 5. 
+The proof that SAT reduces in polynomial time to 3SAT 
+involves a method to write any CNF clause as a logically equivalent 
+3SAT boolean formula.  Use the method to construct a 3SAT equivalent 
+to <b><br>
+(
+x<sub>1</sub> &or; 
+x<sub>2</sub> &or; 
+x<sub>3</sub> &or; 
+x<sub>4</sub> &or; 
+x<sub>5</sub> &or; 
+x<sub>6</sub> &or; 
+x<sub>7</sub> &or; 
+x<sub>8</sub> 
+)</b>
+
+</li>
+
+<li>
+(10 marks)
+Due Friday April 5. 
+Consider the problem WEIGHTY_CYCLE(&lt;G,w,K&gt;| G=(V,E) is a graph, 
+w: E&rarr; Z<sup>+</sup> &cup; {0} is a weight function on edges, and 
+there exists a cycle of weight K or greater in G }.
+<br>
+The weight of a cycle is the sum of the weight of the edges in the cycle.
+<br>
+Prove that WEIGHTY_CYCLE is NP-complete.  
+Remember to first prove it is in NP.
+<!--
+Sipser Problem 7.11
+<li>
+(8 marks)
+Sipser Problem 7.17
+<li>
+(4 marks)
+Sipser Problem 7.20
+<li>
+{(8 marks)
+Sipser Problem 7.22  AND
+(8 marks) Sipser Problem 7.29} 
+OR (16 marks)
+Sipser 7.32
+-->
+</ol>
+<hr>
+<a href="a4.html">Previous Assignment</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </body>
+
+</html>

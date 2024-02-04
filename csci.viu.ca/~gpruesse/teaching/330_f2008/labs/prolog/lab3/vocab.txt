@@ -1,0 +1,78 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Practical Session: Grammars in Prolog
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% simple DCGs (definite clause grammars) are like CFGs,
+%    the element on the LHS is a nonterminal,
+%    elements on the RHS are terminals if they are in a list, e.g. [plane]
+%    or are nonterminals otherwise
+%
+% to verify if a list is valid under the grammar you use the nonterminal
+%    name as the query, the list you're checking as the first argument,
+%    and an empty list as the second argument
+%
+% for instance, with the grammar below, suppose we want to test the validity
+%    of the sentence "the big red bird flew quickly"
+% we would issue the query 
+%    sentence([the, big, red, bird, flew, quickly], []).
+% and the response would be yes or no,
+%    indicating if the list formed a valid sentence under the grammar
+
+noun --> [plane].
+noun --> [bird].
+verb --> [flew].
+verb --> [landed].
+article --> [the].
+article --> [a].
+adverb --> [safely].
+adverb --> [quickly].
+adjective --> [red].
+adjective --> [big].
+verbphrase --> verb.
+verbphrase --> verb, adverb.
+verbphrase --> adverb, verb.
+qualifiednoun --> noun.
+qualifiednoun --> adjective, noun.
+nounphrase --> qualifiednoun.
+nounphrase --> article, qualifiednoun.
+sentence --> nounphrase, verbphrase.
+
+% adding raw prolog to the grammar:
+%   we can add additional parameters and tests to our grammar
+%   with conventional prolog code, but this must be enclosed in
+%   { } to distinguish it from the grammar composition
+%
+% this is often used to perform extra processing or identification of 
+%   the actual terminals used
+% 
+% example:
+%   suppose that, in addition to checking whether something simply was a noun,
+%      we also wanted to identify what kind of noun it was
+%   we could create our own noun types, e.g. person, place, thing,
+%      and use additional raw prolog goals to verify which one was appropriate
+alive(bird).
+alive(fred).
+room(office).
+room(den).
+noun(creature, P) --> [P], { alive(P) }.
+noun(place, R) --> [R], { room(R) }.
+noun(thing, _) --> noun.
+
+% This would be called in a query by passing uninstantiated variables
+%    as the first two parameters (to retrieve the type and actual item)
+%    then the source list and empty list parameters, e.g.
+% noun(Type, Noun, [bird], []).
+%     Yes: Type = creature, Noun = bird
+% noun(Type, Noun, [plane], []).
+%     Yes: Type = thing, Noun = plane
+%
+% When the time comes to add type-checking and other analysis to your
+%    prolog assignment I would generally recommend the latter format,
+%    where the LHS nonterminal takes one parameter to indicate
+%    what subtype of item is being validated, and a second 
+%    parameter to record the specific item.
+% The RHS then lists the specific components that make up the
+%    LHS, with possible raw prolog checks included in { }
+

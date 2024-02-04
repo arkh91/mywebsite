@@ -1,0 +1,63 @@
+
+<html>
+<head><title>CSCI 330 Fall 2008: Labs</title></head>
+<body>
+<center><h4>CSCI 330 Fall 2008: Prolog Definite Clause Grammars</h4>
+<br> Sept 25
+<br> Review file: <a href="extra_prolog.txt">extra_prolog.txt</a>  </center>
+<br> 
+<b>Part I. Recursion in Prolog</b>
+<p>
+Hand in your sort from Lab 1.  It should be called sort1, and a query will be
+something like the following:
+<pre>
+sort1([6,2,9,3,1,10],L).
+
+L=[1,2,3,6,9,10]
+yes
+| ?-
+</pre>
+
+<p><p>
+<b>Part II.  Grammars in Prolog</b>
+<p><p>
+Prolog supports a way of defining grammars.  The syntax is 
+<p>
+<pre>
+aplus --> [a], aplus.
+aplus --> [a].
+
+intplus --> [X], intplus, {integer(X)}.
+intplus --> [X], {integer(X)}.
+</pre>
+
+Now we can query as follows:
+<pre>
+intplus([3,4,6,33],[]).
+</pre>
+and it returns true or false.
+<p><p>
+
+
+Download and examine the file
+<a href="vocab.txt">vocab.txt</a>, then write a prolog grammar for 
+expressions over identifiers <tt>x, y</tt> and <tt>z</tt>, and 
+integers, and '+' and '*'.  Your grammar should parse in a manner
+that reflects precedence of operations, and should be unambiguous.  
+
+<p>
+Note that one of right-recursion or left-recursion works, the other 
+gives stack overflow problems.  Which is which?  Write a one-line reason
+why one is preferred, that mentions how Prolog probably resolves queries.
+Write it in your expression file as a comment.
+
+<p><p>
+
+
+
+
+
+</body>
+</html>
+
+

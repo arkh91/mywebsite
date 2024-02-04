@@ -1,0 +1,52 @@
+
+<html>
+<head><title>CSCI 162 Spring 2018: Labs</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: Circuit Lab: A Simple Circuit</h4>
+<br> 
+</center>
+
+
+For this lab, you will use the Logic Gate Simulator available 
+from the <b>Applications menu &rarr; Education &rarr; Logisim.</b>
+<!--
+<a href="https://academo.org/demos/logic-gate-simulator/">
+Academo.org</a>.
+-->
+
+
+In this lab, we will design and implement (in a web simulator) a
+circuit that computes the function that takes four inputs,
+x0, x1, x2, and x3, and evaluates to TRUE (on) if an even
+number of the inputs are TRUE, and FALSE if an odd number
+of the inputs are TRUE.  
+<ol>
+<li>
+Construct the Truth Table for the boolean function.
+<li>
+Design the circuit just out of AND, OR and NOT gates that will compute
+x0 XOR x1.  Check that it is correct by 
+testing it on all possible inputs.  Label this output "odd x0, x1"  
+<li>
+Replicate it for computing x2 XOR x3.  Test on a few inputs. Label it 
+"odd x2, x3".
+<li>
+Construct the equivalent for "even x0, x1" and "even x2, x3".  Consider 
+how to do so while "reusing" the circuits you already have available
+on the board.
+<li>
+Combine the outputs to form "even" and "odd".  Note that 
+"even" = ("even x0, x1" AND "even x2, x3") OR 
+("odd x0, x1" AND "odd x2,x3").  
+<li>
+Test this circuit on the 16 possible input combinations, and debug 
+if necessary.
+</ol>
+
+
+
+
+</body>
+</html>
+
+

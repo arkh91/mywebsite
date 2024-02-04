@@ -1,0 +1,83 @@
+
+<html>
+<head><title>CSCI 162 Spring 2018: Labs</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: 7 Segment Display Circuit Lab</h4>
+<br> 
+</center>
+
+
+For this lab, you will use the Logic Gate Simulator available 
+from the <b>Applications menu &rarr; Education &rarr; Logisim.</b>
+<!--
+<a href="https://academo.org/demos/logic-gate-simulator/">
+Academo.org</a>.
+-->
+
+Use Logisim to program a 7-segment display.  
+<ol>
+<li>
+Write (on paper) the truth-table entries for all the integers from
+0 to 9.  The inputs are (most significant to least significant)i3, i2, i1, i0, and the outputs are
+in this order: <br>
+middle, topleft, top, topright, bottomleft, bottom, bottomright.
+You can do this collectively, with your neighbour, or by yourself. Make sure
+you understand how these boolean functions were arrived at.
+If you like, you can put a "don't care" value (X, in logisim) for 
+the bottom of a "9" and for the top of a "6".  (Let me know which one 
+logisim decides is the best option to minimize the circuit.)
+
+<li>
+Select Project from the top menu in Logisim.
+Enter inputs i2, i1, i0.  <br>
+Enter outputs m, tl, t, tr, bl, b, br.
+<br>
+Enter the entries from your truth table.
+Enter (or leave it as the default) "X" for the don't care 
+values that are at the bottom of the table.
+It is handy if the columns are in the order given above.
+<li>
+Click on Minimized.  Check out the Karnaugh map that Logisim has 
+found for m, and for tl, and for tr (scroll through the outputs to
+see the K-maps).
+<
+Click Build Circuit.  
+<li>
+Select Input/Output: Seven Segment Display.
+Connect to pins on top, from left to right, the outputs m, tl, t, tr.
+Connect to pins on bottom, from left to right, the outputs bl, b, br.
+<li>
+Test all settings:
+<br>
+0000 = "0"
+<br>
+0001 = "1"
+<br>
+0010 = "2"
+<br>
+0011 = "3"
+<br>
+0100 = "4"
+<br>
+0101 = "5"
+<br>
+0110 = "6"
+<br>
+0111 = "7"
+<br>
+1000 = "8"
+<br>
+1001 = "9"
+<br>
+
+<li>
+What gets displayed if the inputs are 1101, or 1011?
+</ol>
+
+
+
+
+</body>
+</html>
+
+

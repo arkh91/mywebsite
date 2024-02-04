@@ -1,0 +1,11 @@
+reverse1([],[]).
+reverse1([H|T],L):- attachelement(T,H,L).
+
+attachelement([],X,[X]).
+attachelement([H|T],X,[H|T2]) :- attachelement(T,X,T2).
+
+ismember1(X,[X|_]).
+ismember1(X,[_|T]):- ismember1(X,T).
+
+
+

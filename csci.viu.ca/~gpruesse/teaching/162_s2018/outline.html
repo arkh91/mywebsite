@@ -1,0 +1,433 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; OSF1 V5.1 alpha) [Netscape]">
+   <title>Topics in Computing Science 162</title>
+</head>
+<body>
+
+<center>
+<h2>
+Computing Science 162</h2></center>
+
+<center>
+<h3>
+Topics in Computing</h3></center>
+
+<center>
+<h4>
+Course outline for Spring 2018</h4></center>
+
+<b>CSCI 162 (4) Topics in Computing Science</b>  <br>
+An introduction to applied and theoretical concepts in Computer Science.  Topics include fourth generation languages, computer organization, system software, software engineering principles, and theory of computation. (3:0:1)
+<br>
+<em>Prerequisite:</em>  Min "C-" CSCI 160.
+<p><br>
+<hr>
+<table>
+<tr>
+<td><b>Instructor:</b></td>
+
+<td><a href="http://csci.viu.ca/~gpruesse">Dr. Gara Pruesse</a></td>
+</tr>
+
+<tr>
+<td>Office:&nbsp;</td>
+
+<td>Bldg 315, Room 218</td>
+</tr>
+
+<tr>
+<td>Phone:&nbsp;</td>
+
+<td>753-3245 Local 2337</td>
+</tr>
+
+<tr>
+<td>email:&nbsp;</td>
+
+<td>Gara [dot] Pruesse [at] viu [dot]  ca</td>
+</tr>
+
+<tr>
+<td><b>Office Hours</b>:&nbsp;</td><td> Tue 3:00-4:00, Thur 1:30-2:30</td>
+
+</tr>
+<tr>
+<td><b>
+Text:</b> &nbsp;</td><td><em>
+There is no required text for this course. Web materials will be posted to this course
+outline.
+</em>
+</tr>
+<tr>
+<b>Lecture:</b> Tue, Thu 8:30-10:00 B255/140
+<br>
+<b>Lab:</b> Tue 1:30 OR Thu 2:30 B315/102
+</table>
+
+<h3>
+Content</h3>
+The following is roughly the schedule for the course:
+<blockquote>
+<table BORDER >
+<tr>
+<td>Week</td>
+
+<td>Topic</td>
+
+<td>Useful links</td>
+<td>Homework/Required Reading/Viewing</td>
+<td>Lab Link</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP>Jan 9, 11 &nbsp;</td>
+
+<td VALIGN=TOP>What is computer science? Overview of the course. Defn of Algorithm</td>
+
+<td>
+ <a href="http://www.mines.humanoriented.com/410/books/boolean_algebra.pdf">
+ Boolean Algebra
+</td>
+<td>
+<a href=
+"https://www.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/v/what-are-algorithms">What Are Algorithms (video)</a>
+</td>
+
+<td><a href="labs/1.UseYourAccount.html">Lab 1</td></a>
+</tr>
+
+<tr>
+<td VALIGN=TOP>Jan 16, 18</td>
+
+<td VALIGN=TOP>Digital Circuits, DNF, Karnaugh Maps
+</td>
+<td>
+<a href="https://en.wikipedia.org/wiki/Conjunctive_normal_form">CNF</a>,
+<a href="http://www.ee.surrey.ac.uk/Projects/Labview/minimisation/karnaugh.html">Karnaugh Maps</a> 
+<a href="https://en.wikibooks.org/wiki/Digital_Circuits/Logic_Operations">
+Logic Operations</a>
+
+<a href="http://www.cburch.com/logisim/">Logisim</a>
+<a href="http://www.ee.surrey.ac.uk/Projects/Labview/minimisation/karrules.html">Karnaugh Rules</a> 
+<a href="http://www.site.uottawa.ca/~petriu/Digital-Logic.pdf">Digital Logic, 7-segment display, and Karnaugh Maps (U. Ottawa)</a>
+<br>
+From Page 12 on of
+<a href="http://uav.ece.nus.edu.sg/~bmchen/courses/EG1108_Digital.pdf">Designing Logic Circuits</a> is good coverage of the material.  Note they use
+the notation for logic where "AND" is denoted as multiplication, "OR" with
+sum, and "NOT" is overline.  Hence AB + C is the same as
+A &and; B &or; C
+</td>
+<td>
+<a href="assign/Assign1.html">Assignment 1</a>; partial
+<a href="assign/Assign1Sol.html">Solutions 1</a>.  As an exercise,
+do <a href="assign/2017/Assign1.html">Last Year's Assignment</a>.
+</td>
+<td><a href="labs/2.circuits.html">Lab 2: Circuits</td></a>
+
+</tr>
+
+<tr>
+<td>Jan 23, 25</td>
+
+<td>Representing Data </td>
+
+<td>Wikipedia on <a href="http://en.wikipedia.org/wiki/Floating_point">Floating Point</a>, <a href="http://en.wikipedia.org/wiki/Binary-coded_decimal">BCD</a>,
+<a href="https://en.wikipedia.org/wiki/Ones%27_complement">One's</a> and <a
+href="https://en.wikipedia.org/wiki/Twos%27_complement">Two's Complement</a></td>
+
+<td>Tools for Learning: BBC serves up course material for 
+high-school students in the UK. They cover some of the material in the
+course, though not to great depth.  The material and the self-tests 
+make a nice, gentle review of some topics.
+Note: they use the term "denary" for base-10.
+<br>
+Review the following material and do the self-tests at 
+<a href="https://www.bbc.co.uk/education/subjects/z34k7ty">
+BBC Bitesize:</a> <br>
+<a href="https://www.bbc.co.uk/education/guides/zjfgjxs/revision">
+Binary Numbers and Binary Addition
+<br>
+<a href="https://www.bbc.co.uk/education/guides/zp73wmn/revision">Hexadecimal</a> (skip the material on colour)
+</td>
+<td><a href="labs/3.7segmentDisplay.html">Lab 3: 7 Segment Display</td></a>
+</tr>
+
+<tr>
+<tr>
+<td>Jan 30, Feb 1 </td>
+<td>Computer Architecture</td>
+
+
+<td>
+<a href="https://mariejs.xyz/book.pdf">MARIE cpu simulator manual</a>
+<br>
+<a href="http://www.edwardbosworth.com/CPSC2105/Lectures/Slides_05/Chapter_04/MARIE_AssemblyLanguage.htm">A lecture on MARIE Assembly language</a>
+<br>
+<a href="https://gist.github.com/mathewmariani/91f471422c4ac0b5ee37">Examples of MARIE code</a>
+<br>
+<a href="http://www.edwardbosworth.com/CPSC2105/Lectures/Slides_05/Chapter_04/MARIE_Organization.htm">A lecture on MARIE Architecture</a>
+<br>
+<a href="https://github.com/MARIE-js/MARIE.js/wiki/MARIE-Instruction-Set-(with-Opcodes)">Opcodes</a>
+<br>
+<a href="http://samples.jbpub.com/9781449600068/00068_CH04_Null3e.pdf">Architecture Chapter from the developers of MARIE</a>
+<br>
+</td>
+<td></td>
+<td><a href="labs/4.comparch.html">Lab 4: Computer Architecture 1</td></a>
+</tr>
+
+<td>Feb 6, 8</td>
+
+
+
+<td VALIGN=TOP>Computer Architecture: microcode implementation
+of MARIE instruction set; Intro to Operating Systems</td>
+<td>
+<a href="foss-history-unix.jpg">Unix Family Tree (jpg)</a>; 
+<a href="https://www.cheatogrpahy.com/davechild/cheat-sheets/linux-command-line/">Linux Command Cheat Sheet</a>; 
+<a href="../../../~wesselsd/guides/unix.html">Dave Wessels Guide to Unix</a>
+</td>
+<td><a href="http://hwmath.com/dev/MarieSim/Marie-Instruction-Set-Cheat-Sheet.pdf">
+MARIE instruction set cheat sheet</a></td>
+<td><a href="labs/5.comparch2.html">Lab 5: MARIE program (computer architecture II)</td></a>
+</tr>
+
+<tr>
+<td VALIGN=TOP>Feb 13, 15</td>
+<td>Operating Systems: Linux</a></td>
+<td>
+<a href="http://www.howtogeek.com/189036/android-is-based-on-linux-but-what-does-that-mean/">Android is based on Linux</a>; 
+<a href="operatingSystems.html">Operating Systems notes</a>
+</td>
+<td>
+</td>
+<td>
+<a href="labs/6.os1.html">
+Lab 6: Linux 1</a>
+</tr>
+
+<tr>
+<td VALIGN=TOP>Feb 20, 22</td>
+
+<td VALIGN=TOP>Prolog intro; midterm review</td>
+
+<td>
+<a href="midtermsample.html">Sample Midterm</a><br>
+<a href="https://en.wikibooks.org/wiki/Prolog">Prolog Wikibook</a>
+<!--<a href="https://people.eecs.berkeley.edu/~gongliang13/lambda/">
+Lambda calculus interpreter</a>-->
+</td>
+<td>
+</td>
+<td>
+<a href="labs/7.prologfamily.html">Prolog Family</a>
+</tr>
+
+<tr>
+<td VALIGN=TOP>Feb 27, Mar 1 </td>
+
+<td VALIGN=TOP>Study Days -- No Classes</td>
+
+</tr>
+
+<tr>
+<td VALIGN=TOP>Mar 6, 8</td>
+<td VALIGN=TOP>Midterm; Logic Programming</td>
+<td>
+<a href="http://www.swi-prolog.org/">SWI-Prolog documentation</a>
+<br>
+<a href="http://www.learnprolognow.org/l6pnpage.php">Learn Prolog Now!</a>
+<br>
+<a href="https://www.doc.gold.ac.uk/~mas02gw/prolog_tutorial/prologpages/lists.html">Prolog Lists examples</a>
+</td>
+<td></td>
+<td>
+<a href="labs/8.labPrologLists.html">Prolog Lists</a>
+</td>
+</tr>
+<tr>
+<td VALIGN=TOP>Mar 13, 15</td>
+<td>Finite Automata</td>
+<td><a href="http://www.cs.yale.edu/homes/perlis-alan/quotes.html">Perlis Epigrams</a>
+</tr>
+<tr>
+
+<td VALIGN=TOP>Mar 20, 22</td>
+<td VALIGN=TOP>Finite Automata, Regular Expressions</td>
+<td>
+<a href="https://xkcd.com/208/">Why regular expressions are useful</a>, 
+<a href="http://www.csd.uwo.ca/~moreno/CS447/Lectures/Lexical.html/node2.html">Moreno's Automata Notes</a>; 
+<a href="https://en.wikiversity.org/wiki/Automata_theory/Finite_automata">Wikiversity</a>; 
+<!--<a href="http://www.cs.umd.edu/class/fall2008/cmsc330/hw/regexp_sol.pdf">Some sample Exercises with solutions</a> (note: it uses &cup; for + in regular expressions);
+<a href="http://web.stanford.edu/class/archive/cs.cs103/cs103.1142/lectures/12/Smal12.pdf">Stanford slides on automata</a>; -->
+
+See page 556 of <a href="http://infolab.stanford.edu/~ullman/focs/ch10.pdf">
+these notes</a> for regular expression notes.
+</td>
+<td></td>
+<td><a href="labs/9.prologFA.html">Lab 9: Prolog FA</a></td>
+
+</tr>
+
+<tr>
+<td VALIGN=TOP>Mar 27, 29</td>
+
+<td VALIGN=TOP>Church-Turing thesis; pseudocode; Algorithm Analysis</td>
+<td></td>
+<td>
+<a href="assign/Assign2.html">Assignment 2</a>
+</td>
+
+</tr>
+
+<td VALIGN=TOP>Apr 3, 5</td>
+
+<td VALIGN=TOP>Algorithm analysis: &Theta;, O, &Omega;</td>
+<td></td>
+
+</tr>
+
+<tr>
+<td VALIGN=TOP>Apr 10, 12</td>
+
+<td VALIGN=TOP>Algorithm Analysis; Review for Exam</td>
+
+<td>
+<a href="http://130.216.33.163/compsci220s1c/lectures/2014S1C/Part1/220-03.pdf">Georgy Gimel'farb slides (pdf)</a>, <a href="https://cathyatseneca.gitbooks.io/data-structures-and-algorithms/analysis/">Cathy at Seneca book (html)</a> (section on
+Intro to Algorithms Analysis, in 4 parts, is relevant)
+<a href="http://isites.harvard.edu/fs/docs/icb.topic600780.files/loop_analysis.pdf">loop analysis</a>
+<a href="notes/analysisNotes.html">16n<sup>2</sup>+5n &isin; O(n<sup>2</sup>/2 - 1).</a>
+</td>
+<td><a href="practice.pdf">Finite Automata and Regular Expressions Practice</a> for Quiz in Tutorial; <a href="finalpractice18.pdf">Practice Final</a></td>
+<td><a href="practiceSol.pdf">Solutions to FA and Regular Expression Practice Problems</a> Correction: the DFA for 1(a) should have a transition
+on a b from state 1 to state 3, and a loop on b at state 3.
+</tr>
+
+</table>
+</blockquote>
+"Useful links" may be added as the course progresses, at the discretion
+of the instructor. The "useful links" will not be a substitute for class
+notes. Class notes will not be made available.
+<br>
+<br>
+If time permits, other topics may also be covered, including possibly: data storage, ADTs, networks, algorithms.
+
+<p>
+
+<p>Although this is not explicitly a programming course, some assignments
+will involve programming in C++, Prolog or a "demo" assembly language.
+Students are expected to know all of the required C++, but other languages
+will be discussed in class.
+<h2>
+Grading:</h2>
+<b>
+Grade  = 25% Assignments + 24% Midterm + 3% Lab Participation + 3% Quizzes + 45% Final Exam
+<br>Alternative Grade  = 25% Assignments + 20% Midterm + 3% Lab Participation + 12% Quizzes + 40% Final Exam
+</b>
+The student will have the opportunity to write two more quizzes to help prepare for the exam.  If it is to the student's advantage, the alternative 
+grade will be used as the grade for the course.  
+<ul>
+<li>
+<b>Assignments</b></li>
+
+<br>There will be assignments worth 25% percent of your final
+grade. 
+<br>Programming
+assignments must be electronically mailed to me. The program must be sent
+as an attachment and must be in ASCII format. Any programs sent to me in
+MS-Word (or any other format not readily readable in a UNIX environment)
+will be assumed to not work properly. In other words, failure to send me
+an electronic ASCII version of the source code for your assignment will
+result in the non-rebuttable presumption that your assignment does not
+work.
+<p>All assignments, whether programming or not, must be submitted on paper.
+<br>Links&nbsp; to the assignments will appear on the CSCI 162 Assignments web page
+when they are available.
+<p>Each assignment will have a specified due date, and any assignments
+handed in after the due date will not be accepted unless there is a valid
+reason for the assignment being late.
+<p>
+<b> Participation in the labs is mandatory.</b> 
+<ul>
+<li>
+You <b>should</b> attend the labs, because what you learn in the labs will
+enable you to do the Assignments.
+<li>
+You <b>must</b> attend the lab, because it is a requirement of Science and Technology courses
+that the student successfully complete the lab section of the course in order to pass the course.
+<li>
+You <b>must</b> attend the lab, because attendence will be taken, and a participation grade
+will be given at each lab.  Non-attendence or non-participation will result in a zero for 
+that lab.  Each lab participation is worth 1/3% of your final mark, to a maximum of 3%. 
+Not much, but if you fail it, you fail the course (see bullet point 2, above).  
+</ul>
+
+<p>
+<b>Midterm</b></li>
+
+There will be one midterm on March 6.  It will count for a maximum
+of 25 percent of your final grade. The midterm will include material covered
+up to and including the class on Feb 14.
+<br>&nbsp;
+<li>
+<b>Final Exam</b></li>
+
+In addition, there will be a final exam worth 40
+percent. The mark on the final exam can replace the midterm mark, if it is
+to the student's advantage.  
+<br>An old final exam will be made available and I will go over the old
+final during the review class on April 12.
+<br>
+<b>You must pass the final to pass the course.</b>
+<br>&nbsp;
+
+<li><b>Quizzes</b></li>
+Occasionally, there may be short quizzes. The grades will be recorded, 
+and at the discretion of the instructor, 
+these marks may be used, only to students advantage, 
+and such advantage will not be given selectively but to the class as a whole.  
+<br>
+<br>
+<h4>
+Grades will be distributed as follows:</h4>
+
+<center><table BORDER >
+<tr>
+<td>A+ >= 90.0</td>
+
+<td>A >= 85.0</td>
+
+<td>A- >= 80.0</td>
+</tr>
+
+<tr>
+<td>B+ >= 76.0</td>
+
+<td>B >= 72.0</td>
+
+<td>B- >= 68.0</td>
+</tr>
+
+<tr>
+<td>C+ >= 64.0</td>
+
+<td>C >= 60.0</td>
+<td>C- >= 55.0</td>
+
+<td>D&nbsp;&nbsp; >= 50.0</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td>F otherwise</td>
+</tr>
+</table></center>
+</ul>
+
+
+</body>
+</html>

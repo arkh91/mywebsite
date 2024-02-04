@@ -1,0 +1,86 @@
+<html><head><title>CSCI 330 Fall 2008: Assignments</title></head>
+
+<body>
+<center><h4>CSCI 330 Fall 2008: Assignment 2 </h4></center>
+
+<p>
+
+</p>
+<h4><center>Due December 1, 4:30 pm.</h4></center>
+
+<ol>
+<li>
+In the lambda calculus, is &lambda;<tt>x.e</tt> equivalent to <tt>e</tt>
+whenever <tt>x</tt> has no free occurrence in <tt>e</tt>?  (Here <tt>e</tt>
+is an expression.)  Briefly argue your position.  
+</li>
+<li>
+On Lab 3, you were asked which works, right-recursion or left-recursion, in Prolog grammars.  Which works?  Write a one-line reason why one is preferred that mentions how Prolog probably resolves queries.
+</li>
+
+<li>
+What does Scheme do if you want to add (using `+') to a variable that currently contains
+a character?  a string?  a list?
+</li>
+
+<li>
+What are the design issues for selection structures?
+</li>
+<li>
+P 375 (7th edition) Q 5:  In a letter to the editor of CACM, Rubin (1987) uses the following code segment as evidence that the readability of some code with gotos is better than the equivalent code without gotos. This code finds th first row
+of an n by n integer matrix named x that has nothing but zero values.  
+<pre>
+for (i=1; i<=n; i++) {
+  for (j=1; j<=n; j++)
+      if (x[i][j] != 0 )
+         goto reject;
+      println( 'First all-zero row is:', i);
+      break;
+reject:
+  }
+</pre>
+
+Rewrite this code without gotos in one of the following languages: C, C++, Java, C#, or Ada.  Compare the readability of your code to that of the example code.
+</li>
+
+<li>
+P 423 (7th Edition) Q 5.  Consider the following program written in C syntax:
+<pre>
+void swap( int a, int b) {
+  int temp;
+  temp = a;
+  a = b;
+  b = temp;
+}
+void main() {
+  int value = 2, list[5] = {1,3,5,7,9};
+  swap(value, list[0]);
+  swap(list[0], list[1]);
+  swap(value, list[value]);
+}
+</pre>
+For each of the following parameter passing methods, what are all of the values of the variables <tt>value</tt> and <tt>list</tt> after each of the three calls to <tt>swap</tt>?
+<ol>
+<li>
+passed by value
+</li><li>
+passed by reference
+</li><li>
+passed by value-result
+</li>
+
+</ol>
+<li>
+Argue against the C design of providing only function subprograms.
+</li>
+<li>
+</li>
+</ol>
+
+CSCI 330 Homepage</a>
+<br><a href="http://csciun1.mala.bc.ca:8080/~gpruesse/">Gara Pruesse's Homepage</a>
+<br><a href="http://csciun1.mala.bc.ca:8080/">Computing Science Homepage </a>
+<br><a href="http://www.mala.bc.ca/">Malaspina University College Homepage</a>
+
+
+</body></html>

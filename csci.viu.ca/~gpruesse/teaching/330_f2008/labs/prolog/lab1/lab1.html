@@ -1,0 +1,65 @@
+
+<html>
+<head><title>CSCI 330 Fall 2008: Labs</title></head>
+<body>
+<center><h4>CSCI 330 Fall 2008: Getting Started (Again) in Prolog</h4>
+<br> Sept 11
+<br>  </center>
+<br> 
+
+<p><p>
+<b>Lists in Prolog</b>
+<p><p>
+1. Write a Prolog program that sorts a list. 
+It should be called by the following query:
+<p>
+sort([3, 19, 2, ... 70], X).
+<p>
+
+<p>
+<b>Specifying ranges of values in Prolog</b>
+<p><p><p>
+
+2. 
+Here is a simple Prolog program to generate the ways of making change for a dollar.
+
+<pre>
+change([H,Q,D,N,P]) :-
+	member(H,[0,1,2]),          /* half-dollar */
+	member(Q,[0,1,2,3,4]),      /* quarters */
+	...
+	S is 50*H + ...
+	S =< 100,
+	P is 100-S.
+
+</pre>
+Finish off the code so that you can query various ways of making change for a dollar.
+<p>
+Try out trace to see how Prolog backtracks.
+
+
+<p><p><p>
+<p><p><p>
+<p><p><p>
+2. In Prolog, enter the facts necessary to describe the tree on the board by
+defining all the necessary parent relations, and then defining child using
+parent.
+
+<p>
+Now write the predicates to compute the depth of a node.
+
+<p>
+Computing the height is trickier, and may require the use of "setof", which is different in this Prolog compiler.  Give it a try if you wish. 
+(The height is the 
+length (in edges) of the longest path to a leaf.)
+
+<p><p>
+
+
+
+
+
+</body>
+</html>
+
+

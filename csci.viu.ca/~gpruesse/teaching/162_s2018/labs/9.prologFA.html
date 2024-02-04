@@ -1,0 +1,149 @@
+
+<html>
+<head><title>CSCI 162 Spring 2018: Labs</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: Prolog Finite Automaton Lab</h4>
+<br> (March 20,22) 
+<br></center>
+<br> 
+
+Consider the finite automaton which accepts strings that 
+have an even number of a's.  The two states are p1, the start state
+and p2.  Since the empty string is accepted, p1 should be an accept 
+state.  Whenever the FA sees an a, it transitions from p1 to p2 or from 
+p2 to p1; if it sees a b, it stays in the current state. 
+
+<br><br>
+We might have several different finite automata.  To keep them
+separate, let us use the following convention: fa_p will have states 
+that start with p, and p1 will be its start state. In general,
+when we introduce a new FA, its states will start with a new letter, 
+say q, in which case the start state will be assumed to be q1. 
+<br><br>
+We could encode the FA fa_p as follows, in Prolog:
+
+<br><br>
+<pre>
+/* transitions for Finite Automaton fa_p  */
+
+transition(p1,a,p2).
+transition(p1,b,p1).
+transition(p2,a,p1).
+transition(p2,b,p2).
+
+final(p1).
+</pre>
+
+We need to tell Prolog how to run a computation of fa_p on a given string.
+Let us design the predicate `computation(P,[string,as,a,list],Q)'
+to be satisfied if fa_p, currently in state P,  would, on input [string,as,a,list], end up at state Q.
+<br><br>
+How can we tell prolog how fa_p should compute?  We work recursively. 
+First, the small cases:
+The computation on an empty string is just to stay at the current state:
+
+<pre>
+computation(P,[],P).
+</pre>
+Now we need to tell it how to compute if there is at least one letter
+in the string -- a letter that is at the head of the string.  We give Prolog
+a recursive direction: we tell it to make the appropriate 
+transition from the current state, depending on the letter at the
+head of the string (H), and then recursively compute from the new
+state on the Tail of the string.
+
+<pre>
+computation(P, [H|T], Q):-
+   transition(P,H,X),
+   computation(X,T,Q). 
+</pre>
+
+Now we tell Prolog to accept a string String if there is a computation 
+that takes the FA, on input String, from the start state to some final 
+state.
+
+<pre>
+/* A string is accepted by fa_p if a computation that starts at p1
+ on the string will end up in a state that is final.
+accept_p(String):- computation(p1, String, F), final(F).
+*/
+</pre>
+
+<br><br>
+
+<b>For this lab, </b>
+<ol>
+<li>You are to write a prolog file called 'compute.pl'
+and it tells prolog how to run a FA on a string (i.e., the 
+predicates given above).
+
+<br><br>
+<li>
+In a file called fa.pl, specify the transition function given above, and test it on a few strings. 
+Test it by entering the prolog interpreter, loading the file using
+the "[compute]." goal, then the "[fa]" goal, then type:
+<pre>
+accept_p([a,a,b,b]).
+</pre>
+
+This should provoke the response "Yes", but if you query 
+<pre>
+accept_p([a,a,b,b,a]).
+</pre>
+
+the prolog interpreter will say "No" -- in this case, only the
+strings with an even number of a's will be given a ``Yes" response.
+<br><br>
+<li>
+For the fa_p given above,
+query whether the string aabab is accepted.
+<br><br>
+<li>
+For the fa_p given above, query to generate six different strings
+that Prolog says are accepted by fa_p.
+<br><br>
+<li>
+Edit the file fa.pl to add transitions for states that sart with q.
+Write a FA that accepts all strings that contain the substring baab.
+Remember to identify the final states for this new FA.
+<br><br>
+<li>
+Test fa_q on strings abbabaabba ("accept_q([a,b,b,a,b,a,a,b,b,a])."), 
+babaaab, the empty string.  Remember to
+load compute.pl as well as the fa file if you go out of prolog and come back in.
+<br><br>
+<li>
+Get Prolog to generate six strings that have baab as a substring.
+<br><br>
+<li>
+Write a FA fa_r that accepts all strings in the language a<sup>*</sup>(bb+ba)<sup>*</sup>.
+Tuesday's lab won't know what that is yet; so just take it to 
+be the language whose strings can be described as follows: 
+"any number of a's followed by any number of strings from 
+the set {bb, ba}."  We'll do the transition diagram on the board.
+<br><br>
+<li>
+Test fa_r on strings abbabaabba, babaa, the empty string.
+<br><br>
+<li>
+Write fa_s that accepts 
+the union of the language accepted by fa_r and fa_q -- i.e., all
+strings that either contain baab or are a bunch of a's followed by 
+zero or more occurences of strings from the set {bb, ba}.
+Do so using non-determinism, epsilon transitions, and fa_r and fa_q.
+Test fa_s on strings like baab, aabb, abab.  Of these, it should fail on
+the last one only.  How does Prolog know which "lucky choice" to make?
+<br><br>
+</li>
+</ol>
+<p><p>
+<p><p><p>
+
+
+
+
+
+</body>
+</html>
+
+

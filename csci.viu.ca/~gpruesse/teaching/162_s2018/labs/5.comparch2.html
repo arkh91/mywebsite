@@ -1,0 +1,90 @@
+
+<html>
+<head><title>CSCI 162 Spring 2018: Marie Lab 2</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: Computer Architecture Lab 2: A Subroutine construct</h4> 
+<br> (Feb 6 and 8) </center>
+
+For this lab, you will write two MARIE assembly language programs.   
+ 
+
+<p><p>
+Go to the MARIE option at Applications -> Other, or use the <a href="https://mariejs.xyz">Marie web app</a>
+<p>
+
+<br><br>
+Write an assembler program that 
+does the following:
+<br>
+<ul>
+<li>
+has a hardcoded integer called "secret", stored in hex format
+<li>
+gets input from the user in decimal format
+<li>
+puts output in character format
+<li>
+plays "guess the integer" with the user: gets an input integer 
+from the user, and 
+responds 'L' if the secret is less, 'H' if the secret is more than the guess, 
+and allows another guess.
+If the secret number is correctly guessed, then 
+the program will print it out in decimal, then 
+submit that number as a parameter to a function called double 
+and prints out the returned value; then submits that value to 
+double and prints the output of that call as well.  
+
+</ul>
+For example, if the secret hex number is D, then your guesses and output
+might be the following:
+<pre>
+10
+H
+15
+L
+14
+14 28 56
+
+
+</pre>
+You can label the parts of the code that you jump to `if', `then', `else', and `endif', or use other labels that identify the conditions that 
+the code fragment is meant to handle (such as guessIsLower or 
+guessIsHigher or guessedCorrectly). 
+Note that `skipcond 400' is the instruction for skipping the next instruction if the AC is zero.
+<p><p>
+
+The subroutine (function) should have label "double", and you use JnS to 
+get there, and JumpI to return back to the line of code you left.  Recall the label should leave room for a return address, as in
+
+<pre>
+double,  hex 0
+         load double_input
+         subt zero
+         store double_output
+         JumpI double
+
+</pre>
+<br>
+<br>
+The first line of "double" code is the spot to store 
+the return address. 
+After that is the code to double the value that is in double_input, and 
+store it again in double_output.  Then return where control left off before
+entering the subroutine by executing "JumpI double".
+(Note that the above code is not correctly doubling the value -- it 
+is meant only as an example of how to formulate the code to which your
+program will "Jump and Store" or JnS.)
+
+
+<p><p>
+
+<p><p><p>
+
+
+<a href="http://csci.viu.ca/~gpruesse/teaching/162/outline.html">CSCI 162 Course Outline</a>
+
+
+</body>
+</html>
+
+

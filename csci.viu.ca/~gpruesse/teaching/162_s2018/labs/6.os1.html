@@ -1,0 +1,498 @@
+  <h1>
+   OS Lab: Linux files and directories; a couple of good editors; and some
+   more advanced Linux commands.
+  </h1>
+  <p>
+   The purpose of this assignment is to explore Linux commands, file systems, and shell scripting.
+  </p>
+<p>
+<ol>
+<li>
+Do you have a directory for your 162-related material?  If not, create it
+using "mkdir 162" or "mkdir csci162". Change directory into your CSCI 162 directory using
+the cd command, as in "cd 162" or "cd csci162". 
+<ol>
+<li>
+In your 162 directory, you will make a new directory called labs/oslab1.
+First, try the command "mkdir labs/oslab1".  Does it work?  If not, try 
+"mkdir -p labs/oslab1".  The -p option indicates that the parent directories should also be made.  For example, the command "mkdir -p level1/level2/level3" will make 
+a directory level1 in the current directory, and in level1 will be a directory level2, and so on.
+<br>
+<b>While in your oslab1 directory, use the -p option for mkdir to make level1/level2/level3.</b>
+<br>
+cd into level1/level2/level3
+<br>
+create a file f1 by typing the following
+<pre>
+cat > f1
+this is a test
+ctrl-d
+</pre>
+Now type "cat f1" and press return.  You should get your text 
+back, i.e., "this is a test".  The command above redirected 
+concatenation ("cat") into a file you called f1; and ctrl-D 
+terminated the "cat" operation and closed the file.
+<br><br>
+Now in a single cd command, change directory back up to level1.
+("cd ../..")
+While in this directory, execute this: 
+<pre>mkdir -p level2a/level3a
+</pre>
+Do a ls; then cd down to level3a. Do ls; you should see that there
+is nothing there. 
+<br>
+cat the file f1, without using cd.  How do you identify the file using
+a relative path?  Note that, in cd, '.' means the current directory, 
+and '..' means the parent directory.  Therefore, to cat f1, you
+can enter the following command:
+<pre>
+cat ../../level2/level3/f1
+</pre>
+Now cat that file into a new file you will call f1a
+<pre>
+cat ../../level2/level3/f1 > f1a
+</pre>
+Now type ls to see what is in the current directory.  Type pwd to see the 
+path to the current directory.
+<li>
+<b>cd</b> back into oslab1, in whatever manner you wish.
+<br><br>
+Click on the following link to a text file, and grab the text in the 
+files (Ctrl-C). 
+<br>
+You will now drop the text into a file that you create, by doing the 
+following:
+<br>Type this command on your command line:<br>
+<b>cat > einstein1.txt
+<br></b>
+Now drop the text that you grabbed previously, using Ctrl-Shift-V. 
+<br>
+Everthing you type now will go into the file einstein1.txt, 
+until you Ctrl-D.
+Add some of your own text by typing anything, then Ctrl-D.
+<br>
+Copy the files <a href="os/einstein1.txt">einstein1.txt</a> and 
+<a href="os/einstein2.txt">einstein2.txt</a> into this directory, 
+using the <b>cat</b> command.
+<li>
+Copy the files <a href="os/sun1.txt">sun1.txt</a>, 
+<a href="os/sun2.txt">sun2.txt</a> and 
+<a href="os/sun3.txt">sun3.txt</a> into this directory.
+</ol>
+<br>
+<br>
+<li>
+In most Linux systems, there are several ways to create
+a file.
+<br>
+<ol>
+<li>
+Using the <b>touch</b> command:
+<pre>
+gpruesse@otter:~$ ls my-file
+ls: my-file: No such file or directory
+gpruesse@otter:~$ touch my-file
+gpruesse@otter:~$ ls -l my-file
+-rw-r--r-- 1 gpruesse users 0 2017-10-02 21:22 my-file
+gpruesse@otter:~$ touch my-file
+gpruesse@otter:~$ ls -l my-file
+-rw-r--r-- 1 gpruesse users 0 2017-10-02 21:23 my-file
+</pre>
+Here the command touch creates an empty file if the file does not already exist and it only changes its modification
+date if it does. The command ls lists all the files and directories that are under the directory you are
+in. The option -l displays different aspects of the files being listed. (See below)
+<li>
+Using the <b>cat</b> command:
+<pre>
+gpruesse@otter:~$ ls my-file
+ls: my-file: No such file or directory
+gpruesse@otter:~$ cat > my-file
+</pre>
+The > sign directs the following into the file.
+<pre>
+This is the first line.
+This is the second line. 
+^Cntrl-d
+</pre>
+Terminate with Cntrl-d.
+<pre>
+gpruesse@otter:~$ cat my-file 
+</pre>
+Without the > sign, it concatenates the file to "standard-out" filestream -- i.e., it prints contents of file to the screen.
+<pre>
+This is the first line.
+This is the second line.
+gpruesse@otter:~$ cp my-file my-file2
+gpruesse@otter:~$ cat my-file my-file2
+This is the first line.
+This is the second line.
+This is the first line.
+This is the second line.
+gpruesse@otter:~$ cat my-file my-file2 > my-file3 
+</pre>
+The >  sign redirects into a file
+<pre>
+gpruesse@otter:~$ cat my-file3
+This is the first line.
+This is the second line.
+This is the first line.
+This is the second line.
+</pre>
+cat is a command that assumes different functions in different situations. It can be used
+<br>
+(a) to create files,
+<br>
+(b) to concatanate files, meaning to add two or more files consecutively,
+<br>
+(c) or to just simply display a file.
+<br>
+<br>
+<li>
+Using an editor. The most popular editors are emacs, vim (or vi), nano, pico and nedit but there are
+many more. My favorite editor is vim, but many people like emacs because it is
+extremely powerful and flexible.
+<br><br>
+Below are examples of how to manipulate a file using emacs and vi.
+<br><br>
+
+Emacs :
+<br>
+(a) Invoke emacs.  The current version on otter has a nice graphical interface, so that you can
+choose your actions from drop-down menus easily.
+<pre>
+gpruesse@otter:~$ emacs my-file &
+</pre>
+The & sign places a job to the background.  If you don't put the 
+ampersand at the end of the emacs command, the terminal window
+will run emacs in the foreground, in which case you won't be able 
+to run other commands from it.
+<pre>
+[1] 4771 
+</pre>
+At this time, an external window should pop up.
+<pre>
+gpruesse@otter:~$ jobs
+[1]+ Running xemacs my-file &
+</pre>
+(b) In the window that opens, type in the text normally as if you were typing in a Word document.
+<br>
+(c) It's good practice to save your work often while using an editor, so click on the third icon from the left
+on the toolbar on top of screen. Editors, in particular emacs usually allows tasks to be performed through
+keyboard shortcuts, which are key combinations that speed up typing. Saving your work in emacs or xemacs
+can be done by the key combination Cntrl-x Cntrl-s.
+<br>
+(d) Next, we are going to create a third line that is almost identical to the other second line, except we'll
+replace the word "second" with the word "third". For this go to the beginning of the second line and type
+Cntrl-k. This will cut the text and store it in a sort of a clipboard. Then type Cntrl-y once to undo the
+cutting of the second line, press enter to go on to the next line and then type Cntrl-y again to form the
+third line.
+<br><br>
+Now, you are at the beginning of the third line. Go to the end of the word 
+"second" and Alt-Backspace.
+This action erases entire words instead of erasing them letter-by-letter.
+You can now finally type the word "third".
+<br><br>
+Make sure to save again! As long as you don't save your work, it won't actually get written to disk and
+will be lost when you close your emacs session.
+<br>
+<br>
+(e) You can alternatively do all this by using the various menus and icons on the top of the screen. However,
+learning keyboard shortcuts using emacs allows you much flexibility and speed. A complete list of keyboard
+shortcuts is basically impossible but a concise collection can be found at various pages on the web :
+<ul>
+<li>http://www.cs.duke.edu/courses/fall01/cps100/emacs.html
+<li> http://www.engr.uvic.ca/ dastone/emacs-keys.html
+<li> http://naveen.wikidot.com/emacs-commonly-used-shortcuts
+For the time being, it’s sufficient for you to do a few basic exercises using emacs. 
+</ul>
+<br><br>
+Vi :
+<ol>
+<li>
+Invoke the editor vi.
+<pre>
+gpruesse@otter:~$ vi my-file
+</pre>
+There's no need to send vi to the background because unlike emacs, it opens the editor in the terminal and not
+in an external window.
+<li>
+vi has two modes : the insert mode and the command mode. The insert mode lets you type 
+into the file, while the command
+mode is for actions such as removing line, moving the cursor around and yanking text. In order to type into the
+file, type i. This will take you into the insert mode. You can then type text normally.
+
+<li>
+After you are done typing, you need to save your work before exiting. For this, type Esc. This is allow you to
+exit the insert mode and go into the command mode. Now, type :, you will see it appear at the bottom of the
+screen. If you would like to save and quit the file, type x. If you would like to save and continue working, type
+w. If you, instead, want to quit without saving changes, type q!. The ! forces quit without saving.
+</ol>
+<br><br>
+<b>Pico</b>
+<br><br>
+<ol>
+<li>Pico doesn't have modes so you can type right away.
+<li> Some keyboard shortcuts in pico are the same as those in emacs. You can for instance use Cntrl-k to cut a
+line. Yanking a line, however, has a different binding, namely Cntrl-u.
+<li> Once you are done writing, you can either type Cntrl-o and save without exiting or Cntrl-x to exit, which will
+prompt you to save the file.
+<li> The good thing about pico is that it lists relevant actions at the bottom of the screen although I find its
+capabilities rather limited in comparison to emacs.
+</ol>
+</ol>
+<br><br>
+<h3>More Linux Commands</h3>
+<br><br>
+<ol>
+<li>
+The <b>man</b> command
+<br><br>
+"man" is linux for "manual".  You can request the manual pages for 
+a linux command, say "grep", by typing
+<pre>
+man grep
+</pre>
+on the command line.  If you want all the man pages that 
+mention a certain word, like "print", type the command
+<pre>
+man -k print
+</pre>
+There's rather a lot, and it scrolls past quickly.  
+To get it to show you a page at a time, pipe the command into "more".
+The pipe is the |, and it is like a pipeline, directing the output 
+of one command (in this case, the text output from the "man -k print"
+command) into another command (in this case "more", which is exactly 
+like the "less" command, as in less is more ;-).  Use it and see 
+what more does to text.  Hit the spacebar repeatedly; what happens?
+When you've seen enough, you can use 'q' to
+quit "more".
+<br><br>
+Type the command "history", and see what shows up.  Again, you might 
+have too many commands in your history, so use the up arrow to get 
+back the last command ("history") and pipe that command into "more".
+Hit spacebar until you've seen 500 commands or you are back in the present.
+<br><br>
+<li><b>
+Comparing files : diff
+<br><br>
+</b>
+Suppose you have two files that are almost the same but you know that there are a few differences between them. You
+would like to know these differences and where in the file they occur. 
+The files einstein1.txt and einstein2.txt
+that you copied earlier both contain similar text with a few different words in each paragraph. First let's just see a
+brief account which says whther the two files differ.
+<pre>
+gpruesse@otter:~$ diff -q einstein1.txt einstein2.txt
+Files einstein1.txt and einstein2.txt differ
+</pre>
+Now let's see the lines where they differ. For this we'll simply invoke the diff command without any options.
+<pre>
+gpruesse@otter:~$ diff einstein1.txt einstein2.txt
+9,10c9,10
+< Jack Rosenberg remembers the time Einstein’s coworker asked him to
+< turn the tables and help give the famous scientist a present.
+---
+> Jack Rosenberg remembers the time Einstein’s colleagues asked him to
+> turn the tables and help give the famous scientist a gift.
+</pre>
+.....
+You'll see that the differences are given line by line together with line numbers.
+Sometimes, it is useful to see the differences in context, meaning displaying the differences with some lines around
+it. This is especially valuable if your text is sparse and it's 
+hard to understand the location of the differences without
+seeing what's around it. This function can be invoked using the -U option. You can decide how many lines you want
+to be displayed around the lines with differences.
+<pre>
+gpruesse@otter:~$ diff -U 1 einstein1.txt einstein2.txt
+--- einstein1.txt 2007-09-19 16:47:39.000000000 +0300
++++ einstein2.txt 2007-09-19 16:48:34.000000000 +0300
+@@ -8,4 +8,4 @@
+Albert Einstein was well known in Princeton for his generosity. But
+- Jack Rosenberg remembers the time Einstein's colleagues asked him to
+- turn the tables and help give the famous scientist a gift.
++ Jack Rosenberg remembers the time Einstein's coworkers asked him to
++ turn the tables and help give the famous scientist a present.
+@@ -22,3 +22,3 @@
+Einstein's most important findings, the theory of special relativity,
+- plans are now under way to remember the findings of the man who
++ plans are now under way to remember the discoveries of the man who
+revolutionized physics in 1905 by redefining scientists' perception of
+</pre>
+
+If you have time during the lab, explore awk, head, tail, and more on the 
+pipe, in the following section.
+<br><br>
+<li>
+<b>Extracting information from files : awk, head and tail; the pipe
+<br><br>
+</b>
+Suppose we have a file that contains several columns. We'd like to display the first three lines of items that are on
+the ninth column of this file. Download the file 
+<a href="os/columns2.txt">columns2.txt</a> 
+from the web.
+First let's learn how to display the first N lines of a file. You can do this using the command head. As you might
+have noticed by now, Linux commands usually have eccentric names... The default number of lines displayed with
+head is 10, however, you can override this by specifying the number of lines you would like to be displayed.
+<pre>
+gpruesse@otter:~$ head -3 columns2.txt
+(first three lines appear here)
+</pre>
+This is almost what we want except we would like only the ninth column (i.e. the numbers column) to be displayed.
+We do this using a command called awk. awk is really a pattern searching language in itself, which is very helpful for
+certain tasks. awk is ordinarily used to extract columns from files in the following way :
+<pre>
+gpruesse@otter:~$ awk '{print $5}' columns2.txt
+(this is not the data in columns2)
+-1090.13343774
+-1090.20757070
+-1090.24296462
+-1090.25563488
+-1090.27085564
+-1090.27693129
+-1090.28213580
+-1090.29131927
+</pre>
+In awk and in a lot of shell scripting, the direction of the quotation marks is very important. Whatever’s inside
+the ´{ }´ is interpreted as the instruction given to awk, which in our case is to print the fifth column of the file,
+designated by $5.
+However, this isn’t what we wanted to do. Instead of displaying the fifth column of the entire file, we are only
+interested in displaying the fifth column of the first three lines. A very common construct in Linux when we want
+to process the outcome of a command using a second command is the pipe, which is the vertical line |. Instead of
+having awk read from a file, we can pipe the output of head to awk directly without having to save it to a file first.
+<pre>
+gpruesse@otter:~$ head -3 columns.txt | awk '{print $5}'
+(this is not the data in columns2)
+-1090.13343774
+-1090.20757070
+-1090.24296462
+</pre>
+Note that the first part of the pipe, namely the one starting with head is a full command with the file name, whereas
+the second part does not have the file name as the argument anymore.
+To add a final complication, let’s say that we are interested in displaying only the fifth column of the second line
+of this command. We can do this by adding another pipe with the command tail. The usage of tail is very much
+like that of head except that it displays the last N lines of text.
+<pre>
+gpruesse@otter:~$ head -2 columns.txt | awk '{print $5}' | tail -1
+(this is not the data in columns2)
+-1090.20757070
+</pre>
+The action head -2 displays the first two lines, awk then selects the fifth column of the output and finally tail -1
+displays the last line of the second output. You can form a chain of pipes of arbitrary length in this way.
+Create your own data file of column data by cd-ing up to the top directory, 
+and executing the command "ls -l > ~/162/labs/oslab1/column.txt" or 
+"ls -l > ~/csci162/labs/oslab1/column.txt", depending on what you called your
+directory.  That is, give  a valid path name to your csci162 labs subdirectory for this lab.
+<br><br>
+
+<li><b>Extracting information from files : ls, less, cat, grep</b>
+<br>
+<br>
+Go to the directory you have the files sun1.txt, sun2.txt, sun3.txt and sun4.txt.
+First make sure that
+you have all the files and that they are not empty by using the ls command.
+<pre>
+gpruesse@otter:~$ ls -l 
+</pre>
+The -l option lists information
+about content, permissions,
+size, owner etc.
+<pre>
+total 136
+permissions links owner group size modification time name
+date
+drwxr-xr-x 2 gpruesse users 176 2007-09-18 22:03 figs
+-rw-r--r-- 1 gpruesse users 3048 2007-09-18 22:34 ideas.txt
+-rw-r--r-- 1 gpruesse users 326 2007-09-18 10:42 Makefile
+-rw-r--r-- 1 gpruesse users 113 2007-09-18 22:03 my-file
+-rw-r--r-- 1 gpruesse users 860 2007-09-18 22:31 notes.aux
+-rw-r--r-- 1 gpruesse users 10064 2007-09-18 22:31 notes.dvi
+-rw-r--r-- 1 gpruesse users 9752 2007-09-18 22:31 notes.log
+-rw-r--r-- 1 gpruesse users 69323 2007-09-18 22:31 notes.pdf
+-rw-r--r-- 1 gpruesse users 5982 2007-09-18 22:38 notes.tex
+-rw-r--r-- 1 gpruesse users 436 2007-09-18 22:31 notes.toc
+-rw-r--r-- 1 gpruesse users 563 2007-09-18 22:46 sun1.txt
+7
+-rw-r--r-- 1 gpruesse users 1462 2007-09-18 22:46 sun2.txt
+-rw-r--r-- 1 gpruesse users 1992 2007-09-18 22:46 sun3.txt
+-rw-r--r-- 1 gpruesse users 2640 2007-09-18 22:46 sun4.txt
+</pre>
+Perhaps you are not interested in seeing all the files in your directory but those which start with the word "sun".
+<pre>
+gpruesse@otter:~$ ls -l sun*
+-rw-r--r-- 1 gpruesse users 563 2007-09-18 22:46 sun1.txt
+-rw-r--r-- 1 gpruesse users 1462 2007-09-18 22:46 sun2.txt
+-rw-r--r-- 1 gpruesse users 1992 2007-09-18 22:46 sun3.txt
+-rw-r--r-- 1 gpruesse users 2640 2007-09-18 22:46 sun4.txt
+</pre>
+Or equally, you want to view just those files which have a .txt extension.
+<pre>
+gpruesse@otter:~$ ls -l *.txt
+-rw-r--r-- 1 gpruesse users 3048 2007-09-18 22:34 ideas.txt
+-rw-r--r-- 1 gpruesse users 563 2007-09-18 22:46 sun1.txt
+-rw-r--r-- 1 gpruesse users 1462 2007-09-18 22:46 sun2.txt
+-rw-r--r-- 1 gpruesse users 1992 2007-09-18 22:46 sun3.txt
+-rw-r--r-- 1 gpruesse users 2640 2007-09-18 22:46 sun4.txt
+</pre>
+The asterisk(*) is called a wildcard and it is used to list files that start with, end in or contain a given pattern.
+Now that we are convinced that the files exist and they are not empty, let's take a look at one of them. When
+you try to use the command cat like we did before, you will see that the file is too long to fit into a single screen.
+What would be nice is to be able to control the portion of the file that is shown on screen. This can be done with
+the command less.
+<pre>
+gpruesse@otter:~$ cat sun3.txt
+</pre>
+...... Runs off the screen!
+of the Moon is an awesome experience. For a few precious minutes it gets
+dark in the middle of the day. The stars come out. The animals and birds
+think it's time to sleep. And you can see the solar corona. It is well
+worth a major journey.
+<pre>
+gpruesse@otter:~$ less sun3.txt
+......
+total eclipse of the Sun. Partial eclipses are visible over a wide area of
+the Earth but the region from which a total eclipse is visible, called the
+path of totality, is very narrow, just a few kilometers (though it is
+sun3.txt lines 1-23/32 69% 
+</pre>
+Scroll using up and down arrows.
+Next, let’s count the number of lines, words and bytes in the file sun2.txt. This can be done using the wc command,
+which stands for word count.
+<pre>
+gpruesse@otter:~$ wc sun2.txt
+96 1086 5976 sun2.txt
+</pre>
+Doing research, we often find ourselves looking for a particular word or a pattern in a given file. This could be, for
+example, energy or result. While this search can be done by visual inspection if the file is small, for larger files, this
+would be impossible. Linux has a very powerful command, grep, for conducting pattern search. It takes as arguments
+the pattern being searched and a file name. If called without any options, it prints lines containing the pattern on
+the screen. Suppose we want to know the number of times the word "sun" occurs in the file sun2.txt.
+<pre>
+gpruesse@otter:~$ grep Sun sun2.txt
+The surface of the Sun, called the photosphere, is at a temperature of
+about 5800 K. Sunspots are "cool" regions, only 3800 K (they look dark only
+.....
+</pre>
+Calling grep with the option -n causes the number of the line to be displayed where the given pattern occurs.
+<pre>
+gpruesse@otter:~$ grep -n Sun sun2.txt
+1:The surface of the Sun, called the photosphere, is at a temperature of
+2:about 5800 K. Sunspots are "cool" regions, only 3800 K (they look dark only
+.....
+If we are only interested in the number of occurrences of the pattern, we can use the -c option.
+<pre>
+gpruesse@otter:~$ grep -c Sun sun2.txt
+</pre>
+You might have noticed that grep not only finds the instances of the word "sun" but also words which "sun" is a
+part of, such as "Sunspot" (Notice also that grep is not case-sensitive, but that can be modified through options).
+Suppose now that we would like to count all occurences of the word "Sun" but not Sunspot. This can again be
+achieved by piping the output of the grep from above to a second grep, this time using the -v option, which matches
+nonoccurences of the given pattern. Because we are only interested in the number, we can do a further pipe to wc, as
+before.
+<pre>
+gpruesse@otter:~$ grep Sun sun2.txt | grep -v spot | wc -l
+</pre>
+
+
+<br><br>
+<br><br>
+</body></html>

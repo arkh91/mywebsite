@@ -1,0 +1,81 @@
+<html><head><title>CSCI 330 Fall 2008: Assignments</title></head>
+
+<body>
+<center><h4>CSCI 330 Fall 2008: Assignment 1 </h4></center>
+
+<p>
+
+</p>
+<h4><center>Due Mon, Sept 29, 4:30 pm.</h4></center>
+
+<ol>
+<li>
+Write a grammar for C struct statments. Use our favourite notation (->, not ::=).
+
+</li>
+<li>
+Add the operation "mod" to the unambiguous grammar of Example 3.4 (given in class
+under the heading, "An Unambiguous Grammar for Expressions").  
+The mod operation should be given greater precedence than +, but less than *, 
+so A + B mod C is A + (B mod C), but A*B mod C is (A*B) mod C.
+Your grammar should be unambiguous.  Is it left recursive?  <li>
+</li>
+
+Given the grammar above, give a parse tree for A = B mod (C + A).  How many 
+leftmost derivations are there for the above assignment?
+
+</li>
+<li>
+Prove that the following grammar is ambiguous:
+<br>
+&lt; S &gt; &rarr; &lt;E &gt;  <br>
+&lt;S &gt; &rarr; &lt;F &gt;  <br>
+&lt;E &gt; &rarr; &lt;E &gt; + &lt;E &gt; <br>
+&lt;E &gt; &rarr; &lt;F &gt; <br>
+&lt;F &gt; &rarr; &lt;F &gt; * &lt;F &gt; <br>
+&lt;F &gt &rarr; a <br>
+&lt;F &gt &rarr; b <br>
+&lt;F &gt &rarr; c <br>
+<br>
+
+<li>
+Describe the language given by the following grammar:
+<br>
+&lt;S&gt; &rarr; a&lt;A&gt; <br>
+&lt;A&gt; &rarr; a&lt;A&gt; | &lt;B&gt; <br>
+&lt;B&gt; &rarr; b&lt;B&gt; | b <br>
+ <br>
+Is it ambigous?  Argue your answer, briefly.
+</li>
+ 
+<br>
+<li>
+Write a grammar for the strings of a's and b's of length greater than zero that read the same backwards as 
+forwards. 
+
+<li>
+If <b>value</b> is an attribute in an attribute grammar for &lt;arithmetic expression&gt;, would you expect it to be <b>synthesized</b> or <b>inherited</b>?
+</li>
+<li>
+For stack-dynamic strings, if <b>max_possible_length</b> is an attribute, 
+would you expect it to be synthesized or inherited?
+If <b>current_length</b> is an attribute, 
+would you expect it to be synthesized or inherited, and when (i.e., in which 
+side of an assignment operation)?
+</li>
+<li>
+P 241 (Ed 8) or 244 (Ed 7), question 8.
+</li>
+<li>
+P 243 (Ed 8) or 246 (Ed 7), question 11.
+
+<p>
+<hrule>
+<a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/330/index.html">
+CSCI 330 Homepage</a>
+<br><a href="http://csciun1.mala.bc.ca:8080/~gpruesse/">Gara Pruesse's Homepage</a>
+<br><a href="http://csciun1.mala.bc.ca:8080/">Computing Science Homepage </a>
+<br><a href="http://www.mala.bc.ca/">Malaspina University College Homepage</a>
+
+
+</body></html>

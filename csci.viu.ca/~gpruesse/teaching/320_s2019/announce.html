@@ -1,0 +1,172 @@
+<DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.76 [en] (X11; U; OSF1 V5.1 alpha) [Netscape]">
+</head>
+<body>
+<center>
+<b><font size="+2">CSCI 320: Spring 2019  Announcements</font></b></h6>
+<br>
+<b><font face="Arial,Helvetica"><font size="+1">
+<a href="officeHours.html">
+Office Hours</a></font></font></b>
+<br>
+<br>
+</font></font></b>
+</span></font></p>
+<style>
+table, th, td {
+   border: 1px solid lightgreen;
+}
+</style>
+</head>
+<p> <p> 
+<p><font face="verdana" color="LightSeaGreen">
+<center>
+<h3>Course Announcements</h>
+<br>for CSCI 320, Spring 2019
+<br>Foundations of Computing Science<br> (Theory of Computation)</h3>
+
+<p>
+Anything new and relevant to CSCI 320, Spring 2019, will be emailed to the class.
+Such emails will arrive at the email address that is indicated at your Student Record.  
+Announcements with lasting significance will also be posted here.
+</center>
+<br><br>
+<table>
+   <tr>
+      <th>Date</th>
+      <th>Announcement</th>
+   </tr>
+   <tr>
+      <td>
+      Week of January 7: </td>
+      <td>
+      <b>Tutorial</b>: This week there will be tutorials!
+      </td>
+   </tr>
+   <tr>
+      <td>
+      Week of January 14: </td>
+      <td>
+      The Tests will be on the following days, in Tutorial:
+      <br><b>Test 1 FAs:</b> January 29
+      <br><b>Test 2 CFLs:</b> February 19
+      <br><b>Test 3 The rest (to date):</b> March 26
+
+      </td>
+   </tr>
+   <tr>
+      <td>
+      Week of February 25: </td>
+      <td>
+      Due to the snow days, the Test 2 will 
+      be on the following days, in Tutorial:
+      <br><b>Test 2 CFLs:</b> March 5 
+      <br>
+      <br>Regarding Assignment 3.  Question 1 is pretty challenging.
+      (Note that I have updated the Question to ask for a NATURAL PDA for the 
+      language, not a top-down or bottom-up parser.)
+      Some students have even said it can't be done!  But fear not -- you
+      have not been assigned an impossible task.  
+      It's true that the <b>complement</b> language is not Context-Free (CF) -- it is the 
+      language of all strings that either have odd length or are of the form ww (first 
+      half equals last half).  Note, however, that a language can be CF while its 
+      complement is not, and that is the case here.
+      Some hints might be useful, 
+      and I provide them here.
+      <br>
+      <br><b>Hint 1</b>: 
+      First, solve it for all even length strings.  Then see if your solution handles 
+      odd length strings correctly, and adjust if not.
+      <br>
+      <br><b>Hint 2</b>: 
+      In order for a string of length 2n to be of the form ww, 
+      it must be the case
+      that <b>for all</b> i&le; n, 
+      w<sub>i</sub>= 
+      w<sub>i+n</sub>.  [Here 
+      w<sub>i</sub> denotes the ith letter in the string w.]
+      What is the <b>negation</b> of that claim -- is it a "for all" or "exists" quantifier?
+      Formulate a mathematical characterization of the negation of the "for all" claim; 
+      make your new claim begin with a quantifier 
+      (&exist; or &forall;); i.e., it should not begin with negation.  Recall that
+      &not; &forall; can always be rewritten as a &exist;, and a &not; &exist; can be rewritten
+      as a &forall; -- if you don't know how to do that, then see the bullet for 
+      De Morgan's Laws for quantifiers on 
+      <a href="https://www.cs.sfu.ca/~ggbaker/zju/math/pred-quant.html">this page</a> (just 
+      before the Nested Quantifiers section).
+      <br>
+      <br><b>Hint 3</b>: 
+      You will need non-determinism.  Suppose your answer to Hint 2 is an existential quantified claim.
+      Are you postulating the existence of two letters in the string?  How many letters apart
+      are they?  How can you use a PDA to ensure they are exactly that far apart? 
+     <br><br>
+     </td>
+     </tr>
+   <tr>
+      <td>
+      Week of March 4: </td>
+      <td>
+      The assignment 3 will be due Wed March 6 at 2:30.
+      </td>
+   </tr>
+   <tr>
+      <td>
+      Week of April 1-5: </td>
+      <td>
+      Questions 4 and 5 of A5 are due on Friday.  
+      <br>
+      For the WEIGHTY_CYCLE question, you can assume that the 
+      following problem is NP-complete:
+      <br>
+      <br>
+      HAMCYCLE = {&lt;G&gt; | G is a graph, and there is
+      a cycle that visits each vertex of G exactly once}.
+      <br>
+      <br>
+      Note that the graph in HAMCYCLE is undirected and no weights are assumed on the edges.
+      <br>
+      <br>
+      For the WEIGHTY_CYCLE language, the cycle in question must be 
+      simple (visits no vertex or edge more than once); note that WEIGHTY_CYCLE does not require that EVERY vertex be visited.  The weight function
+      w which is part of the input is simply saying each edge, say (u,v), 
+      has a weight on it, denoted w(u,v).  
+      An example of a weighted graph is below.  If that graph's encoding
+      is &lt;G_example1&gt;, then the string &lt;G_example1, 18&gt; is 
+      in the language WEIGHTY_CYCLE, because there is a simple cycle in the 
+      graph where summing the weights on the edges yeilds 18 or greater --
+      specifically, a,b,c,e,a is such a cycle.
+      <img src="WeightedGraph.png" alt="Weighted Graph">
+      </td>
+   </tr>
+   <tr>
+      <td>
+      Week of April 8-12: </td>
+      <td>
+      I will hold office hours on Aril 16 (Tuesday before exam), from 2:30-4:30, in 315/216.
+      </td>
+      </tr>
+
+</table>
+
+<p><p>
+</p><p><a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/320/outline.html"> Course Outline </a>
+<!---
+</p><p><a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/320/homework.html"> Homework</a> and <a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/320/assign.html"> Assignments </a>
+</p><p><a href="http://csciun1.mala.bc.ca:8080/~gpruesse/teaching/320/samplefinal.pdf"> Sample Final</a>
+--->
+
+</p></center>
+<p>
+Useful Links:
+
+<hr>
+<a href="http://csciun1.mala.bc.ca:8080/~gpruesse/">Gara Pruesse's Homepage</a>
+<br><a href="http://csciun1.mala.bc.ca:8080/">Computing Science Homepage </a>
+<br><a href="http://www.viu.ca/">Vancouver Island University Homepage</a>
+</body></html>
+

@@ -1,0 +1,258 @@
+<html>
+<head>
+<title>Foundations of Computing Science</title>
+</head>
+
+<center>
+<h2>Computing Science 320 -- Spring 2019</h2>
+<h3>Assignment 4  -- <b> Solutions</b></h3>
+</center>
+<hr>
+
+<br>
+Due March 21, 2019 2:30 pm.  Do not send electronic submissions
+without permission.
+<br>
+<br>
+<b>Objective</b><br>
+<blockquote>
+To develop understanding of the Turing Machine model of computation, and to create algorithms.
+<br>
+</blockquote>
+<hr>
+<p>
+<b>Task</b><br>
+<blockquote>
+<ol>
+<li>
+(15 marks)
+Give implementation description (5 marks) and a state diagram of a Turing Machine (10 marks) that decides 
+the language {$w &in; {a,b,c}<sup>*</sup>| #<sub>a</sub>(w) = 
+#<sub>b</sub>(w) = #<sub>c</sub>(w)}. Examples of an implementation description of a TM and a state diagram of a TM are given in the text for Example 3.7. 
+Note that the string on the input tape will begin with a "leftmost cell" 
+marker, the $ sign.  This is placed there so that you can easily 
+scan back to the beginning of the string.  It makes your machine smaller.
+<li>
+A Turing Machine (TM) is a 7-tuple, and with a little work 
+we could agree on a convention for representing TMs as strings 
+over an alphabet.  For example, we could agree that 
+the alphabet is 
+{q,0,1,(,),",",L,R,S,ha,hr,_}, 
+and we could use this alphabet
+to encode a simple 3-state TM over an alphabet of size 4 as follows:
+<br>
+<br>
+((q10,ha,hr),
+(11),
+(101),
+((q00,00,q01,01,R), 
+(q01,00,q00,01,L),...,(q10,10,10,ha)),q00,ha,hr).
+<br>
+<br>
+The above encoding can be interpreted as follows:
+<br>
+<br>
+((q10,ha,hr), // implies the state set Q={q00,q01,q10,ha,hr}
+<br>
+(11), // implies input alphabet is &Sigma;={00,01,10,11} 
+<br>
+(101), // implies tape alphabet &Gamma; is &Sigma; &cup; {100,101} &cup; {_ } (the blank symbol)
+<br>
+((q00,00,q01,01,S), // transition &delta;(q00,00)=(q01,01,R)
+<br>
+(q01,00,q00,01,L),...,(q10,10,ha,10,R)),q00,ha,hr). // more transitions, start state, halt-accept and halt-reject states.
+<br>
+<br>
+It is easy to see that any TM could be encoded in this way. For a 
+TM M, we will let &lt;M&gt; denote the encoding of M in the manner 
+described above.  (Note that M is a TM, whereas &lt;M&gt; is 
+an <em>encoding</em> of M.)
+<ol>
+<li>
+(5 marks)
+Do you think the language 
+{ &lt;M&gt; &in; {q,0,1,(,),",",L,R,S,ha,hr,_}<sup>*</sup>| M is a TM }
+is Turing-recognizable? Is it Turing-decidable?  
+Give a brief argument saying why you think so. 
+You do not need to provide a formal proof, but you should
+give directions as to what such a proof would contain -- a 
+high-level description of what such a proof would consist of.
+<br>
+<b>Answer</b>
+<br>
+<small>
+The language of syntactically correct TM encodings is decidable.  <br>
+A TM (algorithm) to decide would do the following.
+<br>
+1.  Recognize whether the input string is in the language 
+of the following regular expression:
+<br>
+string &in; ((q[0+1]<sup>*</sup>,ha,hr),(
+[0+1]<sup>*</sup>
+),(
+[0+1]<sup>*</sup>
+),(
+[(q
+[0+1]<sup>*</sup>
+,
+[0+1]<sup>*</sup>
+,q
+[0+1]<sup>*</sup>
+,
+[0+1]<sup>*</sup>
+,[L+R+S]
+),]<sup>*</sup>
+[(q
+[0+1]<sup>*</sup>
+,
+[0+1]<sup>*</sup>
+,q
+[0+1]<sup>*</sup>
+,
+[0+1]<sup>*</sup>
+,[L+R+S]
+)] + &epsilon;
+),q
+[0+1]<sup>*</sup>
+,ha,hr)
+<br>
+Reject if not in this form.  A DFA can do this, so a TM certainly can.
+<br>
+2.  Check
+that the state numbers (bitstrings) are all &le; the first state number; and
+that the alphabet numbers are all &le; the second alphabet number (i.e.,
+the tape alphabet). 
+Reject if not.
+This can be done using the zigzagging method.
+<br>
+3.  Accept.
+<br>
+The description is in broad strokes, but all are things that we 
+know a TM to be capable of.  Students could receive full 
+marks without explicitly writing out the regular expression 
+that captures the majority of the sytax checking, but there must 
+be some indication of the kinds of check that are needed, and 
+observation that a TM can do this kind of checking.
+</small>
+<li>
+(10 marks)
+Show that 
+{&lt;M&gt; &in; {q,0,1,(,),",",L,R,S,ha,hr,_}<sup>*</sup>| M is a TM }
+is Turing-enumerable -- i.e., there is a printer-TM for it.
+<br>
+<br>
+<b>Answer</b>
+<small>
+We have a TM that decides the language.  A printer-TM P can be built
+as follows:
+<br>
+P = "1. Enumerate all strings over the alphabet of this TM, in shortlex order.
+<br>1.1.  For each such string generated, use the TM of part 1 to decide
+whether it is a syntactically correct encoding of a TM; is so, print 
+it out; if not, continue."
+<br>
+<br>
+P will enumerate all the syntactically correct encodings of TMs, in 
+shortlex order.
+</small>
+</ol>
+
+<br>
+<br>
+
+<li>
+(10 marks)
+Is the langauge 
+R = {&lt;M,w&gt; | M is a TM that rejects string w } decidable, or recognizable, or neither? 
+Say which of the three options you think is true.  
+If R is decidable, prove it by giving a TM that decides the language. 
+If R is recognizable but not decidable, prove both those things -- give a 
+TM that recognizes the language, and prove that some undecidable 
+language reduces to R.
+If it is not recognizable, prove it.
+<br>
+<br>
+<b>Answer</b>
+<br>
+<small>
+Claim: R is not decidable.
+<br>
+Proof:  BWOC.  Suppose R were decidable, and X is a TM that decides R. Then we could 
+construct the following TM S that decides A<sub>TM</sub>:
+<br>
+S = "on input 
+&lt;M,w&gt;:
+<br>
+1. Construct a new TM M' except that all transitions to h<sub>a</sub>
+are now diverted to h<sub>r</sub>.
+<br>
+2. Run X on 
+&lt;M'w&gt;.  If X accepts, return M(&lt;w&gt;).  Otherwise, REJECT."
+<br>
+<br>
+Why this works: X on M' essentially decides whether M halts on input w 
+or not.  If M does not even halt on w, we can reject &le;M,w&ge;.  
+If X accepts, then we can
+run M on w to determine whether M went to 
+h<sub>a</sub>
+or h<sub>r</sub> on w, without the danger that M might loop forever.
+(The proof is even easier if we can reduce directly from Halts, but 
+we did not yet prove Halts was undecidable when this problem was assigned.)
+<br>
+<br>
+We now show that R is recognizable:
+<br>
+R is recognized by the following TM X:
+<br>
+X = "on input &lt;M,w&gt;:
+<br>
+1. Run M on w.  If M accepts, REJECT.  
+<br>If M rejects, ACCEPT. 
+<br>(If M runs forever, run forever.)"
+<br>
+<br>
+If the answer is yes, M rejects w, then the answer is guaranteed to 
+come back as ACCEPT.  Only if the answer is no, M does not reject, might
+X run forever.
+<br>
+<br>
+Since R is recognizable but not decidable, we can conclude that 
+&not;R is not recognizable. 
+</small>
+<br><br>
+<li>
+(10 marks)
+Is the language
+Forever = {&lt;M,w&gt; | M is a TM that runs forever on input string w } decidable, or recognizable but not decidable, or not recognizable? 
+Prove it.
+<br>
+<br>
+<br>
+
+<b>Answer</b>
+<br>
+<small>
+[Note: Forever is the same as 
+<overline>Halts</overline>.  
+We had not yet
+proved 
+&not;Halts
+was not recognizable when this was assigned, but we covered it in 
+tutorial.  Substituting the name Forever for 
+&not;Halts</overline>
+would yield a proof.]
+</small>
+
+<br>
+<br>
+<hr>
+<a href="a1.html">Previous Assignment</a>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<a href="a5.html">Next Assignment</a>
+</body>
+</html>
+

@@ -1,0 +1,355 @@
+
+<html>
+<head><title>CSCI 162 Spring 2018: Assignment 1 - Solutions</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: Assignment 1 -- Solutions: 
+Boolean Circuits and Binary Representation
+</h4></center>
+<center><h4></h4></center>
+
+<b>Submission deadline:</b> Midnight, Tuesday Feb 13, 2018.</b>
+<b>Out of:</b> 50</b>
+
+<p>
+<p>
+<b>Assignment submission:</b>
+<p>
+Problems should be neatly presented on paper. Hand in, or place under my door.
+
+<p><b>Questions:</b>
+<ol>
+<li>
+(10 marks)
+Draw the digital circuit that 
+takes three input values b1, b2, b3, and computes two
+output bits s1, s0, where if s1 s0 were read as 
+a binary number, it would represent the sum of the three input
+bits.  That is, if the three input bits are all ON, then the 
+output bits are s1 s0 = 11.  If any two of the input bits
+are ON, and the other one OFF, then the output bits are 
+s1 s0 = 10.  
+<br>
+[Note: the output bit s0 is ON if and only if an odd number of 
+the input bits are ON, so you may be inspired by the Lab1 circuitry you
+came up with.  It is acceptable to use Logisim to come up with the 
+circuitry, but note that you will have to come up with circuits on tests
+and exams without Logisim.]
+
+<li>
+(5 marks)
+Give a Karnaugh map for the following boolean function, and give
+the "Sum of Products" (i.e., "OR" of "AND" gates)
+boolean formula that minimizes the number of gate inputs -- but you 
+should not count negated literals (i.e., &not; x) as a gate input: we
+get negated literals "for free".  
+<pre>
+wxyz |   R
+0000 |   1
+0001 |   0
+0010 |   1
+0011 |   1
+0100 |   X
+0101 |   X
+0110 |   0
+0111 |   0
+1000 |   X
+1001 |   0
+1010 |   1
+1011 |   0
+1100 |   1
+1101 |   X
+1110 |   1
+1111 |   0
+</pre>
+
+<b>Solution:</b>
+<br>
+<pre>
+  yz= 00 01 11 10
+wx
+00     1  0  1  1
+01     X  X  0  0 
+11     1  X  0  1
+10     X  0  0  1
+</pre>The Karnaugh Map consists of blocking off the 1's in the
+above table, covering no 0's (but X's can be covered or not 
+covered, as convenient), according to proper gate-blocks. (I 
+don't have an easy way to do this in html, so I will indicate
+each gate separately, below.) One minimal
+way to cover the 1's Karnaugh fashion is this way:
+<pre>
+Gate = &not; y &and; &not; z:
+  yz= 00 01 11 10
+wx
+00     1  .  .  .
+01     1  .  .  . 
+11     1  .  .  .
+10     1  .  .  .
+
+
+Gate = &not; w &and; &not; x &and; y:
+  yz= 00 01 11 10
+wx
+00     .  .  1  1
+01     .  .  .  . 
+11     .  .  .  .
+10     .  .  .  .
+
+
+Gate = w &and; &not; z:
+  yz= 00 01 11 10
+wx
+00     .  .  .  .
+01     .  .  .  . 
+11     1  .  .  1
+10     1  .  .  1
+</pre>
+The equation for R is thus:
+R(w,x,y,z) = (&not; y &and; &not; z) &or; (&not; w &and; &not; x &and; y) &or; (w &and; &not; z)
+</pre>
+<br>
+For full marks, your matrix had to indicate the gates (by showing blocks of
+1's and X's, each block representing a gate) that appeared in your 
+boolean equation; and it had to be minimal in size.  Minimality 
+is attained by selecting the fewest and the largest blocks that cover 
+all the 1's but no 0's.  The fewest gate-inputs here is 10 (2 + 3 + 2
+for the AND gates, +3 for the overall OR gate).
+   <br><br>
+<li>
+(2 marks)
+Is
+x &and; &not; (&not; y &or; x) is logically equivalent to
+x &and; y?
+Prove your claim using a truth table.  If it is not equivalent, 
+identify values for x and y that demonstrate the inequivalence.
+<br><br>
+
+<b>Solution:</b>
+<br>
+The truth table is as follows. The columns for 
+(x&and;y) and 
+x&and;&not;(&not;y &or; x) differ when x=true and y=true (values marked 
+below with '*').
+Hence we observe that 
+(x&and;y) and 
+x&and;&not;(&not;y &or; x) 
+expressions are not equivalent; that x=true and y=true 
+demonstrate their inequivalence.
+<br><br>
+<pre>
+x  y  x&and;y  &not;y  &not;y&or;x  &not;(&not;y&or;x)  x&and;&not;(&not;y&or;x)
+0  0   0   1     1       0     0
+0  1   0   0     0       1     0
+1  0   0   1     1       0     0
+1  1   1*  0     1       0     0*
+</pre>
+   <br><br>
+   
+<li>
+(2 marks)
+Convert each of the following base 10 representations to its equivalent binary form:
+use the fast method, and show your work.  A solution that does not show intermediate
+values for the fast method will receive a mark of zero.
+<br><br>
+131
+<br><br>
+
+<b>Solution:</b>
+<br>
+<pre>
+131  65  32  16  8  4  2  1
+ 1    1   0   0  0  0  0  1
+                    &larr;
+</pre>
+number in binary is 10000011.
+   <br><br>
+<li>
+(2 marks)
+Convert each of the following binary representations to its equivalent base 10 form:
+show your intermediate values.
+<br><br>
+11.01101
+<br><br>
+
+<b>Solution:</b>
+<br>
+11: 1*2=2 +1=3.
+<br>
+0.01101: You can use positional method for this question, and 
+your calculator (1/4 + 1/8 + 1/32), or 
+calculate the number as if it had no radix point (1101 
+is 1*2+1=3*2=6*2+1=13, then, since you must move the radix point 5 
+positions to left, which is the same as dividing by 2^5, end up with
+13/32 = 0.40625).  Hence total is 3.40625.
+<br>
+My preferred method is to read the binary digits 01101 from 
+right to left, each time shifting left (dividing by two) and adding 
+in the next digit:
+<pre>
+1
+/2+0=0.5  (0.1)
+/2+1=1.25  (1.01)
+/2+1=1.625 (1.101)
+/2+0=0.8125  (0.1101)
+/2+0=0.40625 (0.01101)
+
+</pre>
+Solution is thus 3.40625
+   <br><br>
+<li>
+(2 marks)
+Express the following values in binary notation:
+show your intermediate values.
+<br>
+234
+<br>
+<br>
+
+<b>Solution:</b>
+<br>
+<pre>
+234  117  58  29  14  7  3  1
+  0    1   0   1   0  1  1  1
+                  &larr;
+  </pre>
+Solution is 11101010
+   <br><br>
+<li>
+(2 marks)
+Perform the following additions in binary notation:
+show the carry bit, when appropriate.
+<br><br>
+1011.11+10.01
+<br>
+<br>
+
+<b>Solution:</b>
+<br>
+<pre>
+1011.11
+  10.01
+_111_1__ &larr; carry bits
+1110.00
+</pre>
+   <br><br>
+<li>
+(3 marks)
+Given the following:
+<br>
+11011+11001
+<br>
+the answer, and the interpretation of what the question is, will be
+different depending on whether binary or twos-complement representation
+is assumed.  Report the decimal notation equivalent of the question, and 
+the answer, of the sum under assumption of binary representation, and 
+of twos-complement representation.
+<br>
+<br>
+<br><br>
+
+<pre>
+Binary: 11011  is  27
+        11001  is  25
+        1_11_ &larr; carry
+       110100  is  52  (binary representation can grow as necessary; no overflow error)
+
+Two's Complement: 
+        11011  is  -0101 i.e., -5
+        11001  is  -0111 i.e., -7
+        1_11_ &larr; carry
+        10100  is  -1100 i.e., -12.  No overflow error, as sign is same as the two operands.
+        </pre>
+   <br><br>
+<li>
+(2 marks)
+Convert the hex number ABC into decimal, by first converting to binary
+and then using the fast method -- 
+show that you are using the fast method by giving the intermediate values (i.e.,
+double or double plus one).  A solution that does not show intermediate 
+values for the fast method will receive a mark of zero.
+<br><br>
+
+<b>Solution:</b>
+<br>
+<pre>
+A B C = 1010 1011 1100
+        1 0 1  0 1   0  1   1   1   1    0    0
+        1 2 5 10 21 42 85 171 343 687 1374 2748
+        </pre>
+        Solution is 2748.
+   <br><br>
+<li>
+(20 marks)
+Write a MARIE assembly language program that plays "guess the secret number",
+taking input from the user and responding "H" ("go Higher") or "L" ("go Lower")
+until the secret number is guessed.  When it is guessed correctly, 
+the program outputs the number, then outputs double the number, then outputs quadruple
+the number.  Then the program halts.
+The program must utilize JnS-JumpI for the doubling subroutine.
+Use indenting of all code lines; only labels should appear 
+completely left-justified.
+<br><br>
+When your MARIE program is completed, email to  gpruesse@otter.csci.viu.ca the code (the .mas file) as an attachment
+-- download the solution, calling it guess.mas (MARIE will attach the
+.mas extension); then attach that file to an email to the above address.  
+You can do this on your own computer, using your own email service,
+or from the lab using the email service "pine".  Send it with the 
+subject "Assignment 1 Q 9".
+Only the MARIE code should be sent this way: the rest you should 
+hand in on paper.
+
+<br><br>
+<b>
+Solution:</b>
+<br><br>
+<pre>
+loop: input
+   store guess
+   subt secret
+   Skipcond 400
+   Jump correctGuess
+   Skipcond 0
+   Jump GuessIsGreater
+   load H      /* Guess is too small
+   output
+   Jump loop
+
+GuessIsGreater, load L
+   output
+   Jump loop
+
+correctGuess, load secret
+   store dbl_param
+   Jns double
+   load dbl_result
+   output
+   store dbl_param
+   Jns double
+   load dble_result
+   output
+   halt
+
+dbl_param, dec 0
+dbl_result, dec 0
+
+double, dec 0
+   load dbl_param
+   add dbl_param
+   store dbl_result
+   JumpI double
+
+guess, dec 0
+secret, hex 114
+
+</pre>
+</ol>
+<br>
+<br>
+
+</ol>
+
+
+</body>
+</html>
+
+

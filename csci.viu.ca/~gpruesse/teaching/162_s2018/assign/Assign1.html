@@ -1,0 +1,159 @@
+
+<html>
+<head><title>CSCI 162 Spring 2018: Assignment 1</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: Assignment 1: 
+Boolean Circuits and Binary Representation
+</h4></center>
+<center><h4></h4></center>
+
+<b>Submission deadline:</b> Midnight, Tuesday Feb 13, 2018.</b>
+<b>Out of:</b> 50</b>
+
+<p>
+<p>
+<b>Assignment submission:</b>
+<p>
+Problems should be neatly presented on paper. Hand in, or place under my door.
+
+<p><b>Questions:</b>
+<ol>
+<li>
+(10 marks)
+Draw the digital circuit that 
+takes three input values b1, b2, b3, and computes two
+output bits s1, s0, where if s1 s0 were read as 
+a binary number, it would represent the sum of the three input
+bits.  That is, if the three input bits are all ON, then the 
+output bits are s1 s0 = 11.  If any two of the input bits
+are ON, and the other one OFF, then the output bits are 
+s1 s0 = 10.  
+<br>
+[Note: the output bit s0 is ON if and only if an odd number of 
+the input bits are ON, so you may be inspired by the Lab1 circuitry you
+came up with.  It is acceptable to use Logisim to come up with the 
+circuitry, but note that you will have to come up with circuits on tests
+and exams without Logisim.]
+
+<li>
+(5 marks)
+Give a Karnaugh map for the following boolean function, and give
+the "Sum of Products" (i.e., "OR" of "AND" gates)
+boolean formula that minimizes the number of gate inputs -- but you 
+should not count negated literals (i.e., &not; x) as a gate input: we
+get negated literals "for free".  
+<pre>
+wxyz |   R
+0000 |   1
+0001 |   0
+0010 |   1
+0011 |   1
+0100 |   X
+0101 |   X
+0110 |   0
+0111 |   0
+1000 |   X
+1001 |   0
+1010 |   1
+1011 |   0
+1100 |   1
+1101 |   X
+1110 |   1
+1111 |   0
+</pre>
+
+<li>
+(2 marks)
+Is
+x &and; &not; (&not; y &or; x) is logically equivalent to
+x &and; y?
+Prove your claim using a truth table.  If it is not equivalent, 
+identify values for x and y that demonstrate the inequivalence.
+<br><br>
+
+<li>
+(2 marks)
+Convert each of the following base 10 representations to its equivalent binary form:
+use the fast method, and show your work.  A solution that does not show intermediate
+values for the fast method will receive a mark of zero.
+<br><br>
+131
+<br>
+<br>
+<li>
+(2 marks)
+Convert each of the following binary representations to its equivalent base 10 form:
+show your intermediate values.
+<br><br>
+11.01101
+<br>
+<br>
+<li>
+(2 marks)
+Express the following values in binary notation:
+show your intermediate values.
+<br>
+234
+<br>
+<br>
+<li>
+(2 marks)
+Perform the following additions in binary notation:
+show the carry bit, when appropriate.
+<br><br>
+1011.11+10.01
+<br>
+<br>
+
+<li>
+(3 marks)
+Given the following:
+<br>
+11011+11001
+<br>
+the answer, and the interpretation of what the question is, will be
+different depending on whether binary or twos-complement representation
+is assumed.  Report the decimal notation equivalent of the question, and 
+the answer, of the sum under assumption of binary representation, and 
+of twos-complement representation.
+<br>
+<br>
+<li>
+(2 marks)
+Convert the hex number ABC into decimal, by first converting to binary
+and then using the fast method -- 
+show that you are using the fast method by giving the intermediate values (i.e.,
+double or double plus one).  A solution that does not show intermediate 
+values for the fast method will receive a mark of zero.
+<br><br>
+<li>
+(20 marks)
+Write a MARIE assembly language program that plays "guess the secret number",
+taking input from the user and responding "H" ("go Higher") or "L" ("go Lower")
+until the secret number is guessed.  When it is guessed correctly, 
+the program outputs the number, then outputs double the number, then outputs quadruple
+the number.  Then the program halts.
+The program must utilize JnS-JumpI for the doubling subroutine.
+Use indenting of all code lines; only labels should appear 
+completely left-justified.
+<br><br>
+When your MARIE program is completed, email to  gpruesse@otter.csci.viu.ca the code (the .mas file) as an attachment
+-- download the solution, calling it guess.mas (MARIE will attach the
+.mas extension); then attach that file to an email to the above address.  
+You can do this on your own computer, using your own email service,
+or from the lab using the email service "pine".  Send it with the 
+subject "Assignment 1 Q 9".
+Only the MARIE code should be sent this way: the rest you should 
+hand in on paper.
+
+</ol>
+<br>
+<br>
+
+</ol>
+
+
+</body>
+</html>
+
+

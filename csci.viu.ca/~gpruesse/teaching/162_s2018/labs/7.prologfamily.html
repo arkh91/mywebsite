@@ -1,0 +1,165 @@
+
+<html>
+<head><title>CSCI 162 Spring 2018: Labs</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: Prolog Whale Geneology Lab</h4>
+</center>
+<br>
+<br>
+<br> 
+<b>IO in Prolog</b>
+<p><p>
+Type this in Prolog:
+<br>
+<pre>
+?- write(hello).
+</pre>
+<br>
+Now try this:
+<br>
+<pre>
+?- write(hello)
+</pre>
+<br>
+Now try this:
+<br>
+<pre>
+?- write(Hello).
+</pre>
+<br>
+Now try this:
+<br>
+<pre>
+?- write(hello world).
+</pre>
+<br>
+Now try this:
+<br>
+<pre>
+?- write('Hello').
+</pre>
+<br>
+Now try this:
+<br>
+<pre>
+?- write("hello world").
+?- halt.
+</pre>
+<br><br>
+<b>Whale geneology</b>
+<br><br>
+For this lab, you will use the data in
+<a href="prologfamily/family.pl">family.pl</a> 
+to test your prolog programs.  
+You can get it using the following command:
+<pre>
+cp ~gpruesse/public_html/teaching/162/labs/prologfamily/family.pl .
+</pre>
+The data is for whale families; we will assume that all whales 
+can be categorized as male or female.
+You will be able to load the file's facts and predicates 
+into Prolog by typing the name of the file (minus the .pl extension)
+in square brackets on the Prolog query line, as follows:
+<pre>
+?- [family].
+</pre>
+<p><p>
+<ol>
+<li>
+Who are chester's parents? Use "listing" to get all the facts and
+predicates that are loaded into prolog, and make the appropriate query.
+Do spot or ned or stumpy have any children?
+<p><p>
+
+<b>You are to write the following predicates (structures) into your 
+family.pl file. Add the new structures to the end of the file.</b>  At the
+end of the file as it is given to you is an example structure, coparents,
+which you can use as a model for your own structures.
+<p><p>
+<li>
+sibling(X,Y) %  X and Y are siblings, either full- or half-siblings.
+<br>
+Ensure that you do not find that ned is his own sibling, by requiring
+that X does not equal Y:<b> X\==Y</b>
+<p><p>
+<li> 
+fullsib(X,Y) % X and Y have two distinct parents in common.  
+You can use \== to determine that two atoms are not the same; see
+the example "coparents" provided in the file.
+<p><p>
+<li>
+<pre>brother(X,B)   
+<br>
+/* Can be used to answer the following questions:
+ * if YOU instantiate X, and let Prolog instantiate B, 
+ * then you can find the first (second, third...) brother of your X.
+ * If you instantiate B, and let Prolog instantiate X, 
+ * then you can find all those entities who have B as a brother.
+ * If you don't instantiate either X or B, 
+ * then you can find out (one or more) pairs of entities where 
+ * the second is a brother of the first.
+*/
+</pre>
+<p><p>
+<li>sister(X,S) 
+<p><p>
+<li>grandparent(X,G).
+<p><p>
+<li><pre>cousin(X,C).  % Neither self nor sibling is a cousin.
+</pre>
+You can use the operator `not(P)', which will be satisified
+only if P is not, or the test X==Y (for equality) or X\==Y (for not equal).
+<pre>
+male(X):- not female(X).
+or
+male(X):- not(female(X)).
+</pre>
+<p><p>
+<li>
+<pre>ancestor(X,Y).  
+/* An ancestor of X is Y.
+* I am my own ancestor, and every ancestor of my parent is 
+* also my ancestor; nobody else is my ancestor.
+*/
+</pre>
+For ancestor, you will need multiple clauses -- they are "OR"ed together, 
+or you can regard them as "If" conditions.
+For example, one way to write a recursive fibonacci calculator is the 
+following:
+<pre>
+fib(1,1). 
+fib(2,1). %the second fibonacci number is 1.
+fib(N,Fn):- N1 is N-1, fib(N1,Fn1), 
+            N2 is N1-1, fib(N2,Fn2),
+            Fn =  Fn1+Fn2.
+<p><p>
+<li>Construct a structure that is satisfied if a person has 
+three distinct grandchildren.  Use `;' to determine all the whales
+in the database who have three distinct grandchildren.  
+Show the instructor in the lab the execution in Prolog that names them 
+all.
+<p><p>
+
+<li>Suppose whales live in a matrilineal society, where the "family name" 
+of the whale is the same as the family name of the mother.  When will 
+two whales have the same last name?  Build a structure:
+<br>
+<pre>
+fname(X,Y)  % X and Y have the same family name.
+
+<br><br>
+[Hint:  you may want to define predicates <pre>
+hasmother(X), nomother(X), topmother(X,G).]
+</ol>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+</html>
+
+

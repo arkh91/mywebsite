@@ -1,0 +1,64 @@
+<html>
+<head><title>CSCI 162 Spring 2018: Labs</title></head>
+<body>
+<center><h4>CSCI 162 Spring 2018: Prolog Lists Lab</h4>
+<br>
+</center>
+For this lab, write the following predicates in a file called lists.pl.  
+<ol>
+<li>
+Write a list predicate called ismember(X,L) that is true if X is in the list L, false (ununifiable) otherwise.
+<br>
+(We did this one in class; try to do it yourself, as a warm-up exercise.)
+<br><br>
+<li>
+Write a list predicate called remove(X,L,L1) that removes the first 
+instance of X in L, leaving L1.
+<br><br>
+
+<li>
+Write a list predicate called removeAll(X,L,L1) that removes 
+all instances of X in L, leaving L1
+<br><br>
+<li>
+Write a list predicate called attach(X,L,LX) where LX is the list that results from attaching X to the end of L.
+<br><br>
+
+<li>
+This next task will lead towards a prolog predicate that
+computes the dot-product of two lists of 
+numbers that are of equal length.  First, let's write
+a predicate dp that assumes the lists are of equal length
+and computes the dot product, putting that list in
+as the third argument.
+<br><br>
+Write a list predicate called dp(L1,L2,L3) 
+so that if L1 and L2 contain numbers, 
+then L3 = [L1[0]*L2[0], L1[1]*L2[1], etc].
+dp will
+assume that L1 and L2 are two lists of same length.
+<br>
+Use number(X) to make sure that the list element is a number before 
+using arithmetic operations on it.
+<br>
+<br>
+Now dp will be your helper routine for a prolog predicate you 
+will call dotproduct(L1,L2,L3).  dotproduct will ensure that 
+L1 and L2 are of the same length, and then call dp(L1,L2,L3).
+length(L,X) is a built-in predicate, you don't have to write it.
+<br>
+<br>
+<li>
+Write a predicate max(L1,X) that places the maximum value in the list L
+into the variable X.  On an empty list it should just fail.
+Note that >= can be used for "greater than or equal to".
+What happens when you hit semi-colon repeatedly after you have found the 
+max?  Try it on the list [1,4,3,8,3].
+
+<br><br>
+<li>
+If you have time,
+use max and remove to implement a sort routine.
+You will have to call it mysort, as sort is a built-in function.
+
+</ol>

@@ -1,0 +1,421 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; OSF1 V5.1 alpha) [Netscape]">
+   <title>CSCI 320: Foundations of Computer Science</title>
+</head>
+<body>
+
+<center>
+<h2>
+Computing Science 320</h2></center>
+
+<center>
+<h3>
+Foundations of Computer Science</h3></center>
+
+<center>
+<h4>
+Course outline 
+</h4></center>
+
+<p><br>
+<hr>
+<table>
+<tr>
+<td><b>Instructor:</b></td>
+
+<td><a href="http://malun1.mala.bc.ca:8080/~gpruesse">Dr. Gara Pruesse</a></td>
+</tr>
+
+<tr>
+<td>Office:&nbsp;</td>
+
+<td>Bldg 315, Room 218</td>
+</tr>
+
+<tr>
+<td>Office Hours:</td>
+<td>Monday & Tuesday 9:00-10:00 
+</tr>
+<tr>
+<td>Contact:&nbsp;</td>
+
+<td>(250) 753-3245 Local 2337</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>Gara.Pruesse [at] viu [dot] ca</td>
+</tr>
+
+<tr>
+<td>Lecture:&nbsp; <td>Mon, Wed 2:30-4:00 316/216</td>
+</tr>
+<tr>
+<td>Seminars:&nbsp; <td>Tuesdays either 2:30-3:30 OR 3:30-4:30 </td>
+</tr>
+<tr>
+<td>Office Hours:&nbsp;</td>
+<td> Monday and Tuesday 9:00-10:00, or by appointment
+</td>
+</tr>
+-->
+</table>
+<br><br>
+<b>Text:&nbsp;</b>
+The following is the required <b>text</b>
+for the course:  
+   <br><br>
+   Introduction to the Theory of Computation, 3rd Edition (2nd is also acceptable)
+   <br>
+   by Michael Sipser.  Thomson Course Technology.  ISBN 978-0-534-95097
+   <br>
+   <br>
+The following open-access, free online text will be used supplementary
+material
+for the course:  
+   <br>
+   <a href="http://cglab.ca/~michiel/TheoryOfComputation/TheoryOfComputation.pdf">Theory of Computation</a> by Anil Maheshwari Michiel Smid (U. of Ottawa)
+   <br>
+   <br>
+Various other texts may be usefull to help the student understand the material, 
+including the following book by 
+Goddard, which has the virtue of being easy to understand and is a recommended read
+for those who find the material very challenging (though our treatment of 
+Push-Down Automata differs from Goddard's):<br><br>
+Goddard, Wayne.  <b>Introducing the Theory of Computation</b>
+&nbsp;
+ISBN 978-0-7637-412-9   ISBN10 0-7637-4125-6<br><br>
+<br><br>
+</table>
+
+
+<h3>
+Content</h3>
+The following is the general schedule for 
+guidance only.  
+<!-- The Spring 2018 schedule is <a href="2018/outline.html">here</a>. -->
+
+<blockquote>
+<table BORDER >
+<tr>
+<td>Week</td>
+
+<td>Topic</td>
+
+<td>Sipser chapter(s)</td>
+<!--<td></td>
+<td></td>
+-->
+</tr>
+
+<tr>
+<td VALIGN=TOP>Week 1</td>
+
+<td VALIGN=TOP>Review of 
+Sets, functions, etc.; Introduce Strings and Languages </td>
+
+<td>Chapter 0 and Chapter 1.  </a>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP>Week 2</td>
+
+<td VALIGN=TOP>
+Regular language; closure under union;
+Non-Determinism; algorithm for converting NFA to DFA. 
+</td>
+
+<td>
+Ch 1 
+</td>
+<!--
+<td>
+Exercises 1.7, 1.8, NFA-to-DFA conversion
+</td>
+-->
+
+</tr>
+
+<tr>
+<td>Week 3</td>
+
+<td>Regular Expressions. Kleene's Theorem; Algorithms for converting among re, DFA, NFA.
+Pumping Lemma. 
+<!--
+Enumeration; countably infinite sets; diagonalization proof.
+-->
+
+</td>
+
+<td>Chapter 1 
+</td>
+<!--<td>
+NFA to DFA conversion
+</td>
+<td>
+
+</td>
+-->
+</tr>
+<tr>
+<tr>
+<td>Week 4</td>
+<td>Pumping Lemma plus Closure theorems for Regular Languages; Test on FAs [Jan 29]; Intro to CFGs
+</td>
+
+
+<td>Chapter 1.4</td>
+<!--<a href="320_PumpingRL.pdf">Reference Slides4</a>
+<a href="https://www.cs.toronto.edu/~azadeh/page11/page12/material/pumping-lemma.pdf">Azedeh Farzan slides</a>
+<a href="https://www.youtube.com/watch?v=g4e2RElzCSQ">A 33 min video</a>
+: <a href="320CFGs1.pdf">Reference Slides5</a>
+</td>
+<td>
+</td>
+<td>
+NFA to r.e. conversion; Pumping Lemma to prove {ww': w &isin; {0,1}<sup>*</sup>
+and w' is bit-flip of w} is not regular
+-->
+</tr>
+
+<td>Week 5 </td>
+
+<td>Context Free Languages</td>
+<td>Ch 2 
+</td>
+
+</tr>
+<tr>
+<td VALIGN=TOP>Week 6</td>
+
+<td VALIGN=TOP>CFGs continiued; Contains Regular Languages; Chomsky Normal Form
+</td>
+<td>
+Ch 2 (cont'd) 
+<!--
+<a href="320PDAs.pdf">Reference Slides6</a>
+<a href="320PumpCFL.pdf">Reference Slides7: Pumping Lemma CFLs</a>
+</td>
+<td>
+-->
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP>Week 6</td>
+
+
+<td> Set Cardinality</td>
+<td>
+Pp 202-205
+</td>
+<!--
+<td> </td>
+-->
+</tr>
+
+<tr>
+<td VALIGN=TOP>Week 7</td>
+<td VALIGN=TOP>Turing Machines; TEST on CFLs [Feb 19]; Turing Machines</td>
+<td>Ch 3
+<!--
+<a href="SampleTest1_2016_Sol.pdf">2016 Test 1 solutions</a>
+<a href="SampleTest2.pdf">Sample Test 2</a> (which we covered in class,
+almost to the end)
+<a href="SampleTest1.pdf">Sample Test 1</a> with a Pumping Lemma quiz 
+appended.
+<a href="320Uncountable.pdf">Jeff Edmonds' slides on uncountability</a>
+<a href="http://www.turing.org.uk/turing/scrapbook/tmjava.html">Alan Turing Scrapbook</a>, 
+<a href="Jeff-Models-including-TMs.pptx">Jeff Edmonds' slides on Models of Computation</a>
+</td>
+<td>
+-->
+</td>
+</tr>
+
+
+<tr>
+<td VALIGN=TOP>Week 8</td>
+<td VALIGN=TOP>Study Days</td>
+<td>Office hours are by appointment</td>
+<!--
+<td>
+Study Days
+</td>
+-->
+</tr>
+
+<tr>
+<td VALIGN=TOP>Week 9</td>
+
+<td VALIGN=TOP>
+Formal Defn TM; Variations on the standard TM; Nondeterminism, multitape, etc.</td>
+<td>Ch 3 cont'd 
+</td>
+<tr>
+<td VALIGN=TOP>Week 10</td>
+
+<td VALIGN=TOP>Church-Turing Thesis. Universal TM (not covered in Text). Decidable Languages and Turing Recognizable Languages</td>
+<td>Ch 4; 
+</td>
+<!--
+<td>
+
+
+</td>
+-->
+
+</tr>
+
+<tr>
+
+<td VALIGN=TOP>Week 11</td>
+<td VALIGN=TOP>Undecidability and the Halting Problem. Reducibility. 
+</td>
+<td>Ch 4-5. 
+<!--
+<a href="https://www.youtube.com/watch?v=Wt00XVmyIpY">Portland State slides</a></td>
+<td><a href="a2.html">Assignment 2</a>(Due April 3)
+-->
+</td>
+
+
+<tr>
+<td VALIGN=TOP>Week 12</td>
+
+<td>Time complexity; NP-complete</td>
+
+<td>
+Ch 5. Ch 7.
+</td>
+<!--
+<td></td>
+-->
+
+</tr>
+<tr>
+<td VALIGN=TOP>Week 13</td>
+
+<td VALIGN=TOP>NP-completeness; TEST on TMS and Reductions (April 2)</td>
+
+<td>Ch 7 cont'd 
+<!--
+<a href="NP-complete.ppt">Shiyan Hu's NP-completeness slides</a>; 
+ <a href="https://grid.cs.gsu.edu/agb/csc4520/reductions.ppt">Power Point
+ slides</a> from GSU on reductions.
+
+</td><td>
+<a href="finalpractice18from12.pdf">Practice Final (PDF)</a>
+-->
+</td>
+
+</tr>
+
+<tr>
+<td VALIGN=TOP>Week 14</td>
+
+<td VALIGN=TOP>NP-completeness, Summary, Review</td>
+
+<td>Ch 7</td>
+<!--
+<td>
+
+
+</td>
+<td>
+-->
+</td>
+</tr>
+</table>
+</blockquote>
+<!--Homework and Assignments will be added as the course progresses.
+-->
+
+<p>
+
+
+<h2>
+Grading Scheme: </h2>
+
+<ul>
+<li>
+<b>Assignments</b></li>
+
+<br>There will be approximately 5 assignments; their total worth is 30 percent
+of your final grade. 
+<p>All assignments must be submitted on paper, and must be neatly presented.
+<!--<br>Specifications for the assignments will appear above, on the course outline,
+when they are available.
+-->
+<p>Each assignment will have a specified due date, and any assignments
+handed in after the due date, within 24 hours, will have 10% penalty; 
+after 24 hours it will not be accepted unless there is a valid
+reason for the assignment being late.
+<p>
+<li>
+<b>Midterms and Quizzes</b></li>
+
+There will be three midterm exams; see the schedule above for the date. It will count for
+
+30% of your final grade. 
+<br>
+The lowest midterm mark will be replace by the mark on the final exam,
+if that is to the student's advantage.
+<br>&nbsp;
+<li>
+<b>Final Exam</b></li>
+
+In addition, there will be a final exam worth 40 
+percent. 
+<b>A student must pass the final exam to pass the course.
+</b>
+<br>
+<br>&nbsp;
+
+<br>
+
+<h4>
+Grades will be distributed as follows:</h4>
+
+<center><table BORDER >
+<tr>
+<td>A+ >= 90.0</td>
+
+<td>A >= 85.0</td>
+
+<td>A- >= 80.0</td>
+</tr>
+
+<tr>
+<td>B+ >= 76.0</td>
+
+<td>B >= 72.0</td>
+
+<td>B- >= 68.0</td>
+</tr>
+
+<tr>
+<td>C+ >= 64.0</td>
+
+<td>C >= 60.0</td>
+<td>C->= 55.0</td>
+</tr>
+
+<tr>
+<td>D&nbsp;&nbsp; >= 50.0</td>
+
+<td></td>
+
+<td>F otherwise</td>
+</tr>
+</table></center>
+</ul>
+
+
+</body>
+</html>

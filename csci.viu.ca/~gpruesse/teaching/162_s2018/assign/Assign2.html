@@ -1,0 +1,172 @@
+
+<html>
+<head><title>CSCI 162 Spring 2017: Assignment 2 </title></head>
+<body>
+<center><h4>CSCI 162 Spring 2017: Assignment 2 
+<br><br>
+
+Operating Systems; Programming Languages: Prolog
+</h4></center>
+<center><h4></h4></center>
+Due Thursday April 5 at 4:30 pm
+<p>
+<p>
+<p><b>Questions:</b>
+Students 
+may discuss Assignment Questions, and may be informed 
+by such discussions, but when a student writes the submitted work 
+the student must do so without the aid of any relic of any 
+conversation, communication, or outside source that gives directly
+the solution or partial solution to the problem, unless explicitly permitted by 
+the Assignment document. 
+<ol>
+<li>
+Consider the following MARIE program.
+
+<br><br>
+<pre>
+   clear 
+   Store answer
+   input 
+   store num
+   input 
+   store maxj
+loop, Load answer
+   Add num
+   Store answer 
+   Load num
+   Add one
+   Store num
+   Load j
+   Add one
+   Store j
+   Subt maxj
+   Skipcond 800
+   Jump loop
+   Load answer
+   Output
+   Halt
+
+num, dec 0
+j,   dec 0
+maxj,   dec 0
+one, dec 1
+answer, dec 0
+</pre>
+
+a) (1 mark)  Give the answer that is output when the inputs are: 1, 3
+<br>
+b) (1 mark)  Give the answer that is output when the inputs are: 0, 11
+<br>
+c)  (5 mark) Give a short program in C++ that is equivalent to the
+program given.  By equivalent, we mean that 
+it computes the same thing and it uses the same method or algorithm.
+When writing it in C++, 
+express the algorithm naturally in C++, using the C++ constructs.
+<!--
+<b>Solution:
+<p>
+The solution is given below.  Concepts where students exhibited incomplete understanding 
+are the following:
+<ol>
+<li>
+Most students did recognize that the concept of having contiguous 
+memory locations which are accessed by the program by incrementing 
+the start address corresponds to an array.  
+<li>
+The values in those memory locations were given in hex, and MARIE uses
+two's complement representation, so the values with a 1 
+in the most significant digit of a 16-binary-digit representation are
+negative values. (Test yourself: what do you look for in a four-hex-digit
+representation to see if the first BINARY digit is a 1?  Does 9A21 have a 
+leading 1 or leading 0 in the 16-binary-digit representation?)
+<li>
+While the word "loop" is just a label in the MARIE program, it is in 
+fact used in the program, in conjunction with the skipcond statement, as a location
+in a loop-style program structure; since the skipcond is conditional on
+the value of the most recently read array element, it suggests a "while" 
+loop.  Several students thought it was a "for" loop structure, ranging 
+on the six values in the array, but in fact the loop stops before it 
+handles all the array elements; it stops when it encounters an 
+array element that is less than 0. 
+<li>
+The work done within the loop is equivalent to adding the array elements
+to an initially zero variable X, until a negative array element is 
+found.
+</ol>
+<pre>
+int Array[]=[84, 32, 10, -1, 21, -24415];
+int X=0;
+int i=0;
+while (Array[i]>0) {
+   X=X+Array[i];
+   i++;
+   }
+cout &lt; &lt; X;
+</pre>
+</b>
+-->
+<br><br>
+<li>
+Write the following Prolog predicates.  Test them
+on the Prolog interpreter, and hand in typed or handwritten Prolog predicates.
+<br>
+
+a) (1 mark) Give the predicate "append(L1,L2,L3)", where L3 is the result
+of appending list L2 to the back of list L1.  
+You don't have to reinvent it; you can look it up in the Prolog Wikibook (link on the web page), or 
+get it from your notes.  The object of this 1 mark question is 
+to ensure your familiarity with Prolog recursive predicates.
+<br>
+b) (4 marks) Give a prolog predicate that takes a list and counts the number
+of elements in the list.  The predicate will be size(L,X), where 
+L is a list and X is the number of members of the list.
+<br>
+<br>
+c) (6 marks) Give a prolog predicate that takes a list and halves it into 
+two sublists, the front end and the back end. The predicate will be 
+halves(L, LF, LB).  If the list is of odd length, the front half will
+be the longer half.  Use the predicate append, which we looked at in
+class and is covered in the Prolog Wiki, and use the size predicate. 
+
+<pre>
+
+<!-- <br><b>Solution: You can try them on otter using prolog.  If you want 
+to use prolog on your own computer, I suggest swipl which is freely 
+downloadable, but it sometimes gives different answers to otter's 
+prolog version, and otter's prolog will be our standard. </b>
+<ol>
+<li>
+?- magic(house_elf).
+<br>
+<b>No.</b>
+<li>
+?- wizard(harry).
+<br>
+<b>No.</b>
+<li>
+?- magic(wizard).
+<br>
+<b>No.</b>
+<li>
+?- magic('McGonagall').
+<br>
+<b>Yes; 'McGonagall' is a witch, and every witch is magic.</b>
+<li>
+?- magic(Hermione).
+<br>
+<b>Yes. Hermione is a variable, so the goal is satisfied when Hermione 
+is set to be any atom that is magic, such as 'McGonagall'.</b>
+</ol>
+-->
+<br>
+<br>
+
+
+</ol>
+
+
+</body>
+</html>
+
+
